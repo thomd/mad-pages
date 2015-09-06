@@ -5,7 +5,9 @@
 
 generate a keypair
 
-    ssh-keygen -t rsa -C my@email.com
+    cd ~/.ssh
+    ssh-keygen -t rsa
+
     ssh-keygen -t rsa -C my@email.com -f ~/.ssh/github
 
 show fingerprint of a public key
