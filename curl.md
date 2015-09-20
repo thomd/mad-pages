@@ -9,17 +9,23 @@
 
   use `-` as filename to have the output sent to `stdout`
 
-## Write output
+## Output
+
+  Write output to a local file named like the remote file
 
     curl -O
+
+  Write output to a file
+
     curl -o \<file>
+    curl http://{site,host}.host[1-5].com -o "#1_#2"
 
 ## POST
 
     -d "string"
     -d @file
 
-  multipart formpost
+  Multipart Formpost
 
     curl -F name=value
     curl -F name=@file
@@ -28,7 +34,7 @@
 
     curl -T \<file>
 
-  automatically find out where to resume a transfer
+  Automatically find out where to resume a transfer
 
     curl -C -
 
@@ -36,21 +42,27 @@
 
     curl -b "c=1; d=2"
 
-  read cookiejar
+  Read Cookiejar
 
     curl -b \<file>
 
-  write cookiejar
+  Write Cookiejar
 
     curl -c \<file>
 
 ## Headers
 
-  add header
+  Add header
 
     curl -H "name: value"
 
-  remove header
+  Remove header
 
     -H "name:"
+
+## Formatting
+
+    curl -s httpbin.org/headers | jq '.'
+    curl -s httpbin.org/xml | xmllint --format -
+    curl -s httpbin.org/xml | xmllint --format - | highlight -S xml -O xterm256 -s neon
 
