@@ -3,17 +3,30 @@
 
   app.js
 
-      var app = require('express')()
-      app.get('/', function(req, res) {
-        res.send('hello');
-      }).listen(3000)
+    var express = require('express')
+    var app = express()
+    app.get('/', function(req, res) {
+      res.send('hello');
+    })
+    app.listen(3000)
+
+Jade Template Engine
+
+    app.set('views', './views')
+    app.set('view engine', 'jade')
+    ...
+    res.render('index')
+
+Static resources
+
+    app.use(express.static('./public'))
 
 # express(1)
 
-    npm install -g express-generator
+    > npm install -g express-generator
 
-    express myapp
-    cd myapp
-    npm install
-    DEBUG=myapp:* ./bin/www
+    > express myapp
+    > cd myapp
+    > npm install
+    > DEBUG=myapp:* ./bin/www
 
