@@ -2,6 +2,7 @@
 # docker-machine(1)
 
     docker-machine create -d virtualbox dev
+    docker-machine start dev
     eval "$(docker-machine env dev)"
 
 # docker(1)
