@@ -3,23 +3,26 @@
 
 ## Setup
 
-    npm install --save-dev webpack
-
-Add _npm script_:
-
-    "scripts": {
-      "build": "webpack"
-    }
-
 File Structure:
 
-    .
     ├── app
     │   └── main.js
     ├── build
     │   └── index.html
     ├── package.json
     └── webpack.config.js
+
+Install:
+
+    npm init -y
+    npm install --save-dev webpack
+
+Add _npm script_:
+
+    "scripts": {
+      "build": "webpack",
+        "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build"
+    }
 
 ## Configuration
 
