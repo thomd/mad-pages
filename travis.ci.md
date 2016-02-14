@@ -14,7 +14,6 @@ Travis command line client
     travis show                  # show build
     travis history               # displays a projects build history
     travis logs                  # stream test logs
-    travis monitor               # live monitor for what's going on
 
 ## .travis.yml
 
