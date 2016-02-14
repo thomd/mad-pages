@@ -15,7 +15,7 @@ File Structure:
 Install:
 
     npm init -y
-    npm install --save-dev webpack
+    npm install --save-dev webpack webpack-dev-server
 
 Add _npm script_:
 
