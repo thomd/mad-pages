@@ -17,6 +17,10 @@ Jade Template Engine
     ...
     res.render('index')
 
+HTML Template
+
+    res.sendFile(require('path').join(__dirname + '/index.html'))
+
 Static resources
 
     app.use(express.static('./public'))
