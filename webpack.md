@@ -28,11 +28,53 @@ Add _npm script_:
 
 _webpack.config.js_:
 
-    var path = require('path')
     module.exports = {
-       entry: path.resolve(__dirname, 'app/main.js'),
+       entry: './app',
        output: {
-          path: path.resolve(__dirname, 'build'),
-          filename: 'bundle.js',
+          path: 'build',
+          filename: 'bundle.js'
        }
     }
+
+## Source map
+
+_webpack.config.js_:
+
+      devtool: 'source-map'
+
+## ES6
+
+    npm i -D babel-loader babel-core babel-preset-es2015
+
+_webpack.config.js_:
+
+      module: {
+        loaders: [
+          {
+            test: /\.js/,
+            include: __dirname + '/src',
+            loader: 'babel',
+            query: {
+              presets: ['es2015']
+            }
+          }
+        ]
+      }
+
+## CSS Styles
+
+    npm i -D css-loader style-loader
+
+_webpack.config.js_:
+
+      module: {
+        loaders: [
+          {
+            test: /\.css/,
+            include: __dirname + '/src',
+            loaders: ['style', 'css']
+          }
+        ]
+      }
+
+
