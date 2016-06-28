@@ -4,8 +4,11 @@
     git checkout develop
     git log                          # all commits of develop (full history)
     git log master                   # all commits of master (full history)
-    git log master..                 # commits in develop since branching; shorthand for git log ^master develop
-    git log ..master                 # commits in master since branching; shorthand for git log master ^develop
-    git log origin/master..          # commits in origin/master since last pull
-    git log ..origin/master          # commits in master since last push
-    git log master...                # commits in develop and master since branching
+    git log master..                 # commits in develop since last merge
+    git log ..master                 # commits in master since last merge
+    git log master...                # commits in develop since branch creation
+
+    git checkout develop
+    git fetch
+    git log ..origin/develop         # commits in origin/develop since last merge
+    git log origin/develop..         # commits in develop since last merge
