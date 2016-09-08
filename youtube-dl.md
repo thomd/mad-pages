@@ -32,3 +32,6 @@ and download a specific format with
 
     youtube-dl -f http\_mp3\_128\_url https://vimeo.com/48858289
 
+## Templates
+
+    youtube-dl --cookies COOKIES.txt -o 'eventedmind/%(playlist_title)s/%(title)s.%(ext)s' https://www.eventedmind.com/classes/ansible-a0b2c69d
