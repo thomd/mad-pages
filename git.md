@@ -1,4 +1,10 @@
 
+# what have I done in my branch?
+
+Supposed I'm in branch `development` which was branched off of `master`
+
+    git log master..
+
 # git-log(1)
 
     git checkout develop
