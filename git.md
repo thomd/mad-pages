@@ -18,3 +18,14 @@ Supposed I'm in branch `development` which was branched off of `master`
     git fetch
     git log ..origin/develop         # commits in origin/develop since last merge
     git log origin/develop..         # commits in develop since last merge
+
+# What is in the repository?
+
+    git ls-tree -r --name-only HEAD
+
+# How to remove a just commited file/folder
+
+    git ls-tree -r --name-only HEAD
+    git rm <file>
+    git rm -r <folder>
+    git commit --amend
