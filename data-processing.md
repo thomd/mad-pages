@@ -12,3 +12,7 @@ Get product-ids of products with a specific attribute
 
     awk '/product-id/{p=$0} /attribute/{print p}' catalog.xml
     awk 'BEGIN{p=0;a=0} /product-id=".*"/{p=1;gsub("(product-id=\")|(\")","",$0);id=$0} /attribute/{a=1} /\/product/{if(p==1&&a==1){print id};p=0;a=0}' catalog.xml
+
+get lengths of display-name values
+
+     awk '/display-name/{gsub(" *<[^>]+>","",$0); print length(), $0}' catalog.xml | sort | uniq | sort -n
