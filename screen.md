@@ -12,11 +12,13 @@ Start a new screen session
 Detach screen session and open again
 
     ctrl-b d
+    screen -ls
     screen -r
 
-Create a new Window
+Create a new Window and switch in between
 
     ctrl-b c
+    ctrl-b b
 
 List of Windows
 
