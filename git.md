@@ -19,13 +19,27 @@ Supposed I'm in branch `development` which was branched off of `master`
     git log ..origin/develop         # commits in origin/develop since last merge
     git log origin/develop..         # commits in develop since last merge
 
-# What is in the repository?
+# What files are in my repository?
 
-    git ls-tree -r --name-only HEAD
+    git ls-tree HEAD -r --name-only
 
-# How to remove a just commited file/folder
+# Find largest file in my repository
+
+    git ls-tree HEAD -l -r | sort -k 4 | tail -1
+
+# How to remove a just committed file/folder
 
     git ls-tree -r --name-only HEAD
     git rm <file>
     git rm -r <folder>
     git commit --amend
+
+# Find when a file was deleted
+
+If filename is known
+
+    git log -1 --stat -- path/to/filename
+
+If filename is not fully known
+
+    
