@@ -1,24 +1,4 @@
 
-# what have I done in my branch?
-
-Supposed I'm in branch `development` which was branched off of `master`
-
-    git log master..
-
-# git-log(1)
-
-    git checkout develop
-    git log                          # all commits of develop (full history)
-    git log master                   # all commits of master (full history)
-    git log master..                 # commits in develop since last merge
-    git log ..master                 # commits in master since last merge
-    git log master...                # commits in develop since branch creation
-
-    git checkout develop
-    git fetch
-    git log ..origin/develop         # commits in origin/develop since last merge
-    git log origin/develop..         # commits in develop since last merge
-
 # What files are in my repository?
 
     git ls-tree HEAD -r --name-only
@@ -30,16 +10,16 @@ Supposed I'm in branch `development` which was branched off of `master`
 # How to remove a just committed file/folder
 
     git ls-tree -r --name-only HEAD
-    git rm <file>
-    git rm -r <folder>
+    git rm \<FILE>
+    git rm -r \<FOLDER>
     git commit --amend
 
-# Find when a file was deleted
+# Restore a deleted file
 
-If filename is known
+    git log -- path/to/filename
+    git revert \<SHA1>
 
-    git log -1 --stat -- path/to/filename
+# Restore a change from the past
 
-If filename is not fully known
-
-    
+    git log -S"foo" -p
+    git revert -n \<SHA1>
