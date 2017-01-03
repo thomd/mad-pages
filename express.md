@@ -34,3 +34,7 @@ Static resources
     > npm install
     > DEBUG=myapp:* ./bin/www
 
+Automatically restart server:
+
+    > npm i -g nodemon
+    > DEBUG=myapp_* nodemon bin/www
