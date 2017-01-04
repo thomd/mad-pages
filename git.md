@@ -5,7 +5,7 @@
 
 # Find largest file in my repository
 
-    git ls-tree HEAD -l -r | sort -k 4 | tail -1
+    git ls-tree HEAD -l -r | sort -n -k4 | tail -1
 
 # How to remove a just committed file/folder
 
