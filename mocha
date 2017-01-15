@@ -1,0 +1,19 @@
+
+# mocha(1)
+
+    npm i -g mocha
+    mocha              # run all tests in 'test' folder
+    mocha-w -R min     # watch mode
+
+# Synchronous Test
+
+File _test/mytest.js_:
+
+    var assert = require('assert')
+    describe('description', function() {
+      it('should ...', function() {
+        assert.equal(value, expected_value)
+      })
+    })
+
+  Passing arrow-functions is discouraged.
