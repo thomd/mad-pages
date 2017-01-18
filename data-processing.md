@@ -16,3 +16,7 @@ Get product-ids of products with a specific attribute
 get lengths of display-name values
 
      awk '/display-name/{gsub(" *<[^>]+>","",$0); print length(), $0}' catalog.xml | sort | uniq | sort -n
+
+Extract values of an attribute from an XML:
+
+    grep customer-no file.xml | perl -pe 's/.*(CA[0-9]+).*/\1/g'
