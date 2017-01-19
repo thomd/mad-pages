@@ -1,8 +1,20 @@
 
 # redis
 
-    > brew install redis
+    > brew install redis                            # OSX
+    > sudo apt-get install redis-server             # Debian
+
+  start:
+
     > redis-server
+
+  stop:
+
+    > redis-cli shutdown
+
+  monitor (real-time feed of operations happening in it):
+
+    > redis-cli monitor
 
 # node_redis
 

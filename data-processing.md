@@ -21,3 +21,8 @@ Get lengths of display-name values:
 Get text-node `bar` of `\<foo>bar\</foo>` tag:
 
     grep foo file.xml | perl -pe 's/ \*\<.\*?>//g'
+
+Extract values of an attribute from an XML:
+
+    grep customer-no file.xml | perl -pe 's/.\*(CA\d+).\*/\1/g'
+    grep -o 'CA[0-9]\{8\}' file.xml
