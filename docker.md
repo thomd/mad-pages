@@ -2,11 +2,13 @@
 # docker-machine(1)
 
     docker-machine create -d virtualbox dev
+
     docker-machine start dev
     eval "$(docker-machine env dev)"
 
 # docker(1)
 
+    docker images                                 # list local images (in /var/lib/docker of your VM)
     docker run -ti \<image> /bin/bash              # Start a container with an interactive shell
     docker inspect \<container>                    # Inspect a running container
     docker inspect --format \<pid> \<container>     # Get the process ID for a container
