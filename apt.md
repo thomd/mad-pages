@@ -28,3 +28,5 @@ dpkg just installs a `.deb` file, but not its dependencies.
     dpkg -c \<package.deb>                   # show contends of package.deb
     dpkg -i \<package.deb>                   # install a package (no dependencies installed!)
     dpkg -r \<package>                       # remove a package
+
+    dpkg -L \<package>                       # list files a package installed on your system
