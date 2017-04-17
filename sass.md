@@ -30,5 +30,13 @@ Sass-files are in a `scss` folder, CSS-files will be compiled into a `css` folde
     npm run -s css
     npm run -s css:watch
 
+## Rules
+
+Turn rules off with:
+
+    /\* stylelint-disable */
+    a { ... }
+    /\* stylelint-enable */
+
 ## API
 
