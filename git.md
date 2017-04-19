@@ -1,25 +1,47 @@
 
-# What files are in my repository?
+# Git Best Practices
+
+What's behind and ahead origin/master?
+
+    git fetch
+    git branch -vv
+
+  behind:
+
+    git log ..origin/master
+    git diff ...origin/master
+
+  ahead:
+
+    git log origin/master..
+    git diff origin/master...
+
+
+What files are in my repository?
 
     git ls-tree HEAD -r --name-only
 
-# Find largest file in my repository
+
+Find largest file in my repository
 
     git ls-tree HEAD -l -r | sort -n -k4 | tail -1
 
-# How to remove a just committed file/folder
+
+How to remove a just committed file/folder
 
     git ls-tree -r --name-only HEAD
     git rm \<FILE>
     git rm -r \<FOLDER>
     git commit --amend
 
-# Restore a deleted file
+
+Restore a deleted file
 
     git log -- path/to/filename
     git revert \<SHA1>
 
-# Restore a change from the past
+
+Restore a change from the past
 
     git log -S"foo" -p
     git revert -n \<SHA1>
