@@ -1,12 +1,13 @@
 
 # ack(1)
 
-## Usage
+## Search
 
     ack -i PATTERN                               # find PATTERN 
     ack -i PATTERN FILE                          # find PATTERN in FILE
     ack -i PATTERN FOLDER/                       # find PATTERN in all files within FOLDER
     ack -l PATTERN                               # list all files matching PATTERN and their count
+    ack -g PATTERN                               # list all files matching PATTERN in file path
 
 ## Filetypes
 
