@@ -7,8 +7,6 @@
 
 # Synchronous Test
 
-File _test/myTest.js_:
-
     var assert = require('assert')
     describe('description', function() {
       it('should ...', function() {
@@ -21,9 +19,7 @@ File _test/myTest.js_:
 
 # Asynchronous Test
 
-Add a callback `done` to `it()` if you want to test an error-first callback:
-
-File _test/myAsyncTest.js_:
+  Add a callback `done` to `it()` if you want to test an error-first callback:
 
     var assert = require('assert')
     describe('description', function() {
@@ -37,3 +33,21 @@ File _test/myAsyncTest.js_:
         getAsync(done)
       })
     })
+
+# Hooks
+
+    describe('hooks', function() {
+      before(function() {
+        // runs before all tests in this block
+      })
+      after(function() {
+        // runs after all tests in this block
+      })
+      beforeEach(function() {
+        // runs before each test in this block
+      })
+      afterEach(function() {
+        // runs after each test in this block
+      })
+    })
+
