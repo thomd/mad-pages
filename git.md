@@ -96,3 +96,9 @@
     git stash pop
     git add .
     git commit -m "new commit message"
+
+
+## Why is my file ignored?
+
+    git check-ignore -v path/to/file
+
