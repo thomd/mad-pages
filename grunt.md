@@ -21,13 +21,13 @@ Usage
       grunt.registerTask('test', function() {          # Basic Task
         grunt.log.write(this.name)
       })
-      
+
       grunt.registerTask('default', ['test'])          # Alias Task
-      
+
       grunt.initConfig({                               # Config for Multi Task
         task: {
           target: {
-          
+
           }
         }
       })
@@ -44,4 +44,7 @@ Automatically Load Tasks
 
     npm install -D load-grunt-tasks
 
-    require('load-grunt-tasks')(grunt)                 # load grunt tasks matching ['grunt-\*', '@\*/grunt-*']
+    module.exports = function(grunt) {
+      ...
+      require('load-grunt-tasks')(grunt)               # load grunt tasks matching ['grunt-\*', '@\*/grunt-*']
+    }
