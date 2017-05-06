@@ -52,6 +52,11 @@
     git reset --hard origin/master
 
 
+## Undo your last commit, but don't throw away your changes
+
+    git reset --soft HEAD^
+
+
 ## Restore old state of a specific file
 
     git log
