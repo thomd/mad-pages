@@ -39,16 +39,25 @@
     git rm -r \<folder>
 
 
-## Restore a deleted file
+## Find and restore deleted files
 
-    git log -- path/to/filename
-    git revert \<sha1>
+  List all deleted files ever
+
+    git log --diff-filter=D --summary
+
+  Search the contents of deleted files
+
+    git log --summary -S\<string> [path/to/file] [--since=2009.1.1] [--until=2010.1.1]
+
+  Restore a deleted file
+
+    git checkout \<commit>~1 \<file>
 
 
-## Restore a change from the past
+## Restore a commit from the past
 
     git log -S"foo" -p
-    git revert -n \<sha1>
+    git revert --no-commit \<commit>
 
 
 ## Drop everything since last push
