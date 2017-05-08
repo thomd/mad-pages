@@ -27,12 +27,16 @@
     git ls-tree HEAD -l -r | sort -n -k4 | tail -1
 
 
-## How to remove a just committed file/folder
+## How to remove a committed file
 
-    git ls-tree -r --name-only HEAD
+  remove from index but not from the working tree
+
+    git rm --cached \<file>
+
+  remove from index
+
     git rm \<file>
     git rm -r \<folder>
-    git commit --amend
 
 
 ## Restore a deleted file
@@ -106,4 +110,8 @@
 ## Why is my file ignored?
 
     git check-ignore -v path/to/file
+
+  list all ignored files
+
+    git ls-files -o -i --exclude-standard
 
