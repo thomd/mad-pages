@@ -19,6 +19,7 @@
 ## What have I done in my branch?
 
     git log master..
+    git diff master...
 
 
 ## What files are in my repository?
