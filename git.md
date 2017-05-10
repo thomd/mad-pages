@@ -3,8 +3,7 @@
 
 ## What's behind and ahead origin/master?
 
-    git fetch
-    git branch -vv
+    git fetch --all
 
   behind:
 
@@ -15,6 +14,11 @@
 
     git log origin/master..
     git diff origin/master...
+
+
+## What have I done in my branch?
+
+    git log master..
 
 
 ## What files are in my repository?
@@ -127,8 +131,8 @@
 
 ## Clone all remote branches locally
 
-    for branch in `git branch -a | grep remotes | grep -v HEAD | grep -v master`; do
-       git branch --track ${branch#remotes/origin/} $branch
+    for branch in \`git branch -a | grep remotes | grep -v HEAD | grep -v master`; do
+      git branch --track ${branch#remotes/origin/} $branch
     done
 
 
