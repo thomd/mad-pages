@@ -140,3 +140,8 @@
 ## Show all branches which are still not merged into master
 
     git branch --no-merged master
+
+
+## Find the merge where your code disappeared
+
+    git log --patch -m -G regexForMissingCode
