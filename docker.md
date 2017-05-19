@@ -19,3 +19,12 @@
     docker ps -a                                  # List all containers
     docker images                                 # List all images
     docker ps -aq | xargs docker rm               # remove all containers
+
+Share an image
+
+    docker login
+    docker tag \<image> thomd/\<image>:\<tag>
+    docker push thomd/\<image>
+    docker run thomd/\<image>
+
+
