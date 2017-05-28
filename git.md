@@ -145,3 +145,8 @@
 ## Find the merge where your code disappeared
 
     git log --patch -m -G regexForMissingCode
+
+## Shall I rebase or merge?
+
+  People can (and probably should) rebase their _private_ trees (their own work). 
+  That's a _cleanup_. But never other peoples code. That's a "destroy history"
