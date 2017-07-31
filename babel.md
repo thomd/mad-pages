@@ -5,7 +5,7 @@ Babel is a JavaScript compiler
 
 Install `babel` command line
 
-    npm install babel-cli babel-preset-es2015
+    npm install babel-cli babel-preset-es2015 babel-preset-stage-0
 
 ## Usage
 
@@ -19,4 +19,4 @@ Create Sourcemap
 
 Node REPL
 
-    babel-node --presets es2015 script.js
+    babel-node --presets es2015,stage-0 script.js
