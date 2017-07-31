@@ -7,7 +7,7 @@
     docker-machine start dev
     eval "$(docker-machine env dev)"
 
-    docker-machine ip dev                         # get IP
+    docker-machine ip dev                         # determine IP
 
 # docker(1)
 
@@ -20,7 +20,12 @@
     docker images                                 # List all images
     docker ps -aq | xargs docker rm               # remove all containers
 
-Share an image
+Create and run a Docker Image from a `Dockerfile`
+
+    docker build -t \<tag> .
+    docker run \<tag>
+
+Share a Docker Image
 
     docker login
     docker tag \<image> thomd/\<image>:\<tag>
