@@ -97,7 +97,7 @@
     git commit --amend
 
 
-## Make small change in last commit
+## Make small change in last commit / I forgot to commit something
 
     vim file
     git add .
