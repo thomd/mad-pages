@@ -11,19 +11,19 @@
 
 # docker(1)
 
-    docker images                                 # list local images (in /var/lib/docker of your VM)
-    docker run -it ubuntu /bin/bash               # Start an Ubuntu container with an interactive shell
+Container
+
+    docker run -it \<image> /bin/bash              # Start an Ubuntu container with an interactive shell
+    docker run --rm \<image> env                   # show environment of a container
     docker inspect \<container>                    # Inspect a running container
-    docker inspect --format \<pid> \<container>     # Get the process ID for a container
-    docker ps                                     # List currently running containers
-    docker ps -a                                  # List all containers
-    docker images                                 # List all images
     docker ps -aq | xargs docker rm               # remove all containers
 
 Create and run a Docker Image from a `Dockerfile`
 
-    docker build -t \<tag> .
-    docker run \<tag>
+    docker build -t thomd/my-app .
+    docker run --rm --name \<name> -d -p 8080:8080 thomd/my-app            # run as daemon
+    docker logs \<name>
+    docker exec -it \<name> /bin/bash                                      # go inside container
 
 Share a Docker Image
 
