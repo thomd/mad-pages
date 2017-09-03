@@ -4,7 +4,7 @@
   app.js
 
     const app = require('express')()
-    app.get('/', (req, res) => res.send('hello')).listen(3000)
+    app.get('/', (req, res, next) => res.send('hello')).listen(3000)
 
 Jade Template Engine
 
