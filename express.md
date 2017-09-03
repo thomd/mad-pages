@@ -3,12 +3,8 @@
 
   app.js
 
-    var express = require('express')
-    var app = express()
-    app.get('/', function(req, res) {
-      res.send('hello');
-    })
-    app.listen(3000)
+    const app = require('express')()
+    app.get('/', (req, res) => res.send('hello')).listen(3000)
 
 Jade Template Engine
 
