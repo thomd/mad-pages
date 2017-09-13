@@ -18,7 +18,7 @@ Container
     docker inspect \<container>                    # Inspect a running container
     docker ps -aq | xargs docker rm               # remove all containers
 
-Create and run a Docker Image from a `Dockerfile`
+Create and run a Docker Image from a _Dockerfile_
 
     docker build -t thomd/my-app .
     docker run --rm --name \<name> -d -p 8080:8080 thomd/my-app            # run as daemon
