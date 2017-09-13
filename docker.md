@@ -28,8 +28,7 @@ Create and run a Docker Image from a `Dockerfile`
 Share a Docker Image
 
     docker login
-    docker tag \<image> thomd/\<image>:\<tag>
+    docker tag thomd\<image> thomd/\<image>:\<tag>
     docker push thomd/\<image>
-    docker run thomd/\<image>
 
 
