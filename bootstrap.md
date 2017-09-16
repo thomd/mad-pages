@@ -2,8 +2,8 @@
 
 ## Install
 
-    npm install bootstrap                    # for version 3
-    npm install bootstrap@4.0.0-alpha.6      # for version 4
+    npm install bootstrap                    # v.3
+    npm install bootstrap@4.0.0-beta         # v.4
     cp node_modules/bootstrap/dist/css/bootstrap.css .
 
 # Bootstrap 4
