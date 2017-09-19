@@ -31,4 +31,6 @@ Share a Docker Image
     docker tag thomd\<image> thomd/\<image>:\<tag>
     docker push thomd/\<image>
 
+# docker-compose(1)
+
 
