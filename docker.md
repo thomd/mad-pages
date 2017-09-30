@@ -9,6 +9,8 @@
 
     docker-machine ip dev                         # determine IP
 
+    docker-machine ssh dev                        # 'sudo -i' for root
+
 # docker(1)
 
 Container
