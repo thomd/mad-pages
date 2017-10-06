@@ -104,11 +104,13 @@
     git commit --amed
 
 
-## I accidentally committed something to master that should have been on a _brand new branch_
+## I accidentally committed and pushed something to master that should have been on a _new branch_
 
     git branch new-branch
     git reset HEAD~ --hard
+    git push origin/master --force
     git checkout new-branch
+    git add .
 
 
 ## I accidentally committed to the wrong branch
