@@ -33,6 +33,18 @@ Share a Docker Image
     docker tag thomd\<image> thomd/\<image>:\<tag>
     docker push thomd/\<image>
 
+_alpine_ Image
+
+    docker run -it alpine:latest /bin/sh
+    > apk update
+    > apk add nginx
+
+Dockerized Webserver
+
+    docker run -d --rm -v $(pwd):/usr/local/apache2/htdocs -p 80:80 httpd
+    docker run -d --rm -v $(pwd):/usr/share/nginx/html -p 80:80 nginx
+    echo Hello Apache > index.html
+
 # docker-compose(1)
 
 
