@@ -12,8 +12,8 @@
 ## Filetypes
 
     ack --help=types                             # list all supported filetypes
-    ack --js   PATTERN                           # search for pattern in all javascript files
-    ack -l --js   PATTERN                        # search for pattern in all javascript files and print filenames only
+    ack --js PATTERN                             # search for pattern in all javascript files
+    ack -l --js PATTERN                          # search for pattern in all javascript files and print filenames only
     ack -f --js                                  # list all javascript files
 
 ## Ignoring
@@ -32,3 +32,7 @@ FILTERS:
 Examples
 
     ack --ignore-file=match:min.js$ PATTERN      # exclude minified files
+
+## Best Practices
+
+    ack --js -w const                            # search for the keyword const in all javascript files
