@@ -15,6 +15,7 @@
     ack --js PATTERN                             # search for pattern in all javascript files
     ack -l --js PATTERN                          # search for pattern in all javascript files and print filenames only
     ack -f --js                                  # list all javascript files
+    ack --ts --notsdef PATTERN                   # search in all typescript files but not in definitions
 
 ## Ignoring
 
