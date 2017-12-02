@@ -1,15 +1,17 @@
 
 # express
 
+    npm i express pug
+
   app.js
 
     const app = require('express')()
     app.get('/', (req, res, next) => res.send('hello')).listen(3000)
 
-Jade Template Engine
+Template Engine
 
     app.set('views', './views')
-    app.set('view engine', 'jade')
+    app.set('view engine', 'pug')
     ...
     res.render('index')
 
