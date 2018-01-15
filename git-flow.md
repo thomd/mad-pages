@@ -23,19 +23,19 @@ Initialize git flow (accepting all the defaults with `-d`)
 
   git-flow releases are _not_ compatible with `npm version`
 
-    git flow release start 1.2.0           # create new branch release/1.2.0 based on develop
-    git flow release publish 1.2.0         # share: push the local branch and track the remote branch
+    git flow release start v1.2.0          # create new branch release/v1.2.0 based on develop
+    git flow release publish v1.2.0        # share: push the local branch and track the remote branch
     ... stabilize ...                      # stabilize relase (Changelog, Version, Pack, Bugs ...)
-    git flow release finish 1.2.0          # merge into master, back-merge into develop, delete & tag 1.2.0
+    git flow release finish v1.2.0         # merge into master, back-merge into develop, delete & tag with 'v1.2.0'
     git push origin develop
 
 ## Hotfix
 
     git pull origin master
-    git flow hotfix start 1.2.1            # create new branch hotfix/1.2.1 based on master
+    git flow hotfix start v1.2.1            # create new branch hotfix/v1.2.1 based on master
     ... fix ...                            # fix relase (Changelog, Version, Bug ...)
-    git flow hotfix finish 1.2.1           # merge into master, back-merge into develop, delete & tag 1.2.1
-    git push origin master --tags 1.2.1    # ... then deploy using Git Panel
+    git flow hotfix finish v1.2.1           # merge into master, back-merge into develop, delete & tag with 'v1.2.1'
+    git push origin master --tags v1.2.1    # ... then deploy using Git Panel
     git push origin develop
 
 ## Troubleshooting
