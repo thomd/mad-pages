@@ -23,6 +23,7 @@ Initialize git flow (accepting all the defaults with `-d`)
 
   git-flow releases are _not_ compatible with `npm version`
 
+    git checkout develop
     git flow release start v1.2.0          # create new branch release/v1.2.0 based on develop
     ... stabilize ...                      # stabilize relase (Changelog, Version, Pack, Bugs ...)
     git flow release publish v1.2.0        # share: push the local branch and track the remote branch

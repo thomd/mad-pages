@@ -148,10 +148,12 @@
 
     git log --patch -m -G regexForMissingCode
 
+
 ## Shall I rebase or merge?
 
   People can (and probably should) rebase their _private_ trees (their own work). 
   That's a _cleanup_. But never other peoples code. That's a "destroy history"
+
 
 ## How can I make git ignore future revisions to a file?
 
@@ -166,3 +168,31 @@
   get a list of files that are marked skipped with:
 
     git ls-files -v . | grep ^S
+
+
+## Squash multiple commit into one commit
+
+  Before:
+
+        A---B---C---D---E---F
+
+  After:
+
+        A---B---C'          [C' = C+D+E+F]
+
+  Method 1 "interactive rebasing":
+
+    git rebase -i \<B>
+
+        pick C
+        squash|fixup D
+        squash|fixup E
+        squash|fixup F
+
+  Method 2 "squashed merge":
+
+    git branch temp
+    git reset \<B> --hard
+    git merge --squash temp
+    git commit -a
+    git branch -D temp
