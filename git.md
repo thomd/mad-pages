@@ -112,6 +112,11 @@
     git checkout new-branch
     git add .
 
+Alternatively consider:
+
+    git reset HEAD~ --soft
+    git checkout -b new-branch
+    git commit
 
 ## I accidentally committed to the wrong branch
 
