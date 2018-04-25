@@ -23,3 +23,24 @@
     # .eslintrc.yml
     extends: standard
 
+## Disable Rules with Inline Comments
+
+To completely ignore a whole file, put this on top of file:
+
+    /\* eslint-disable \*/
+
+To ignore a specific eslint rule by line
+
+    /\* eslint no-var: 0 \*/
+    var foo = true;
+
+To ignore eslint by line:
+
+    // eslint-disable-next-line
+    var foo = true;
+
+  or
+
+    var foo = true;  // eslint-disable-line
+
+
