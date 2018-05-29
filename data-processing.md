@@ -25,4 +25,5 @@ Get text-node `bar` of `\<foo>bar\</foo>` tag:
 Extract values of an attribute from an XML:
 
     grep customer-no file.xml | perl -pe 's/.\*(CA\d+).\*/\1/g'
+    grep customer-no \*.xml | perl -pe 's/.\*customer-no="(.\*?)".\*/\1/g' | sort -n
     grep -o 'CA[0-9]\{8\}' file.xml

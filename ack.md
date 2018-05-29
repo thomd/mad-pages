@@ -37,3 +37,4 @@ Examples
 ## Best Practices
 
     ack --js -w const                            # search for the keyword const in all javascript files
+    ack -B 10 -A 5 PATTERN                       # display 10 lines before amd 5 line after
