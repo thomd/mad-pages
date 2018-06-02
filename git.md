@@ -118,6 +118,7 @@ Alternatively consider:
     git checkout -b new-branch
     git commit
 
+
 ## I accidentally committed to the wrong branch
 
     git reset HEAD~ --soft
@@ -126,6 +127,14 @@ Alternatively consider:
     git stash pop
     git add .
     git commit -m "new commit message"
+
+
+## I want to remove my last commit on remote
+
+    git reset HEAD^
+    git push -f origin develop
+
+  If someone already fetched this commit from remote, he must remove it alos localy
 
 
 ## Why is my file ignored?
