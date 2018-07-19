@@ -3,7 +3,7 @@
 ## hosts file
 
     sudo vim /ets/hosts                    # assign hostname to IP
-    sudo dscacheutil -flushcache           # flush dns cache
+    sudo dscacheutil -flushcache           # flush DNS cache
 
 ## dig(1)
 
