@@ -7,8 +7,8 @@
   order
 
     csvfix order -f 1 data.csv                         # print column 1
-    csvfix order -f 1,3 data.csv                       # print column 1 and 3
-    csvfix order -f 1:3 data.csv                       # print column 1, 2 and 3
+    csvfix order -f 4:6 data.csv                       # print column 4 to 6
+    csvfix order -f 1,4:6 data.csv                     # print column 1 and 4 to 6
     csvfix order -xf 1 data.csv                        # print all columns except column 1
     csvfix order -rf 1 data.csv                        # print last column (count from end)
     csvfix order -fn field1 data.csv                   # print column with name field1
