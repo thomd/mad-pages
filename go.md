@@ -3,3 +3,4 @@
 
     go env
     go run app.go
+    go build app.go
