@@ -44,6 +44,11 @@
     git rm -r \<folder>
 
 
+## Print file change history
+
+    git log --follow -p -- \<file>
+
+
 ## Find and restore deleted files
 
   List all deleted files ever
@@ -210,3 +215,9 @@ Alternatively consider:
     git merge --squash temp
     git commit -a
     git branch -D temp
+
+## Use a project specific git user
+
+    git config user.name thomd
+    git config user.email thomduerr@gmail.com
+    git config -e
