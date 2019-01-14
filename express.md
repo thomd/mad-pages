@@ -25,10 +25,8 @@ Static resources
 
 # express(1)
 
-    > npm install -g express-generator
-
-    > express myapp
-    > cd myapp
+    > mkcd myapp
+    > npx express-generator myapp
     > npm install
     > DEBUG=myapp:* ./bin/www
 
