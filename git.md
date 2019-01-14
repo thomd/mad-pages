@@ -44,9 +44,13 @@
     git rm -r \<folder>
 
 
-## Print file change history
+## Show change history of a file
 
     git log --follow -p -- \<file>
+
+  or
+
+    tig \<file>
 
 
 ## Find and restore deleted files
