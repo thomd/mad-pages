@@ -68,6 +68,11 @@
     git checkout \<commit>~1 \<file>
 
 
+## Un-Commit a file
+
+    git reset @~ <file> && git commit --amend --no-edit
+
+
 ## Restore a commit from the past
 
     git log -S"foo" -p
