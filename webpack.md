@@ -1,7 +1,7 @@
 
 # webpack(1)
 
-## Setup
+## Setup Webpack 4
 
 File Structure:
 
@@ -15,13 +15,13 @@ File Structure:
 Install:
 
     npm init -y
-    npm install --save-dev webpack webpack-dev-server
+    npm i -D webpack webpack-cli webpack-dev-server
 
 Add _npm script_:
 
     "scripts": {
-      "build": "webpack",
-        "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build"
+       "build": "webpack",
+       "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build"
     }
 
 ## Configuration
