@@ -225,8 +225,24 @@ Alternatively consider:
     git commit -a
     git branch -D temp
 
+
 ## Use a project specific git user
 
     git config user.name thomd
     git config user.email thomduerr@gmail.com
     git config -e
+
+
+## delete a tag on remote
+
+  delete a tag named \<tag>
+
+    git tag -d \<tag>
+    
+  remove tag \<tag> from remote repo
+
+    git push origin :refs/tags/\<tag>
+
+## create hotfix branch based on tag
+
+    git checkout -b hotfix/\<tag> \<tag>
