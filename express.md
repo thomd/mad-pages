@@ -1,14 +1,28 @@
 
 # express
 
-    npm i express pug
+    > npm i express
 
-  app.js
+GET Route
 
-    const app = require('express')()
-    app.get('/', (req, res, next) => res.send('hello')).listen(3000)
+    const express = require('express')
+    const app = express()
+    app.get('/', (req, res) => res.send('hello'))
+    app.listen(80)
+
+POST Route
+
+    const express = require('express')
+    const app = express()
+    app.use(express.json())
+    app.post('/', (req, res) => res.json(req.body))
+    app.listen(80)
+
+    > curl -d '{"a":1}' -H 'content-type: application/json' localhost
 
 Template Engine
+
+    > npm i pug
 
     app.set('views', './views')
     app.set('view engine', 'pug')
