@@ -183,19 +183,13 @@ Alternatively consider:
   That's a _cleanup_. But never other peoples code. That's a "destroy history"
 
 
-## How can I make git ignore future revisions to a file?
+## Ignoring Version-Controlled Files
 
-  ignore:
+    cat file-to-ignore >> .gitignoe
+    git rm --cached file-to-ignore
 
-    git update-index --skip-worktree file.txt
-
-  allow file again:
-
-    git update-index --no-skip-worktree file.txt
-
-  get a list of files that are marked skipped with:
-
-    git ls-files -v . | grep ^S
+    cat dir-to-ignore >> .gitignoe
+    git rm -r --cached dir-to-ignore
 
 
 ## Squash multiple commit into one commit
