@@ -27,3 +27,8 @@ Extract values of an attribute from an XML:
     grep customer-no file.xml | perl -pe 's/.\*(CA\d+).\*/\1/g'
     grep customer-no \*.xml | perl -pe 's/.\*customer-no="(.\*?)".\*/\1/g' | sort -n
     grep -o 'CA[0-9]\{8\}' file.xml
+
+Format all XML files within a folder:
+
+    for f in orig/2019-04-*; do xml fo $f > temp && mv temp `echo $f | sed 's/\.xml.*$/.xml/g' | sed 's/orig\///g'` || echo $f >> fo-error.txt; done
+    
