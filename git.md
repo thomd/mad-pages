@@ -1,25 +1,31 @@
 
 # Git Best Practices
 
-## What's behind and ahead origin/master?
+## What have I done in my branch?
+
+    git log develop..
+    git diff develop...
+
+
+## What have others done since I branched
+
+    git log ..develop
+    git diff ...develop
+
+
+## What's behind or ahead origin/develop?
 
     git fetch --all
 
   behind:
 
-    git log ..origin/master
-    git diff ...origin/master
+    git log ..origin/develop
+    git diff ...origin/develop
 
   ahead:
 
-    git log origin/master..
-    git diff origin/master...
-
-
-## What have I done in my branch?
-
-    git log master..
-    git diff master...
+    git log origin/develop..
+    git diff origin/develop...
 
 
 ## What files are in my repository?
