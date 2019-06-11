@@ -3,17 +3,18 @@
 
 ## Search
 
-    ack -i PATTERN                               # find PATTERN 
-    ack -i PATTERN FILE                          # find PATTERN in FILE
-    ack -i PATTERN FOLDER/                       # find PATTERN in all files within FOLDER
-    ack -l PATTERN                               # list all files matching PATTERN and their count
-    ack -g PATTERN                               # list all files matching PATTERN in file path
+    ack -i PATTERN                               # find PATTERN
+    ack -i PATTERN file                          # find PATTERN in a given file
+    ack -i PATTERN folder/                       # find PATTERN in all files within a given folder
+    ack -l PATTERN                               # print files matching PATTERN and their count
+    ack -g PATTERN                               # print files matching PATTERN in file path (same as: ack -f | ack -C0 json)
 
 ## Filetypes
 
     ack --help=types                             # list all supported filetypes
     ack --js PATTERN                             # search for pattern in all javascript files
     ack -l --js PATTERN                          # search for pattern in all javascript files and print filenames only
+    ack -f                                       # list all files
     ack -f --js                                  # list all javascript files
     ack --ts --notsdef PATTERN                   # search in all typescript files but not in definitions
 
