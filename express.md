@@ -39,7 +39,6 @@ Static resources
 
 # express(1)
 
-    > mkcd myapp
     > npx express-generator myapp
     > npm install
     > DEBUG=myapp:* ./bin/www
