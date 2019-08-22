@@ -1,4 +1,26 @@
 
+# Git Notations
+
+  Not reachable from A, but reachable from B
+
+    git log ^A B	
+    git log A..B
+
+  Reachable from either one A or B, but not reachable from both A and B
+
+    git log A B ^$(git merge-base A B)
+    git log A...B
+
+  Differences between A and B
+  
+    git diff A B
+    git diff A..B
+
+  Differences between A and B, starting at the last common commit
+  
+    git diff $(git merge-base A B) B
+    git diff A...B
+
 # Git Best Practices
 
 ## What have I done in my branch?
