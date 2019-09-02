@@ -96,7 +96,7 @@
     git checkout \<commit>~1 \<file>
 
 
-## Un-Commit a file
+## Uncommit a file
 
     git reset @~ <file> && git commit --amend --no-edit
 
