@@ -1,8 +1,9 @@
 
 # csvfix(1)
 
-    csvfix command-1 data.csv | csvfix command-2 | csvfix command-3          # piping of multiple commands
-    csvfix data1.csv data2.csv                                               # processing multiple csv files
+    csvfix command-1 data.csv | csvfix command-2       # piping of multiple commands
+    csvfix data1.csv data2.csv                         # processing multiple csv files
+    csvfix -sep ';' data.csv                           # set separator (default: ',')
 
   order
 
