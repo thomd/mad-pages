@@ -7,6 +7,7 @@
     -r                                              # recursive
     -o                                              # show only mattching word of the line
     -v                                              # invert match
+    -l                                              # display only the file names which matches the given pattern
 
 ## Examples
 
