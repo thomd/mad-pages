@@ -139,6 +139,20 @@
     git commit --amend
 
 
+## Change message of commits before last commit
+
+    git rebase -i HEAD~X
+
+  X is the number of commits to go back
+  Move to the line of your commit, change pick into edit, then change your commit message:
+
+    git commit --amend
+
+  Finish the rebase with:
+
+    git rebase --continue
+
+
 ## Make small change in last commit / I forgot to commit something
 
     vim file
