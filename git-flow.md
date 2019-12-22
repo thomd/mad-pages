@@ -1,5 +1,6 @@
 
-# Git Flow
+# git-flow(1)
+-----------
 
 Initialize git flow (accepting all the defaults with `-d`)
 
@@ -37,3 +38,128 @@ Initialize git flow (accepting all the defaults with `-d`)
     git push origin master --tags
     git push origin :hotfix/001         # [OPTIONAL] delete remote feature branch
 
+# Git Flow Workflow
+-----------------
+
+## Hotfix
+
+1. Create release in JIRA:
+
+2. Code hotfix
+
+    git co master
+    git co -b hotfix/v1.29.3
+
+    ... code ...
+
+3. Test
+
+  Deploy branch hotfix/v1.29.3 (Jenkins)
+
+4. Release Hotfix
+
+    git co master
+    git log ..hotfix/v1.29.3 --stat
+    git diff ...hotfix/v1.29.3 --stat
+    git merge hotfix/v1.29.3
+    git tag v1.29.3
+    git push origin master
+    git push origin v1.29.3
+
+  Deploy tag v1.29.3 (Jenkins)
+
+    git co develop
+    git log ..hotfix/v1.29.3 --stat
+    git diff ...hotfix/v1.29.3 --stat
+    git merge hotfix/v1.29.3
+    git push origin develop
+
+  Deploy develop branch (Jenkins)
+
+5. Create notification
+
+  In Slack Channel "tp_oneteam":
+
+        @here Release Notes
+        v1.29.3
+
+        ID-123: fix nasty bug
+
+        Reason: Hotfix
+        Release Date: 19.12.2019 13:20-13:30 CET
+
+5. Deploy to Production
+
+  Code Replication Staging --> Production
+
+6. Clean Up
+
+  delete hotfix branch
+
+    git push origin :hotfix/v1.29.3
+
+## Regular Release
+
+Lets create a new release 1.30.0 from current develop branch
+
+1. Create release `1.30.0` in JIRA
+
+2. Create Release Branch
+
+    git co develop
+    git pull
+    git diff v1.29.3... —stat                   # compare with last production release
+    git co -b release/v1.30.0
+    git push origin release/v1.30.0
+
+3. Test Release
+
+  3.1 Deploy release v1.30.0 (Jenkins)
+  3.2 Smoke Test on Staging
+
+4. Release
+
+    git co master
+    git diff ...release/v1.30.0 --stat
+    git merge release/v1.30.0
+    git tag v1.30.0
+    git push origin master
+    git push origin v1.30.0
+
+  Deploy tag v1.30.0 (Jenkins)
+
+    git co develop
+    git diff ...release/v1.30.0 --stat
+    ... there are likely no changes, so no need to merge back
+
+5. Create Notofocation
+
+  In Slack Channel "tp_oneteam":
+
+        @here Release Notes
+	v1.30.0
+
+	ID-124: BUG | description
+	ID-125: FEATURE | description
+	ID-126: FEATURE | description
+
+	Reason: Release CW 50-52
+	Release Date: 19.12.2019 ~16:00 CET
+
+6. Check for metadata to replicate:
+
+    git diff v1.29.3...v1.30.0 --stat
+
+7. Replicate from Staging --> Production
+
+8. Clean Up
+
+  Delete release branch
+  
+    git push origin :release/v1.30.0
+
+## Cherry Picked Release
+
+Lets create a new release 1.31.0 of picked commits from develop branch
+
+TODO
