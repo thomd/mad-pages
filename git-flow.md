@@ -76,7 +76,9 @@ Initialize git flow (accepting all the defaults with `-d`)
 
   Deploy develop branch (Jenkins)
 
-5. Create notification
+5. Check for **Meta Data** to be replicated
+
+6. Create notification
 
   In Slack Channel "tp_oneteam":
 
@@ -86,13 +88,13 @@ Initialize git flow (accepting all the defaults with `-d`)
         ID-123: fix nasty bug
 
         Reason: Hotfix
-        Release Date: 19.12.2019 13:20-13:30 CET
+        Release Date: 01.01.2020 13:20-13:30 CET
 
-5. Deploy to Production
+7. Deploy to Production
 
   Code Replication Staging --> Production
 
-6. Clean Up
+8. Clean Up
 
   delete hotfix branch
 
@@ -132,7 +134,9 @@ Lets create a new release 1.30.0 from current develop branch
     git diff ...release/v1.30.0 --stat
     ... there are likely no changes, so no need to merge back
 
-5. Create Notofocation
+5. Check for **Meta Data** to be replicated
+
+6. Create Notofocation
 
   In Slack Channel "tp_oneteam":
 
@@ -144,15 +148,15 @@ Lets create a new release 1.30.0 from current develop branch
 	ID-126: FEATURE | description
 
 	Reason: Release CW 50-52
-	Release Date: 19.12.2019 ~16:00 CET
+	Release Date: 01.01.2020 ~16:00 CET
 
-6. Check for metadata to replicate:
+7. Check for metadata to replicate:
 
     git diff v1.29.3...v1.30.0 --stat
 
-7. Replicate from Staging --> Production
+8. Replicate from Staging --> Production
 
-8. Clean Up
+9. Clean Up
 
   Delete release branch
   
