@@ -55,6 +55,14 @@
     git ls-tree HEAD -r --name-only
 
 
+## Rename a local and remote branch
+
+    git checkout old-name
+    git branch -m new-name
+    git push origin :old-name new-name
+    git push origin -u new-nam
+
+
 ## Find largest file in my repository
 
     git ls-tree HEAD -l -r | sort -n -k4 | tail -1
