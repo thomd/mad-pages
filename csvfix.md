@@ -13,7 +13,7 @@
     csvfix order -xf 1 data.csv                        # print all columns except column 1
     csvfix order -rf 1 data.csv                        # print last column (count from end)
     csvfix order -fn field1 data.csv                   # print column with name field1
-    csvfix order -fn field1, field2 data.csv           # print column with name field1 and field2
+    csvfix order -fn field1,field2 data.csv            # print column with name field1 and field2
 
   head
 
