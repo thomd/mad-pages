@@ -1,0 +1,34 @@
+# conda(1)
+
+    conda info                                      # print global info
+    conda config --describe                         # list all available config parameters
+
+## Manage Environment
+
+  environment locations are in `~/develop/miniconda3/envs/`
+
+    conda env list                                  # list of environments, active env is marked with *
+    conda create --name NAME                        # create a new environment named NAME (default version is python 3)
+    conda create --name NAME python=3.7             # create a new environment named NAME using python 3.7
+    conda create --clone NAME --name NEW_NAME       # make exact copy of an environment
+    conda env remove --name NAME                    # delete an environment and everything in it
+
+## Save and Load Environments
+
+    conda env export > my-env.yaml                  # save environment to a yaml file
+    conda env create --file my-env.txt              # create environment from a text file
+
+## Use Environment
+
+    conda activate NAME
+    conda deactivate
+
+    conda list                                      # installed packages
+    conda list --revisions                          # history of each change to the current environment
+
+    conda install PACKAGE                           # install a package into current env
+    conda install --channel conda-forge PACKAGE     # install using conda-forge channel
+    conda install --revision 2                      # restore environment to a previous revision
+
+    conda update PACKAGE                            # update a package into current environment
+    conda update --all                              # update all package in an environment
