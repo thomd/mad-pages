@@ -15,8 +15,8 @@
 
 ## Save and Load Environments
 
-    conda env export > my-env.yaml                  # save environment to a yaml file
-    conda env create --file my-env.txt              # create environment from a text file
+    conda env export > environment.yaml             # save environment to a yaml file
+    conda env create --file environment.yaml        # create environment from a text file
 
 ## Use Environment
 
