@@ -1,6 +1,8 @@
 
 # vim(1)
 
+    vim large.xml "+syntax off"
+
 ## Vim's Grammar
 
     [operator][count][motion]
