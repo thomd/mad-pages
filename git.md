@@ -290,3 +290,7 @@ Alternatively consider:
 ## create hotfix branch based on tag
 
     git checkout -b hotfix/\<tag> \<tag>
+
+## Change Author of the very Last Commit
+
+    git commit --amend --author="Thomas Dürr <thomduerr@gmail.com>"
