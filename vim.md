@@ -22,3 +22,11 @@ Examples
 
     :% ! json2yml %         # convert json to yml
     :r ! date               # insert date
+
+## Record a Macro
+
+    qa                      # start recording (or any other lower case character to name the macro)
+    ... edit ...
+    q                       # stop recording
+    @a                      # replay
+    N@a                     # replay N times ( VG:normal @a to replay until end of buffer)
