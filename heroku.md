@@ -1,7 +1,7 @@
 
 # heroku(1)
 
-heroku is a cloud application platform
+Heroku is a cloud application platform
 
 ## Quickstart
 
@@ -9,6 +9,8 @@ heroku is a cloud application platform
     heroku create
     git push heroku master
     heroku open
+
+Heroku CLI automatically detects the *app name* by scanning the *git remotes* for the current working copy.
 
 ## Commands
 
