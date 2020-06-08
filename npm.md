@@ -23,5 +23,7 @@
     npm version major | minor | patch            # bump version, set git tag and commit
     npm version minor -m "Upgrade to %s"         # bump version with custom commit message
 
+## List Packages
 
+    npm list -g --depth 0                        # list globally installed packages
 
