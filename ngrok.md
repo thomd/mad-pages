@@ -2,7 +2,6 @@
 
 ngrok is an open reverse proxy to localhost.
 
-    ngrok 8000
     ngrok http 8080                                # open http tunnel for port 8080 (expose HTTP or TLS)
     ngrok http -host-header=example.com 80         # rewrite the Host header
     ngrok tcp 22                                   # Expose a SSH server listening on the default port
