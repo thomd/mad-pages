@@ -1,9 +1,9 @@
 
-# markdown(1)
+# Markdown
 
 Markdown is a lightweight markup language. Readability is emphasized above all else.
 
-## Block Elements
+# Standard Markdown
 
   Paragraphs
 
@@ -12,7 +12,7 @@ Markdown is a lightweight markup language. Readability is emphasized above all e
     another paragraph [two spaces]
     with a linebreak
 
-  Header
+  Headline
 
     # h1 header
     ## h2 header
@@ -44,13 +44,11 @@ Markdown is a lightweight markup language. Readability is emphasized above all e
         a line of code indented by at least 4 spaces or 1 tab
         another line of code
 
-## Inline Elements
-
   Emphasis
 
-    \*asterisk\* or \_underscore\_
+    \*italics\* or \_italics\_
 
-    strong emphasis with \*\*asterisks\*\* or \_\_underscores\_\_
+    \*\*bold\*\* or \_\_bold\_\_
 
   Inline Code
 
@@ -70,4 +68,63 @@ Markdown is a lightweight markup language. Readability is emphasized above all e
 
     [id]: /path/to/img.png
 
+# JIRA Markdown
 
+  Headline
+
+    h1. headline h1
+    h2. headline h2
+    ...
+    h6. headline h6
+
+  Emphasis
+
+    \*bold\*
+
+    \_italics\_
+
+    -strike through-
+
+    +underlined+
+
+  Table
+
+    || head 1 || head 2 || head 3 ||
+    | row 1 | row 2 | row 3 |
+    | row 1 | row 2 | row 3 |
+
+    || || head 1 || head 2 ||
+    || head 2 | row 1 | row 2 |
+    || head 3 | row 1 | row 1 |
+
+  Image
+
+    !image.png|width=200,thumbnail!
+
+  Code
+
+    this is {{inline code}} within a paragraph
+
+    {code:javascript}
+    // block of code
+    var foo;
+    {code}
+
+  Quote
+
+    bq. a single line quote
+
+    {quote}
+    multiline quote
+    multiline quote
+    {quote}
+
+  Panel
+
+    {panel:title=My title}
+    my panel text
+    {panel}
+
+  Link
+
+    On [this|http://example.com] page.
