@@ -23,6 +23,12 @@ Examples
     :% ! json2yml %         # convert json to yml
     :r ! date               # insert date
 
+## Modeline
+
+    # vim:ft=ruby           # use ruby syntax highlighting
+    # vim:nospell           # no spell checking
+    # vim:nospell:ft=java
+
 ## Record a Macro
 
     qa                      # start recording (or any other lower case character to name the macro)
@@ -30,3 +36,4 @@ Examples
     q                       # stop recording
     @a                      # replay
     N@a                     # replay N times ( VG:normal @a to replay until end of buffer)
+
