@@ -25,9 +25,9 @@ Examples
 
 ## Modeline
 
-    # vim:ft=ruby           # use ruby syntax highlighting
+    # vim:ft=bash           # use bash syntax highlighting
     # vim:nospell           # no spell checking
-    # vim:nospell:ft=java
+    # vim:nospell:nowrap
 
 ## Record a Macro
 
