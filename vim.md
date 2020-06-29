@@ -9,31 +9,31 @@
 
 Examples
 
-    v3w                     # select three words
-    cs])                    # change surrounding brackets to parantheses
+    v3w                            # select three words
+    cs])                           # change surrounding brackets to parantheses
 
 ## Commands
 
-    d0                      # delete before cursor position
-    100i-\<ESC>              # write 100 dashes
-    yypVr-                  # underline text with dashes
+    d0                             # delete before cursor position
+    100i-\<ESC>                     # write 100 dashes
+    yypVr-                         # underline text with dashes
 
 ## Execute Shell Commands in Vim
 
-    :% ! json2yml %         # convert json to yml
-    :r ! date               # insert date
+    :% ! json2yml %                # convert json to yml
+    :r ! date                      # insert date
 
 ## Modeline
 
-    # vim:ft=bash           # use bash syntax highlighting
-    # vim:nospell           # no spell checking
-    # vim:nospell:nowrap
+    # vim:ft=bash                  # use bash syntax highlighting
+    # vim:nospell                  # no spell checking
+    # vim:nospell:nowrap:tw=0
 
 ## Record a Macro
 
-    qa                      # start recording (or any other lower case character to name the macro)
+    qa                             # start recording (or any other lower case character to name the macro)
     ... edit ...
-    q                       # stop recording
-    @a                      # replay
-    N@a                     # replay N times ( VG:normal @a to replay until end of buffer)
+    q                              # stop recording
+    @a                             # replay
+    N@a                            # replay N times ( VG:normal @a to replay until end of buffer)
 
