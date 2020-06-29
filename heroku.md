@@ -17,7 +17,8 @@ Heroku CLI automatically detects the *app name* by scanning the *git remotes* fo
     heroku login                              # login with email and password. Generates an API token in ~/.netrc
 
     heroku apps                               # list all apps on heroku
-    heroku apps:create NAME                   # create NAME app. [Alias: heroku create NAME]
+    heroku apps:create NAME                   # create NAME app [Alias: heroku create NAME]
+    heroku apps:create --region eu NAME       # create NAME app in the EU region
     heroku apps:destroy -a NAME               # destroy NAME app
     heroku apps:info -a NAME                  # show detailed information
     heroku apps:open -a NAME                  # open in web browser
