@@ -294,3 +294,7 @@ Alternatively consider:
 ## Change Author of the very Last Commit
 
     git commit --amend --author="Thomas Dürr \<thomduerr@gmail.com>"
+
+## Empty Commit
+
+    git commit --allow-empty -m "jenkins trigger" && git push
