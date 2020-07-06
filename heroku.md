@@ -33,3 +33,7 @@ Heroku CLI automatically detects the *app name* by scanning the *git remotes* fo
     heroku git:remote -a APP                  # adds an heroku remote to an app
 
     heroku status                             # show current status
+    heroku releases                           # show current releases
+    heroku releases:rollback v102             # rollback to version v102
+
+    heroku run bash                           # run bash locally
