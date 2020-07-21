@@ -22,6 +22,7 @@ Examples
 
     :% ! json2yml %                # convert json to yml
     :r ! date                      # insert date
+    :% ! js-beautify               # format javascript
 
 ## Modeline
 
