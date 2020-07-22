@@ -29,7 +29,7 @@ Add _npm script_:
 _webpack.config.js_:
 
     module.exports = {
-       entry: './app',
+       entry: './app/main.js',
        output: {
           path: __dirname + 'build',
           filename: 'bundle.js'
