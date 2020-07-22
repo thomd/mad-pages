@@ -20,7 +20,7 @@ Install:
 Add _npm script_:
 
     "scripts": {
-       "build": "webpack",
+       "build": "webpack --mode production",
        "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build"
     }
 
