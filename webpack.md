@@ -31,7 +31,7 @@ _webpack.config.js_:
     module.exports = {
        entry: './app',
        output: {
-          path: 'build',
+          path: __dirname + 'build',
           filename: 'bundle.js'
        }
     }
