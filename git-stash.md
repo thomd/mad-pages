@@ -7,6 +7,7 @@ Stash the changes in a dirty working directory away
     git stash
     git stash -p                                 # interactively specify changes included in this stash
     git stash -u                                 # include also untracked files
+    git stash -a                                 # include also untracked and ignored files
     git stash push -- file.txt                   # stash only a specific file
     git stash push -m "description"              # save stash with a description
 
