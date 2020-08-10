@@ -37,3 +37,8 @@ Heroku CLI automatically detects the *app name* by scanning the *git remotes* fo
     heroku releases:rollback v102             # rollback to version v102
 
     heroku run bash                           # run bash locally
+
+## Teams
+
+    heroku teams                              # list teams I belong to
+    heroku members -t \<team>                  # list members of a team
