@@ -42,3 +42,4 @@ Heroku CLI automatically detects the *app name* by scanning the *git remotes* fo
 
     heroku teams                              # list teams I belong to
     heroku members -t \<team>                  # list members of a team
+    heroku apps -t \<team>                     # list apps of a team
