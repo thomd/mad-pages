@@ -12,11 +12,12 @@ Examples
     v3w                            # select three words
     cs])                           # change surrounding brackets to parantheses
 
-## Commands
+## Common Commands
 
     d0                             # delete before cursor position
     100i-\<ESC>                     # write 100 dashes
     yypVr-                         # underline text with dashes
+    :w !sudo tee %                 # save a file edited without the needed permissions
 
 ## Execute Shell Commands in Vim
 
