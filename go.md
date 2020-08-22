@@ -38,11 +38,14 @@ Install
 Usage
 
     dlv debug main.go                # start debugging
+
+    > help | h                       # show help
     > break app.go:12                # set breakpoint at line 12 of app.go
     > break main.main                # set breakpoint at main function of main package
     > breakpoints                    # list breakpoints
     > continue | c                   # run until breakpoint
-    > print foo | p foo              # print variable foo
+    > print foo | p foo              # print value of variable foo
+    > whatis foo                     # print type of variable foo
     > funcs main                     # print functions in main package
     > types main                     # print types in main package
     > next | n                       # step over to next line
