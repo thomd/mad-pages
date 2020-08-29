@@ -2,6 +2,8 @@
 # vim(1)
 
     vim large.xml "+syntax off"
+    vim -                                  # read text from stdin, e.g. `ls -al | vim -`
+    vim -u NONE                            # ignore `~/.vimrc`
 
 ## Vim's Grammar
 
