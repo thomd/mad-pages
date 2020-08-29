@@ -35,7 +35,7 @@ HTML Template
 
 Static resources
 
-    app.use(express.static('./public'))
+    app.use(express.static(__dirname + '/public'))
 
 # https
 
