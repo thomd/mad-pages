@@ -37,11 +37,21 @@ Static resources
 
     app.use(express.static(__dirname + '/public'))
 
-# https
+
+# https server
 
 1. Generate a self-signed certificate
 
-    openssl req -nodes -new -x509 -keyout server.key -out server.cert
+  Using openssl:
+
+    openssl req -nodes -new -x509 -keyout localhost-key.pem -out localhost.pem
+
+  Using mkcert:
+
+    brew install mkcert
+    mkcert -install                                                               # install root-ca inn system trust-store
+
+    mkcert -key-file localhost-key.pem -cert-file localhost.pem localhost         # create key and cert for localhost
 
 2. Enable HTTPS in Express
 
@@ -51,9 +61,15 @@ Static resources
     var app = express()
     app.get('/', (req, res) => res.send(req.headers))
     https.createServer({
-      key: fs.readFileSync('server.key'),
-      cert: fs.readFileSync('server.cert')
+      key: fs.readFileSync(__dirname + '/localhost-key.pem'),
+      cert: fs.readFileSync(__dirname + '/localhost.pem')
     }, app).listen(443)
+
+3. Request
+
+    curl -k https://localhost          # with self-signed openssl cert
+    curl https://localhost             # with mkcert
+
 
 # express(1)
 
