@@ -58,8 +58,10 @@ Static resources
     var express = require('express')
     var fs = require('fs')
     var https = require('https')
+    var http = require('http')
     var app = express()
     app.get('/', (req, res) => res.send(req.headers))
+    http.createServer(app).listen(80)
     https.createServer({
       key: fs.readFileSync(__dirname + '/localhost-key.pem'),
       cert: fs.readFileSync(__dirname + '/localhost.pem')
@@ -67,6 +69,7 @@ Static resources
 
 3. Request
 
+    curl localhost
     curl -k https://localhost          # with self-signed openssl cert
     curl https://localhost             # with mkcert
 
