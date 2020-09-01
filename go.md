@@ -37,26 +37,27 @@ Install
 
 Usage
 
-    dlv debug main.go                # start debugging
+    dlv debug main.go                     # start debugging
 
-    > help | h                       # show help
-    > break | b app.go:12            # set breakpoint at line 12 of app.go
-    > break | b \<pkg>.\<func>         # set breakpoint at \<func> function of \<pkg> package
-    > break | b main.main            # set breakpoint at main function of main package
-    > breakpoints | bp               # list breakpoints
-    > continue | c                   # run until breakpoint
-    > next | n                       # step over to next line
-    > list | l                       # show source code
+    > help | h                            # show help
+    > break | b app.go:12                 # set breakpoint at line 12 of app.go
+    > break | b \<pkg>.\<func>              # set breakpoint at \<func> function of \<pkg> package
+    > break | b main.main                 # set breakpoint at main function of main package
+    > breakpoints | bp                    # list breakpoints
+    > cond \<bp> \<boolean-expression>    # conditional breakpoint
+    > continue | c                        # run until breakpoint
+    > next | n                            # step over to next line
+    > list | l                            # show source code
 
-    > funcs main                     # print functions in main package
-    > types main                     # print types in main package
+    > funcs main                          # print functions in main package
+    > types main                          # print types in main package
 
-    > whatis foo                     # print type of variable foo
-    > print foo | p foo              # print value of variable foo
+    > whatis foo                          # print type of variable foo
+    > print foo | p foo                   # print value of variable foo
 
-    > vars                           # package variables
-    > locals                         # local variables
-    > args                           # function arguments
+    > vars                                # package variables
+    > locals                              # local variables
+    > args                                # function arguments
 
   Example Debug Session
 
