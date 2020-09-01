@@ -28,7 +28,7 @@
     go get github.com/thomd/package@master          # download head of specific branch
     go get github.com/thomd/package@3702bed2        # download specific revision
 
-# Go Debugginng
+# Go Debugging
 
 Install
 
@@ -40,20 +40,32 @@ Usage
     dlv debug main.go                # start debugging
 
     > help | h                       # show help
-    > break app.go:12                # set breakpoint at line 12 of app.go
+    > break | b app.go:12            # set breakpoint at line 12 of app.go
+    > break | b <pkg>.<func>         # set breakpoint at main function of main package
     > break main.main                # set breakpoint at main function of main package
     > breakpoints                    # list breakpoints
     > continue | c                   # run until breakpoint
-    > print foo | p foo              # print value of variable foo
-    > whatis foo                     # print type of variable foo
-    > funcs main                     # print functions in main package
-    > types main                     # print types in main package
     > next | n                       # step over to next line
     > list | l                       # show source code
+
+    > funcs main                     # print functions in main package
+    > types main                     # print types in main package
+
+    > whatis foo                     # print type of variable foo
+    > print foo | p foo              # print value of variable foo
 
     > vars                           # package variables
     > locals                         # local variables
     > args                           # function arguments
+
+  Example Debug Session
+
+    dlv debug main.go
+    > b main.main
+    > c
+    > n
+    > p myVar
+
 
 # Go Specification
 
