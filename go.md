@@ -41,9 +41,9 @@ Usage
 
     > help | h                       # show help
     > break | b app.go:12            # set breakpoint at line 12 of app.go
-    > break | b <pkg>.<func>         # set breakpoint at main function of main package
-    > break main.main                # set breakpoint at main function of main package
-    > breakpoints                    # list breakpoints
+    > break | b \<pkg>.\<func>         # set breakpoint at \<func> function of \<pkg> package
+    > break | b main.main            # set breakpoint at main function of main package
+    > breakpoints | bp               # list breakpoints
     > continue | c                   # run until breakpoint
     > next | n                       # step over to next line
     > list | l                       # show source code
