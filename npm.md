@@ -1,5 +1,9 @@
 # npm(1)
 
+## Install
+
+    npm install --no-fund --no-audit \<package>
+
 ## Linking
 
   Link
