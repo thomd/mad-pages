@@ -7,7 +7,7 @@ GET Route
 
     const express = require('express')
     const app = express()
-    app.get('/', (req, res) => res.send('hello'))
+    app.get('/', (req, res) => res.json(req.headers))
     app.listen(80)
 
 POST Route
