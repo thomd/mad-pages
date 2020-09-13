@@ -48,6 +48,8 @@ Usage
     > continue | c                        # run until breakpoint
     > next | n                            # step over to next line
     > list | l                            # show source code
+    > step | s                            # step into function
+    > stepout | so                        # step out from function
 
     > funcs main                          # print functions in main package
     > types main                          # print types in main package
