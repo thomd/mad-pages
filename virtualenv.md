@@ -13,4 +13,5 @@ Packages are stored in `~/.virtualenvs/`
     lssitepackages                              # list site-packages
     cdvirtualenv                                # cd into currently activated virtual environment
 
-
+    pip install PKG
+    pip install -r requirements.txt             # install dependencies
