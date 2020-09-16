@@ -8,7 +8,7 @@ Packages are stored in `~/.virtualenvs/`
     workon my\_project                           # switch into virtualenv of my\_project
     deactivate
 
-    lsvirtualenv                                # list virtualenv projects
+    lsvirtualenv -b                             # list virtualenv projects
     rmvirtualenv my\_project                     # delete virtualenv project
     lssitepackages                              # list site-packages
     cdvirtualenv                                # cd into currently activated virtual environment
