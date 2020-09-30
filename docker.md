@@ -1,16 +1,4 @@
 
-# docker-machine(1)
-
-    docker-machine ls
-    docker-machine create -d virtualbox dev
-
-    docker-machine start dev
-    eval "$(docker-machine env dev)"
-
-    docker-machine ip dev                         # determine IP
-
-    docker-machine ssh dev                        # 'sudo -i' for root
-
 # docker(1)
 
 Container
@@ -44,7 +32,3 @@ Dockerized Webserver
     docker run -d --rm -v $(pwd):/usr/local/apache2/htdocs -p 80:80 httpd
     docker run -d --rm -v $(pwd):/usr/share/nginx/html -p 80:80 nginx
     echo Hello Apache > index.html
-
-# docker-compose(1)
-
-
