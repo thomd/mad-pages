@@ -96,3 +96,19 @@ Go does not support Pointer Arithmetic. You can't add to or subtract from pointe
     ptr := new(int)           # create pointer to an int type
     *ptr = 100
     fmt.Print(*ptr)           # 100
+
+# Go Server
+
+## HTTP/2 Server
+
+    > openssl req -x509 -newkey rsa:4096 -sha256 -nodes -keyout server.key -out server.crt -subj "/CN=localhost" -days 365
+
+    # server.go
+    http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+        fmt.Fprintf(w, "foo")
+    })
+    http.ListenAndServeTLS(":443", "server.crt", "server.key", nil)
+
+    > curl -i -k https://localhost
+
+
