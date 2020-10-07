@@ -1,6 +1,6 @@
 # lighthouse(1)
 
-    lighthouse https://www.example.com
+    lighthouse "https://user:password@www.example.com"
 
 Options
 
@@ -30,7 +30,7 @@ Create config file `lh.js`:
 
 and run
 
-    lighthouse --view --config-path=./lh.js https://www.example.com
+    lighthouse --view --config-path=./lh.js "https://www.example.com"
 
 ## Chrome Flags
 
