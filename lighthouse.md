@@ -11,8 +11,8 @@ Options
     --only-categories=performance
     --emulated-form-factor=desktop                         # emulate mobile/desktop
     --throttling-method=provided                           # throttle provided/simulated conditions
-    --extra-headers "{\"Authorization\":\"Basic abc=\"}"
     --blockedUrlPatterns=*.googletagmanager.com'
+    --extra-headers "{\"Authorization\":\"Basic $(echo -n user:password | base64)\"}"
 
 ## Configuration
 
