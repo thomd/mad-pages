@@ -1,25 +1,4 @@
-
-# JSON
-
-    {
-      "key": "value",
-      "array": [
-        "value1",
-        "value2"
-      ],
-      "map": {
-        "key1": "value1",
-        "key1": "value1"
-      },
-      "array2": [
-        {
-          "key1": "value1",
-          "key2": "value2"
-        }
-      ]
-    }
-
-# YAML
+# YAML Spec
 
     ---
     key: value
@@ -44,3 +23,8 @@ On YAML Syntax:
 
   Comment with `#`
 
+# yq(1)
+
+    yq validate doc.yml                     # validate valid.yaml
+    yq read doc.yml -C                      # print
+    yq read doc.yml -jP                     # to JSON and pretty-print
