@@ -294,6 +294,7 @@ Alternatively consider:
 ## Change Author of the very Last Commit
 
     git commit --amend --author="Thomas Dürr \<thomduerr@gmail.com>"
+    git push -f
 
 ## Empty Commit
 
