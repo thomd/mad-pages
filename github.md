@@ -1,47 +1,28 @@
 # GitHub Code Search
 
-Search for code based on what language it's written in
+    language:                 # search for code based on what language it's written in
+    filename:                 # match code files with a certain filename
+    extension:                # match code files with a certain file extension
+    in:path                   # matches code where search term appears in the file path
+    in:file                   # matches code where search term appears in the file content
+    NOT                       # exclude Operator: Matches repositories that have a word but not another word
+    -                         # exclude Qualifier: Matches repositories that have a word but not in an entity
 
-    language:	
-
-  Example: 
+  Examples
 
     sfcc language:go
-
-Match code files with a certain filename
-
-    filename:	
-
-  Example:
-
     sfcc fileame:package.json
-
-
-Match code files with a certain file extension
-
-    extension:	
-
-  Example:
-
     sfcc extension:jsonn
-
-Matches code where search term appears in the file path / file content
-
-    in:path
-    in:file
-
-Exclude Operator: Matches repositories that have a word but not another word
-
-    NOT
-
-  Example:
-
     foo NOT bar
-
-Exclude Qualifier: Matches repositories that have a word but not in an entity
-
-    -
-
-  Example:
-
     foo -language:css	
+
+# act(1)
+
+Run GitHub Actions locally
+
+    act -l                    # list actions
+    act                       # run the default push event
+    act pull_request          # run a specific event
+    act -j test               # run a specific job
+    act -n                    # run in dry-run mode
+    act -v                    # enable verbose-logging
