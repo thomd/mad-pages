@@ -1,12 +1,29 @@
-
 # go(1)
+
+## New Go project
+
+Using $GOPATH
+
+    cd go-project
+    sgn                                             # set GO Path-based environment in current directory
+
+Using Go Modules
+
+A module is a collection of related Go packages that are versioned together as a single unit:
+
+* a Repository contains one or more Go Modules.
+* each Module contains one or more Go Packages.
+* each Package consists of one or more Go source files in a single directory.
+
+    cd go-project                                   # ourside $GOPATH !
+    go mod init github.com/thomd/go-project
+
 
 ## go env
 
     go env
     go help environment
     go env GOPATH                                   # print GOPATH
-    sgo                                             # set GO environment inn current directory
 
 ## go run
 
@@ -68,47 +85,3 @@ Usage
     > c
     > n
     > p myVar
-
-
-# Go Specification
-
-## Go Pointer
-
-A pointer is a variable that stores the memory address of another variable.
-
-Go does not support Pointer Arithmetic. You can't add to or subtract from pointers.
-
-
-    & operator                # get memory address
-    \* operator                # access the value stored at an address. This is called dereferencing or indirecting
-    \*T                        # pointer type. Here, the \* is not an operator, it is part of a type, hence \*T and T are different types.
-
-  Example
-
-    var age int = 49
-    var ptr *int = &age
-    var ptr = &age            # type inference
-    var value = *ptr          # 49
-    *ptr = 50                 # Change value stored in the pointed variable through the pointer
-
-  Create a pointer using the built-in new() function:
-
-    ptr := new(int)           # create pointer to an int type
-    *ptr = 100
-    fmt.Print(*ptr)           # 100
-
-# Go Server
-
-## HTTP/2 Server
-
-    > openssl req -x509 -newkey rsa:4096 -sha256 -nodes -keyout server.key -out server.crt -subj "/CN=localhost" -days 365
-
-    # server.go
-    http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-        fmt.Fprintf(w, "foo")
-    })
-    http.ListenAndServeTLS(":443", "server.crt", "server.key", nil)
-
-    > curl -i -k https://localhost
-
-
