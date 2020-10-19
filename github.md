@@ -17,7 +17,7 @@
 
     sfcc language:go
     sfcc fileame:package.json
-    sfcc extension:jsonn
+    sfcc extension:json
     foo NOT bar
     foo -language:css
     sfcc in:name
