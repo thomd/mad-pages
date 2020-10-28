@@ -6,4 +6,5 @@
     ed /^$/d file                         // remove all blank line from file
     sed 10,20d file                       // remove line 10 to 20 from file
     sed 1d file                           // remove first line from file
+    sed '$d' file                         // remove last line from file
     sed 1!d file                          // remove all but the first line from file
