@@ -24,6 +24,19 @@
     sfcc in:name,description,readme
 
 
+# gh(1)
+
+gh is GitHub on the command line.
+
+    gh auth login
+
+    gh repo create my-project                    # create new repo user/my-project
+    gh repo create                               # create new repo based on name of CWD
+    gh gist list
+    gh gist view ID
+    gh gist edit ID
+
+
 # act(1)
 
 Run GitHub Actions locally
