@@ -33,6 +33,9 @@ gh is GitHub on the command line.
     gh repo create my-project           # create new repo user/my-project
     gh repo create                      # create new repo based on name of CWD
     gh gist list
+    gh gist list -L 100                 # list 100 gists (default 10)
+    gh gist list --public
+    gh gist list --secret
     gh gist view ID
     gh gist edit ID
 
