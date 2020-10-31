@@ -1,17 +1,17 @@
 # GitHub Code Search
 
-    language:                 # search for code based on what language it's written in
-    filename:                 # match code files with a certain filename
-    extension:                # match code files with a certain file extension
+    language:                           # search for code based on what language it's written in
+    filename:                           # match code files with a certain filename
+    extension:                          # match code files with a certain file extension
 
-    in:path                   # matches code where search term appears in the file path
-    in:file                   # matches code where search term appears in the file content
-    in:name                   # matches repositories with the search term in their name
-    in:description            # matches repositories with the search term in their description
-    in:readme                 # matches repositories with the search term in their README file
+    in:path                             # matches code where search term appears in the file path
+    in:file                             # matches code where search term appears in the file content
+    in:name                             # matches repositories with the search term in their name
+    in:description                      # matches repositories with the search term in their description
+    in:readme                           # matches repositories with the search term in their README file
 
-    NOT                       # exclude Operator: Matches repositories that have a word but not another word
-    -                         # exclude Qualifier: Matches repositories that have a word but not in an entity
+    NOT                                 # exclude Operator: Matches repositories that have a word but not another word
+    -                                   # exclude Qualifier: Matches repositories that have a word but not in an entity
 
   Examples
 
@@ -30,8 +30,8 @@ gh is GitHub on the command line.
 
     gh auth login
 
-    gh repo create my-project                    # create new repo user/my-project
-    gh repo create                               # create new repo based on name of CWD
+    gh repo create my-project           # create new repo user/my-project
+    gh repo create                      # create new repo based on name of CWD
     gh gist list
     gh gist view ID
     gh gist edit ID
@@ -41,9 +41,9 @@ gh is GitHub on the command line.
 
 Run GitHub Actions locally
 
-    act -l                    # list actions
-    act                       # run the default push event
-    act pull_request          # run a specific event
-    act -j test               # run a specific job
-    act -n                    # run in dry-run mode
-    act -v                    # enable verbose-logging
+    act -l                              # list actions
+    act                                 # run the default push event
+    act pull_request                    # run a specific event
+    act -j test                         # run a specific job
+    act -n                              # run in dry-run mode
+    act -v                              # enable verbose-logging
