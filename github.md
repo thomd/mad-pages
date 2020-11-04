@@ -50,3 +50,10 @@ Run GitHub Actions locally
     act -j test                         # run a specific job
     act -n                              # run in dry-run mode
     act -v                              # enable verbose-logging
+
+# Personal Access Token (PAT)
+
+Clone repositories protected by SAML SSO using a PAT:
+
+    git clone https://\<user>:\<pat>@github.com/orga/repo.git
+
