@@ -1,49 +1,45 @@
-# go(1)
+# Go
 
-## New Go project
-
-Using $GOPATH
+## Go PATH
 
     cd go-project
-    sgn                                             # set GO Path-based environment in current directory
+    sgn                                                  # set GO Path-based environment in current directory
 
-Using Go Modules
+## Go Modules
 
-A module is a collection of related Go packages that are versioned together as a single unit:
+    cd go-project                                        # ourside $GOPATH !
+    go mod init github.com/thomd/temp
 
-* a Repository contains one or more Go Modules.
-* each Module contains one or more Go Packages.
-* each Package consists of one or more Go source files in a single directory.
+    go list -m -versions github.com/gookit/color         # list available tagged versions
+    go get github.com/gookit/color@v1.3.1
 
-    cd go-project                                   # ourside $GOPATH !
-    go mod init github.com/thomd/go-project
+    go list -m all                                       # list all modules
 
-
-## go env
-
-    go env
-    go help environment
-    go env GOPATH                                   # print GOPATH
+# go(1)
 
 ## go run
 
-    go run main.go                                  # run executable code
-    go run .                                        # run file containg main()
+    go run main.go                                       # run executable code
+    go run .                                             # run file containg main()
 
 ## go build
 
-    go build                                        # build static binary of file containg main() and name it like folder
-    go build -o \<name>                              # build static binary with name <name>
-    GOOS=linux go build                             # build static binary for linux platform
+    go build                                             # build static binary of file containg main() and name it like folder
+    go build -o \<name>                                   # build static binary with name <name>
+    GOOS=linux go build                                  # build static binary for linux platform
+
+## go install
+
+    go install                                           # perform a go build and move executable to $GOBIN
 
 ## go get
 
-    go get ./...                                    # install all dependencies. The pattern ... tells to go down recursively
-    go get github.com/thomd/package                 # download and install packages $GOPATH/src
-    go get -u github.com/thomd/package              # update packages to $GOPATH/src
-    go get github.com/thomd/package@v1.2.3          # download specific version
-    go get github.com/thomd/package@master          # download head of specific branch
-    go get github.com/thomd/package@3702bed2        # download specific revision
+    go get ./...                                         # install all dependencies. The pattern ... tells to go down recursively
+    go get github.com/thomd/package                      # download and install packages $GOPATH/src
+    go get -u github.com/thomd/package                   # update packages to $GOPATH/src
+    go get github.com/thomd/package@v1.2.3               # download specific version
+    go get github.com/thomd/package@master               # download head of specific branch
+    go get github.com/thomd/package@3702bed2             # download specific revision
 
 # Go Debugging
 
@@ -54,29 +50,29 @@ Install
 
 Usage
 
-    dlv debug main.go                     # start debugging
+    dlv debug main.go                        # start debugging
 
-    > help | h                            # show help
-    > break | b app.go:12                 # set breakpoint at line 12 of app.go
-    > break | b \<pkg>.\<func>              # set breakpoint at \<func> function of \<pkg> package
-    > break | b main.main                 # set breakpoint at main function of main package
-    > breakpoints | bp                    # list breakpoints
-    > cond \<bp> \<boolean-expression>    # conditional breakpoint
-    > continue | c                        # run until breakpoint
-    > next | n                            # step over to next line
-    > list | l                            # show source code
-    > step | s                            # step into function
-    > stepout | so                        # step out from function
+    > help | h                               # show help
+    > break | b app.go:12                    # set breakpoint at line 12 of app.go
+    > break | b \<pkg>.\<func>                 # set breakpoint at \<func> function of \<pkg> package
+    > break | b main.main                    # set breakpoint at main function of main package
+    > breakpoints | bp                       # list breakpoints
+    > cond \<bp> \<boolean-expression>       # conditional breakpoint
+    > continue | c                           # run until breakpoint
+    > next | n                               # step over to next line
+    > list | l                               # show source code
+    > step | s                               # step into function
+    > stepout | so                           # step out from function
 
-    > funcs main                          # print functions in main package
-    > types main                          # print types in main package
+    > funcs main                             # print functions in main package
+    > types main                             # print types in main package
 
-    > whatis foo                          # print type of variable foo
-    > print foo | p foo                   # print value of variable foo
+    > whatis foo                             # print type of variable foo
+    > print foo | p foo                      # print value of variable foo
 
-    > vars                                # package variables
-    > locals                              # local variables
-    > args                                # function arguments
+    > vars                                   # package variables
+    > locals                                 # local variables
+    > args                                   # function arguments
 
   Example Debug Session
 
