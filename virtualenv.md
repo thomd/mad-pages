@@ -15,5 +15,3 @@ Packages are stored in `~/.virtualenvs/`
 
     pip install PKG
     pip install -r requirements.txt             # install dependencies
-
-Virtualenvwrapper stores packages in `~/.virtualenvs/`
