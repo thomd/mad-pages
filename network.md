@@ -2,7 +2,7 @@
 
 ## Print listening ports and programs
 
-    netstat -an -ptcp | grep LISTEN                # List listening ports
+    netstat -an | grep LISTEN                      # List listening ports
     sudo lsof -i -P | grep LISTEN                  # List listening ports and programs
 
 ## What is the IP of my Nameserver?
