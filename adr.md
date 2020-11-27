@@ -9,6 +9,7 @@ List Records
     adr list
     adr generate toc -p doc/adr/ | pbcopy                # genrate TOC in markdown to be used in README.md
     adr generate graph | dot -T png -o adr.png           # generate dependenncy graph
+    adr-graph                                            # generate dependenncy graph
 
 Create Record
 
