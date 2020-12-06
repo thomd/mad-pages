@@ -41,6 +41,13 @@
     go get github.com/thomd/package@master               # download head of specific branch
     go get github.com/thomd/package@3702bed2             # download specific revision
 
+# Go Testing
+
+    go test                                              # test any files matching <code>*_test.go</code>
+    go test ./...                                        # test entire <code>pkg</code>
+    go test -v                                           # be verbose
+    gotestsum --watch
+
 # Go Debugging
 
 Install
