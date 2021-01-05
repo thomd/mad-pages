@@ -58,6 +58,7 @@ Install
 Usage
 
     dlv debug main.go                        # start debugging
+    dlv test .                               # start debugging tests
 
     > help | h                               # show help
     > break | b app.go:12                    # set breakpoint at line 12 of app.go
