@@ -29,6 +29,8 @@
     conda install PACKAGE                           # install a package into current env
     conda install --channel conda-forge PACKAGE     # install using conda-forge channel
     conda install --revision 2                      # restore environment to a previous revision
+    conda install --yes --file requirements.txt     # install packages from requirements file
+
     gpip install PACKAGE                            # install a package using pip
 
     conda update PACKAGE                            # update a package into current environment
