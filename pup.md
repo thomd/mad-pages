@@ -12,7 +12,7 @@ Examples
     cat index.html | pup --color                      # print colorful formatted html to tty
 
     cat index.html | pup 'title'                      # filter by tag
-    cat index.html | pup 'ul#items'                   # filter by id-attribute
+    cat index.html | pup 'ul.items'                   # filter by class-attribute
     cat index.html | pup 'a[href*="foo"]'             # filter by attribute
     cat index.html | pup 'a attr{href}'               # filter URLs of all links
 
