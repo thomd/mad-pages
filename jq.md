@@ -1,13 +1,25 @@
 # jq(1)
 
+## Filter
+
+    jq '.'                                   # pretty format
+    jq '.foo'                                # return value of key 'foo'
+    jq '.foo, .bar'                          # return value of key 'foo' and key 'bar'
+    jq '.[]'                                 # return all of the elements of an array
+    jq '.foo[0]'                             # return first element of foo-array
+
+## Operators & Functions
+
+    jq 'keys'                                # return keys in an array
+    jq '.foo | keys'                         # return keys of key foo
+    jq '.foo | length'                       # return number of elements
+
 ## Examples
 
   Search in JSON array:
 
     npx sfcc-ci code:list --json | jq '.data[] | select(.active == true) | .id'
 
+  String Interpolation
 
-## Public JSON APIs
-
-1. https://jsonplaceholder.typicode.com
-2. http://www.filltext.com
+    jq '. | "value: \(.foo) \(.bar)"'
