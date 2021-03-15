@@ -1,0 +1,18 @@
+# npx(1)
+
+## Examples
+
+    npx alex README.md                                   # check text for insensitive or inconsiderate writing
+    cat README.md | npx alex
+
+    npx http-server                                      # run a static web server in your current directory
+    npx json-server data.json                            # run a mock REST API server
+    echo -e "\033[33m hello" | npx strip-ansi-cli        # remove terminal color codes from piped text
+
+    npx sort-package-json                                # sort your package.json keys
+    npx nsp check                                        # scan your npm project for vulnerabilities and security alerts
+    npx npm-check                                        # interactively update npm dependencies
+    npx npm-check --skip-unused --update
+
+    npx figlet-cli text                                  # ascii text generator
+    echo hello | npx lolcatjs                            # colorful rainbow text
