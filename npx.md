@@ -17,5 +17,12 @@
     npx figlet-cli text                                  # ascii text generator
     echo hello | npx lolcatjs                            # colorful rainbow text
 
+  Export medium stories
+
     npx mediumexporter \<medium-url> > file.md            # export a medium story to markdown
     npx mediumexporter \<medium-url> | glow -             # export a medium story to terminal
+
+  Make any web page a desktop application
+
+    npx nativefier web.whatsapp.com
+    npx nativefier teams.microsoft.com --internal-urls '(.*?)' -n "Microsoft Teams" -p linux
