@@ -14,7 +14,7 @@
     jq '.foo | keys'                         # return keys of key foo
     jq '.foo | length'                       # return number of elements
 
-## Examples
+# jq examples
 
   Search in JSON array:
 
@@ -23,3 +23,7 @@
   String Interpolation
 
     jq '. | "value: \(.foo) \(.bar)"'
+
+  Decode JWT token
+
+    cat jwt.txt | jq -R 'split(".") | .[1] | @base64d | fromjson'
