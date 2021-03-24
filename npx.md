@@ -16,3 +16,6 @@
 
     npx figlet-cli text                                  # ascii text generator
     echo hello | npx lolcatjs                            # colorful rainbow text
+
+    npx mediumexporter \<medium-url> > file.md            # export a medium story to markdown
+    npx mediumexporter \<medium-url> | glow -             # export a medium story to terminal
