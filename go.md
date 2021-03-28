@@ -50,11 +50,6 @@
 
 # Go Debugging
 
-Install
-
-    xcode-select --install
-    go get -u github.com/go-delve/delve/cmd/dlv
-
 Usage
 
     dlv debug main.go                        # start debugging
