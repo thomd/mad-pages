@@ -60,7 +60,7 @@ Usage
     > break | b \<pkg>.\<func>                 # set breakpoint at \<func> function of \<pkg> package
     > break | b main.main                    # set breakpoint at main function of main package
     > breakpoints | bp                       # list breakpoints
-    > cond \<bp> \<boolean-expression>       # conditional breakpoint
+    > cond \<bp> \<boolean-expression>         # conditional breakpoint
     > continue | c                           # run until breakpoint
     > next | n                               # step over to next line
     > list | l                               # show source code
