@@ -56,8 +56,8 @@ Usage
     dlv test .                               # start debugging tests
 
     > help | h                               # show help
-    > break | b \<file>:\<line>                # set breakpoint at line \<line> in file \<file>, e.g. `app.go:12`
-    > break | b \<pkg>.\<func>                 # set breakpoint at \<func> function of \<pkg> package, e.g. `main.main`
+    > break | b \<file>:\<line>                # set breakpoint at line \<line> in file \<file>, e.g.: `./app.go:12`
+    > break | b \<pkg>.\<func>                 # set breakpoint at \<func> function of \<pkg> package, e.g.: `main.main`
     > breakpoints | bp                       # list breakpoints
     > cond \<bp> \<boolean-expression>         # conditional breakpoint
     > continue | c                           # run until breakpoint
