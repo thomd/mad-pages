@@ -46,4 +46,14 @@
 
 ## Examples
 
+  Print column 4 if column 2 contains empty values:
+
     csv rmnew data.csv | csv find -if 'len($2)==0' | csv order -f 4 
+
+  Print column index:
+
+    head -n 1 data.csv | tr ';' '\n' | nl
+
+  Print columns 2, 4 and 5 and a row number:
+
+    csv order -sep ";" -f 2,4:5 data.csv | csv sequence -n 0
