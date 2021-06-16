@@ -11,6 +11,9 @@
     sh -x script.sh                                    # run script with debug info
     sh -vx script.sh 2>&1 | tee logfile.log            # run script with debug info and log
 
+  Step Your Code: put this code in your script, at the location you wish to begin stepping:
+
+    trap '(read -p "[$BASH\_SOURCE:$LINENO] $BASH\_COMMAND?")' DEBUG
 
 ## Redirection
 
