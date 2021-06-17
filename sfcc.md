@@ -18,16 +18,16 @@
   Create new Sandbox:
 
     sfcc-ci sandbox:create -r \<realm-id>
-    sfcc-ci sandbox:get -s \<realm-id>
-    sfcc-ci sandbox:update -s \<realm-id> --ttl 0
-    sfcc-ci sandbox:get -s \<realm-id> -O             # open sandbox in browser
+    sfcc-ci sandbox:get -s \<sbx-id>
+    sfcc-ci sandbox:update -s \<sbx-id> --ttl 0
+    sfcc-ci sandbox:get -s \<sbx-id> -O             # open sandbox in browser
 
   Sandbox Management:
 
-    sfcc-ci sandbox:start -s \<realm-id>
-    sfcc-ci sandbox:stop -s \<realm-id>
-    sfcc-ci sandbox:restart -s \<realm-id>
-    sfcc-ci sandbox:reset -s \<realm-id>
+    sfcc-ci sandbox:start -s \<sbx-id>
+    sfcc-ci sandbox:stop -s \<sbx-id>
+    sfcc-ci sandbox:restart -s \<sbx-id>
+    sfcc-ci sandbox:reset -s \<sbx-id>
 
-    sfcc-ci sandbox:delete -s \<realm-id>
-    sfcc-ci sandbox:delete -s \<realm-id> --noprompt
+    sfcc-ci sandbox:delete -s \<sbx-id>
+    sfcc-ci sandbox:delete -s \<sbx-id> --noprompt
