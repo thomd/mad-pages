@@ -30,26 +30,31 @@ gh is GitHub on the command line.
 
     gh auth login
 
-    gh repo create my-project           # create new repo user/my-project
-    gh repo create                      # create new repo based on name of CWD
+    gh repo create my-project                     # create new repo user/my-project
+    gh repo create                                # create new repo based on name of CWD
+
     gh gist list
-    gh gist list -L 100                 # list 100 gists (default 10)
+    gh gist list -L 100                           # list 100 gists (default 10)
     gh gist list --public
     gh gist list --secret
     gh gist view ID
     gh gist edit ID
+    
+    gh gist create file.py -d "description"       # create gist with one file and a description
+    gh gist create file.py --public               # create a public gist
+    gh gist create file1.py file2.py              # create a gitst with multiple files
 
 
 # act(1)
 
 Run GitHub Actions locally
 
-    act -l                              # list actions
-    act                                 # run the default push event
-    act pull_request                    # run a specific event
-    act -j test                         # run a specific job
-    act -n                              # run in dry-run mode
-    act -v                              # enable verbose-logging
+    act -l                                        # list actions
+    act                                           # run the default push event
+    act pull_request                              # run a specific event
+    act -j test                                   # run a specific job
+    act -n                                        # run in dry-run mode
+    act -v                                        # enable verbose-logging
 
 # Personal Access Token (PAT)
 
