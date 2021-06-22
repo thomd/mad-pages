@@ -28,6 +28,7 @@
 
 gh is GitHub on the command line.
 
+    gh auth status                                # see who is logged in
     gh auth login
 
     gh repo create my-project                     # create new repo user/my-project
