@@ -40,6 +40,8 @@ gh is GitHub on the command line.
     gh gist list --secret
     gh gist view ID
     gh gist edit ID
+    gh gist clone ID                              # clone a gist
+    gh gist clone ID TARGET                       # clone a gist into a 'TARGET' folder
     
     gh gist create file.py -d "description"       # create gist with one file and a description
     gh gist create file.py --public               # create a public gist
