@@ -35,5 +35,5 @@ Dockerized Webserver
     docker run -d --rm -v $(pwd):/usr/share/nginx/html -p 80:80 nginx
     echo Hello Nginx > index.html
 
-    docker run -d --rm -v $(pwd):/var/www/html -p 80:80 php-apache
+    docker run -d --rm -v $(pwd):/var/www/html -p 80:80 php:8-apache
     echo <?php\nphpinfo();\nphp> > index.php
