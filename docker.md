@@ -30,10 +30,10 @@ Alpine Image
 Dockerized Webserver
 
     docker run -d --rm -v $(pwd):/usr/local/apache2/htdocs -p 80:80 httpd
-    echo Hello Apache > index.html
+    echo "Hello Apache" > index.html
 
     docker run -d --rm -v $(pwd):/usr/share/nginx/html -p 80:80 nginx
-    echo Hello Nginx > index.html
+    echo "Hello Nginx" > index.html
 
     docker run -d --rm -v $(pwd):/var/www/html -p 80:80 php:8-apache
-    echo <?php\nphpinfo();\nphp> > index.php
+    echo -e "\<?php phpinfo(); ?>" > index.php
