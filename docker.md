@@ -10,18 +10,18 @@ Container
 
 Create and run a Docker Image from a _Dockerfile_
 
-    docker build -t thomd/my-app .
-    docker run --rm --name \<name> -d -p 8080:8080 thomd/my-app            # run as daemon
+    docker build -t \<image> .
+    docker run --rm --name \<name> -d -p 8080:8080 \<image>
     docker logs \<name>
-    docker exec -it \<name> /bin/bash                                      # go inside container
+    docker exec -it \<name> /bin/bash 
 
-Share a Docker Image
+Push Image to Docker-Hub (https://hub.docker.com/u/thomd)
 
     docker login
-    docker tag thomd\<image> thomd/\<image>:\<tag>
-    docker push thomd/\<image>
+    docker tag \<image> thomd/\<image>:\<tag>
+    docker push thomd/\<image>:\<tag>
 
-_alpine_ Image
+Alpine Image
 
     docker run -it alpine:latest /bin/sh
     > apk update
@@ -30,5 +30,10 @@ _alpine_ Image
 Dockerized Webserver
 
     docker run -d --rm -v $(pwd):/usr/local/apache2/htdocs -p 80:80 httpd
-    docker run -d --rm -v $(pwd):/usr/share/nginx/html -p 80:80 nginx
     echo Hello Apache > index.html
+
+    docker run -d --rm -v $(pwd):/usr/share/nginx/html -p 80:80 nginx
+    echo Hello Nginx > index.html
+
+    docker run -d --rm -v $(pwd):/var/www/html -p 80:80 php-apache
+    echo <?php\nphpinfo();\nphp> > index.php
