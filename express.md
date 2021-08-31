@@ -10,11 +10,17 @@ GET Route
     app.get('/', (req, res) => res.json(req.headers))
     app.listen(80)
 
+  Request Object:
+
+    req.headers          # http header
+    req.query            # parsed query string parameters
+    req.params           # parsed route parameters from the path, e.g. '/:id'
+
 POST Route
 
     const express = require('express')
     const app = express()
-    app.use(express.json())
+    app.use(express.json())                               # <- parse request body as JSON
     app.post('/', (req, res) => res.json(req.body))
     app.listen(80)
 
