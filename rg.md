@@ -1,6 +1,8 @@
 
 # rg(1)
 
+ripgrep
+
 ## Options
 
     -i                                          # Case insensitive search
