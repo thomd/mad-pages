@@ -43,7 +43,7 @@
     fd '^.*rc$' /etc
     fd -e isml product ~/develop/               # search for isml template having "product" in filename
     fd -g 'test_*.py' -X vim -p                 # open all python tests in vim
-    fd -e py -X grep foo                        # grep for 'foo' in all python files
+    fd -e py -X rg foo                          # rip-grep for 'foo' in all python files
     fd -H '^\.DS\_Store$' -tf -X rm -i           # interactively delete all DS_Store files in current dir
     fd foo | as-tree                            # list search result as tree
     fd --changed-within \`now -s`                # find changed files since last call of now

@@ -28,8 +28,9 @@ ripgrep
     rg -i foo
     rg 'foo|bar|baz' -woNI | sort | uniq -c     # search for foo, bar or baz and count
     rg -- -foo                                  # search for -foo
-    rg -t html -t css foobar                    # Search in .html and .css files only for the word foobar
-    rg -g *.css --files                         # Print list of all .css files
+    rg -t html -t css foobar                    # search in .html and .css files only for the word foobar
+    rg -g *.css --files                         # print list of all .css files
+    fd -e css -X rg color                       # print all colors in all css files
 
 ## Multiline Search
 
