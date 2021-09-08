@@ -28,3 +28,6 @@ Extract values of an attribute from an XML:
     grep customer-no \*.xml | perl -pe 's/.\*customer-no="(.\*?)".\*/\1/g' | sort -n
     grep -o 'CA[0-9]\{8\}' file.xml
 
+Replace all prices in a pricebook:
+
+    cat pricebooks.xml | perl -pe 's/(<amount quantity="\d">).*(<\/amount>)/${1}7.77${2}/g' > new_pricebook.xml
