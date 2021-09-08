@@ -28,6 +28,9 @@ Extract values of an attribute from an XML:
     grep customer-no \*.xml | perl -pe 's/.\*customer-no="(.\*?)".\*/\1/g' | sort -n
     grep -o 'CA[0-9]\{8\}' file.xml
 
-Replace all prices in a pricebook:
+Replace all prices in a price-book with '7.77':
 
-    cat pricebooks.xml | perl -pe 's/(<amount quantity="\d">).*(<\/amount>)/${1}7.77${2}/g' > new_pricebook.xml
+    cat pricebooks.xml | perl -pe 's/(\<amount quantity="\d">).*(\<\/amount>)/${1}7.77${2}/g' \
+        | sed /parent/d \
+        | perl -pe 's/(pricebook-id=").*"/${1}gbp-m-777-prices"/g' \
+        | perl -pe 's/(\<display-name.\*>).*</${1}GBP 7.77 Prices</g'
