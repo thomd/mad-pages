@@ -1,3 +1,9 @@
+# Tools
+
+* https://yaml.org
+* http://www.yamllint.com
+* https://learnxinyminutes.com/docs/yaml
+
 # YAML Spec
 
     ---
@@ -28,3 +34,12 @@ On YAML Syntax:
     yq validate doc.yml                     # validate valid.yaml
     yq read doc.yml -C                      # print
     yq read doc.yml -jP                     # to JSON and pretty-print
+
+# yaml(1)
+
+    yaml json read test.json                # json to yaml
+    yaml json write test.yaml               # yaml to json
+
+    yaml get test.yaml foo.bar              # get property
+    yaml get test.yaml foo.baz.1            # array accessor
+    yaml set test.yaml foo.baz.1 bar        # set a value
