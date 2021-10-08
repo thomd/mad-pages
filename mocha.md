@@ -1,53 +1,42 @@
 
 # mocha(1)
 
-    npm i -g mocha
-    mocha              # run all tests in 'test' folder
-    mocha-w -R min     # watch mode
+    npx mocha                   # run all tests in folder `test`
+    npx mocha test.js           # run test `test.js`
+    npx mocha -w -R min         # watch mode with 'min' reposter
 
-# Synchronous Test
+## Synchronous Test
 
     var assert = require('assert')
-    describe('description', function() {
-      it('should ...', function() {
-        var value = getSync()
-        assert.equal(value, expected_value)
-      })
+    describe('description', () => {
+       it('should ...', () => {
+         assert.ok(true)
+         assert.equal(value, expected_value)
+       })
     })
 
-  Passing arrow-functions is discouraged.
+  Do not use arrow-functions when using Mocha Context.
 
-# Asynchronous Test
+## Asynchronous Test
 
   Add a callback `done` to `it()` if you want to test an error-first callback:
 
     var assert = require('assert')
-    describe('description', function() {
-      it('should ...', function(done) {
-        getAsync(function(err, value) {
-          assert.equal(value, expected_value)
-          done()
-        })
-      })
-      it('should ... without errors', function(done) {
-        getAsync(done)
-      })
+    describe('description', () => {
+       it('should ...', done => {
+          do-something-async((err, value) => {
+             assert.equal(value, expected_value)
+             done()
+          })
+       })
     })
 
-# Hooks
+## Hooks
 
     describe('hooks', function() {
-      before(function() {
-        // runs before all tests in this block
-      })
-      after(function() {
-        // runs after all tests in this block
-      })
-      beforeEach(function() {
-        // runs before each test in this block
-      })
-      afterEach(function() {
-        // runs after each test in this block
-      })
+       before(function() { ... })
+       after(function() { ... })
+       beforeEach(function() { ... })
+       afterEach(function() { ... })
     })
 
