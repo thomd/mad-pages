@@ -11,7 +11,7 @@
     sfcc-ci org:list -j | jq -r '.[] | "\(.name) \(.realms)"'
     sfcc-ci sandbox:realm:list -r \<realm-id> --show-usage
 
-  List all available Sandboxes:
+  List Sandboxes:
 
     sfcc-ci sandbox:list
 
