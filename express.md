@@ -1,7 +1,7 @@
 
 # express
 
-    > npm i express
+    > npm install express
 
 GET Route
 
@@ -28,7 +28,7 @@ POST Route
 
 Template Engine
 
-    > npm i pug
+    > npm install pug
 
     app.set('views', './views')
     app.set('view engine', 'pug')
