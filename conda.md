@@ -7,7 +7,7 @@ If conda(1) does not work as expected, check ~/.bash_profile for conda related l
 
 ## Manage Environment
 
-  environment locations are in `~/conda/envs/`
+  environment locations are in `~/miniconda3/envs/`
 
     conda env list                                  # list of environments, active env is marked with *
     conda create --name NAME                        # create a new environment named NAME (default version is python 3)
