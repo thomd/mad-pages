@@ -4,7 +4,6 @@
 
     -d DEL                                # delimiting character of the input CSV file
     -q CHAR                               # character used to quote strings
-    --snifflimit 0                        # disable CSV sniffing
     -l                                    # insert a column of line numbers
     -K LINES                              # skip number of lines before the header row (e.g. comments, copyright notices)
     -H                                    # create default headers a,b,c,... if data has no header row
