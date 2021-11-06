@@ -1,3 +1,59 @@
+# csvkit(1)
+
+## Options
+
+    -d DEL                                # delimiting character of the input CSV file
+    -q CHAR                               # character used to quote strings
+    --snifflimit 0                        # disable CSV sniffing
+    -l                                    # insert a column of line numbers
+    -K LINES                              # skip number of lines before the header row (e.g. comments, copyright notices)
+    -H                                    # create default headers a,b,c,... if data has no header row
+    -S                                    # ignore whitespace immediately following the delimiter
+
+## Input
+
+    csvsql --db "sqlite:///data.db" --tables "data" --insert data.csv         # import CSV into SQL database
+    sql2csv --db "sqlite:///data.db" --query "select * from data"             # output SQL-queries as CSV
+    in2csv data.xlsx > data.csv                                               # convert tabular data formats into CSV
+
+## Processing
+
+    csvcut -n data.csv                                         # print column names and indices
+    csvcut -n data.csv | cut -c6-                              # print only column names
+    csvcut -c 2,5-8 data.csv                                   # print given columns
+    csvcut -C 2,5-8 data.csv                                   # print all except given columns
+    csvcut -c 2,5-8 -x data.csv                                # after cutting, delete rows which are empty
+    csvcut -c county,name data.csv | csvlook | head
+    csvcut -c 2 data.csv | sed 1d | sort | uniq                # print unique values of a column
+
+    csvclean data.csv                                          # fix common errors. Writes *_out.csv and *_err.csv
+    csvclean -n data.csv                                       # dry-run fix common errors
+    daff data.csv data_out.csv                                 # diff two csv files
+
+    csvgrep -c 1 -m foo data.csv                               # print rows containing 'foo' in first columnn
+    csvgrep -c 1 -r "($i)foo" data.csv                         # print rows containing 'foo' case-insensitive
+    csvgrep -c 1 -r "^A" data.csv                              # print rows with values startingn with A in first column
+    csvgrep -c 1 -r "^$" -i data.csv                           # print rows with non-empty cell inn first column
+
+    csvjoin -c 1 a.csv b.csv                                   # inner join
+    csvjoin -c 1 --outer a.csv b.csv                           # outer join
+
+    csvsort -c 1,3 data.csv                                    # sort csv by column 1 and 3
+    csvsort -c 3 -r data.csv                                   # sort reverse by column 3
+
+    Output and Analysis
+    csvlook data.csv | less -S                                 # print as markdown-compatible, fixed-width table
+
+    csvformat -D "|" data.csv                                  # convert to a pipe-delimited file
+    csvformat -U 2 data.csv                                    # quoute non-numeric columns
+
+    csvjson data.csv                                           # print as JSON
+    csvjson -k foo data.csv                                    # print as JSON with column 'foo' as key
+
+    csvstat data.csv                                           # statistical data summary
+    csvstat -c 5 data.csv                                      # statistical data summary of column 5
+    csvstat --unique data.csv                                  # print number of unique values for each column
+
 # csvfix(1)
 
 ## Data Info
@@ -13,7 +69,6 @@
 
 ## Selecting Columns
 
-    csv order -f 1 data.csv                         # print column 1
     csv order -f 1,3 data.csv                       # print column 1 and 3
     csv order -f 1:3 data.csv                       # print column 1, 2 and 3
     csv order -xf 1 data.csv                        # print all columns except column 1
