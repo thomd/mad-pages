@@ -23,4 +23,4 @@ venv is the recommended method for creating virtual environments
   local HTTP server
 
     python -m http.server 80
-    python -m http.server 80 -d test         # serve `test` folder
+    python -m http.server 80 -d test         # serve test folder
