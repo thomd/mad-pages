@@ -1,20 +1,14 @@
-# venv
+# python(1)
 
-venv is the recommended method for creating virtual environments
+## Best Practices
 
-    python -m venv -h
+  create virtual environment
 
-  Usage
-
-    python -m venv venv                      # create virtual env `"venv"`
+    python -m venv .venv                     # create virtual env in `.venv`
     source venv/bin/activate                 # activate virtual env
     pip install \<package>                    # install packages
     ...
     deactivate
-
-# python(1)
-
-## Best Practices
 
   pretty print a JSON string
 
