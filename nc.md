@@ -19,7 +19,7 @@ netcat is a utility for reading from and writing to network connections using TC
     nc -lvp 80
     printf 'HTTP/1.1 200 OK' | nc -l -c -p 80                               # listen on port 80, print request and return HTTP response: `open localhost`
     printf 'HTTP/1.1 200 OK\n\n%s' "$(cat index.html)" | nc -lcp 80
-    printf 'GET / HTTP/1.0\n\n' | nc localhost 80                           # do HTTP request to localhost (same as `curl localhost`)
+    printf 'GET / HTTP/1.0\n\n' | nc localhost 80                           # do HTTP request to localhost. same as `curl localhost`
 
 ## Netcat Port Scan
 
