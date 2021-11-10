@@ -6,9 +6,9 @@ venv is the recommended method for creating virtual environments
 
   Usage
 
-    python -m venv venv                    # create virtual env `"venv"`
-    source venv/bin/activate               # activate virtual env
-    pip install \<package>                  # install packages
+    python -m venv venv                      # create virtual env `"venv"`
+    source venv/bin/activate                 # activate virtual env
+    pip install \<package>                    # install packages
     ...
     deactivate
 
@@ -22,4 +22,5 @@ venv is the recommended method for creating virtual environments
 
   local HTTP server
 
-    python -m http.server 8000
+    python -m http.server 80
+    python -m http.server 80 -d test         # serve `test` folder
