@@ -42,6 +42,7 @@
     fd -e mp3                                   # find all mp3 files in current dir
     fd -e mp3 . /                               # find all mp3 files everywhere. The '.' means arbitrary name
     fd '^.*rc$' /etc
+    fd -IHL -t d ^rc$ ~                         # find all rc folders in ~
     fd -e isml product ~/develop/               # search for isml template having "product" in filename
     fd -g 'test_*.py' -X vim -p                 # open all python tests in vim
     fd -e py -X rg foo                          # rip-grep for 'foo' in all python files
