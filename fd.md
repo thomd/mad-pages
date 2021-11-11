@@ -9,7 +9,7 @@
     -L, --follow                                # symbolic links are also traversed
     -x, --exec                                  # run an external command for each of the search results in parallel
     -X, --exec-batch                            # run the external command once, with all search results as arguments
-    -l                                          # shortcut for -X ls -alh
+    -l                                          # shortcut for `-X ls -alh`
     -E PATTERN                                  # exclude
     --changed-within TIME                       # filter by file modification time (newer than)
 
