@@ -44,13 +44,13 @@
     fd -e mp3                                   # find all mp3 files in current dir
     fd -e mp3 . /                               # find all mp3 files everywhere. The '.' means arbitrary name
     fd '^.*rc$' /etc
-    fd -IHL -t d ^rc$ ~                         # find all rc folders in ~
     fd -e isml product ~/develop/               # search for isml template having "product" in filename
     fd -g 'test_*.py' -X vim -p                 # open all python tests in vim
     fd -e py -X rg foo                          # rip-grep for 'foo' in all python files
-    fd -H '^\.DS\_Store$' -tf -X rm -i           # interactively delete all DS_Store files in current dir
+    fd -H -tf '^\.DS\_Store$' -X rm -i           # interactively delete all DS_Store files in current dir
     fd foo | as-tree                            # list search result as tree
     fd --changed-within \`now -s`                # find changed files since last call of 'now'
     fd --changed-within 30min                   # find changed files within the last 30min
-    fd -t d -HI ^venv$ ~/develop -X dua         # calculate disk usage of all venv folders
+    fd -IH -td ^venv$ ~/develop -X dua          # calculate disk usage of all venv folders
+    fd -IHL -td ^rc$ ~                          # find all rc folders in ~
     fd -IHL -tf -p /rc/package.json$ ~          # find all 'package.json' files within a 'rc' folder
