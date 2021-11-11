@@ -4,7 +4,7 @@
 
     -t TYPE                                     # f: file, d: directory, l: symlink, x: executable, e: empty
     -e EXT                                      # search for file extensions
-    -H, --hidden                                # searchalos in hidden files
+    -H, --hidden                                # search also in hidden files
     -I, -no-ignore                              # search also in ignored files
     -x, --exec                                  # run an external command for each of the search results in parallel
     -X, --exec-batch                            # run the external command once, with all search results as arguments
@@ -39,7 +39,7 @@
 ## Examples
 
     fd -e mp3                                   # find all mp3 files in current dir
-    fd -e mp3 . /                               # find all mp3 files everywhere
+    fd -e mp3 . /                               # find all mp3 files everywhere. The '.' means arbitrary name
     fd '^.*rc$' /etc
     fd -e isml product ~/develop/               # search for isml template having "product" in filename
     fd -g 'test_*.py' -X vim -p                 # open all python tests in vim
