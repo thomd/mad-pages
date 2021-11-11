@@ -4,6 +4,8 @@
 
     -t TYPE                                     # f: file, d: directory, l: symlink, x: executable, e: empty
     -e EXT                                      # search for file extensions
+    -p                                          # search within the entire pathname, not just the filename
+    -s                                          # force case-sensitivity (default: ignore case unless an uppercase letter is in the pattern)
     -H, --hidden                                # search also in hidden files
     -I, -no-ignore                              # search also in ignored files
     -L, --follow                                # symbolic links are also traversed
@@ -49,4 +51,5 @@
     fd -H '^\.DS\_Store$' -tf -X rm -i           # interactively delete all DS_Store files in current dir
     fd foo | as-tree                            # list search result as tree
     fd --changed-within \`now -s`                # find changed files since last call of 'now'
-
+    fd --changed-within 30min                   # find changed files within the last 30min
+    fd -t d -HI ^venv$ ~/develop -X dua         # calculate disk usage of all venv folders
