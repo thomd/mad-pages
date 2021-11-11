@@ -48,5 +48,5 @@
     fd -e py -X rg foo                          # rip-grep for 'foo' in all python files
     fd -H '^\.DS\_Store$' -tf -X rm -i           # interactively delete all DS_Store files in current dir
     fd foo | as-tree                            # list search result as tree
-    fd --changed-within \`now -s`                # find changed files since last call of now
+    fd --changed-within \`now -s`                # find changed files since last call of `now`
 
