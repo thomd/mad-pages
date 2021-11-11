@@ -53,3 +53,4 @@
     fd --changed-within \`now -s`                # find changed files since last call of 'now'
     fd --changed-within 30min                   # find changed files within the last 30min
     fd -t d -HI ^venv$ ~/develop -X dua         # calculate disk usage of all venv folders
+    fd -IHL -tf -p /rc/package.json$ ~          # find all 'package.json' files within a 'rc' folder
