@@ -40,7 +40,6 @@
     csvsort -c 1,3 data.csv                                             # sort csv by column 1 and 3
     csvsort -c 3 -r data.csv                                            # sort reverse by column 3
 
-    Output and Analysis
     csvlook data.csv | less -S                                          # print as markdown-compatible, fixed-width table
 
     csvformat -D "|" data.csv                                           # convert to a pipe-delimited file
