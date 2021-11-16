@@ -1,5 +1,18 @@
+# Git User Management
 
-# Git Notations
+  Set Git User
+
+    git config user.name NAME
+    git config user.email EMAIL
+
+  Set SSH Identity
+
+    ssh-add -D
+    ssh-add -K ~/.ssh/azure_thomduerr           # Azure
+    ssh-add -K ~/.ssh/id_rsa                    # Bitbucket
+    ssh-add -K ~/.ssh/github_thomd              # Github
+
+# Git Notation
 
   Not reachable from A, but reachable from B
 
