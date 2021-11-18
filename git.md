@@ -9,8 +9,10 @@
 
     ssh-add -D
     ssh-add -K ~/.ssh/azure_thomduerr           # Azure
+    ssh-add -K ~/.ssh/azure_devops              # Azure
     ssh-add -K ~/.ssh/id_rsa                    # Bitbucket
     ssh-add -K ~/.ssh/github_thomd              # Github
+    ssh-add -E md5 -l
 
 # Git Notation
 
