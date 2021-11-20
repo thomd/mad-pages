@@ -19,7 +19,7 @@ If conda(1) does not work as expected, check ~/.bash_profile for conda related l
 
     conda env export > environment.yaml             # save environment to a yaml file
     conda env create --file environment.yaml        # create environment from a text file
-    conda list -e > requirements.txt                # create pip dependencies
+    pip list --format=freeze > requirements.txt     # create pip dependencies file
 
 ## Use Environment
 
