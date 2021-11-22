@@ -19,9 +19,10 @@ pdb Debugger Commands
     d(own)                                        # move the current frame one level down in the stack trace
     u(p)                                          # move the current frame one level up in the stack trace
     a(rgs)                                        # print the argument list of the current function
-    l(ist) [first[, last]]                        # list source code for the current file.
-    p expression                                  # evaluate and print the expression.
-    pp expression                                 # evaluate and pretty-print the expression.
+    w                                             #:show the context of the current line it is executing
+    l(ist) [first[, last]]                        # list source code for the current file
+    p expression                                  # evaluate and print the expression
+    pp expression                                 # evaluate and pretty-print the expression
     q(uit)                                        # quit
     \<statement>                                   # Python statement (prefix with ! if statement is equal to a command)
 
