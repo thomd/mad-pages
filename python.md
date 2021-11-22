@@ -29,9 +29,9 @@ pdb Debugger Commands
 
   create virtual environment
 
-    python -m venv .venv                     # create virtual env in `.venv`
-    source venv/bin/activate                 # activate virtual env
-    pip install \<package>                    # install packages
+    python -m venv .venv                          # create virtual env in `.venv`
+    source venv/bin/activate                      # activate virtual env
+    pip install \<package>                         # install packages
     ...
     deactivate
 
@@ -40,9 +40,9 @@ pdb Debugger Commands
   local HTTP server
 
     python -m http.server 80
-    python -m http.server 80 -d test         # serve test folder
+    python -m http.server 80 -d test              # serve test folder
 
   local CGI server
 
-    python -m http.server 80 --cgi           # run scripts in `./cgi-bin/`
+    python -m http.server 80 --cgi                # run scripts in `./cgi-bin/`
     curl localhost/cgi-bin/test.py
