@@ -19,7 +19,7 @@ pdb Debugger Commands
     d(own)                                        # move the current frame one level down in the stack trace
     u(p)                                          # move the current frame one level up in the stack trace
     a(rgs)                                        # print the argument list of the current function
-    w                                             #:show the context of the current line it is executing
+    w                                             # show the context of the current line it is executing
     l(ist) [first[, last]]                        # list source code for the current file
     p expression                                  # evaluate and print the expression
     pp expression                                 # evaluate and pretty-print the expression
