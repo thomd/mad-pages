@@ -9,8 +9,8 @@ insert `breakpoint()` inside a `main.py` (since Python 3.7) and run
 
 pdb Debugger Commands
 
-    b(reak) <line> [, condition]                  # set a breakpoint at a <line>
-    b(reak) <function> [, condition]              # set a breakpoint at first line of <function>
+    b(reak) \<line\> [, condition]                  # set a breakpoint at a <line>
+    b(reak) \<function\> [, condition]              # set a breakpoint at first line of <function>
     b                                             # list all breakpoints
     c(ontinue)                                    # continue execution, only stop when a breakpoint is encountered
     n(ext)                                        # execute line (executes called functions)
@@ -23,7 +23,7 @@ pdb Debugger Commands
     p expression                                  # evaluate and print the expression.
     pp expression                                 # evaluate and pretty-print the expression.
     q(uit)                                        # quit
-    <statement>                                   # Python statement (prefix with ! if statement is equal to a command)
+    \<statement\>                                   # Python statement (prefix with ! if statement is equal to a command)
 
 ## Virtualenv
 
