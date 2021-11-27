@@ -11,7 +11,7 @@
 
 # identify(1)
 
-Describes the **format** and *characteristics* of one or more image files
+Describes the format and characteristics of one or more image files
 
     identify -verbose image.jpg
     identify animated.gif                                      # discover number of frames
