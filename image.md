@@ -1,7 +1,6 @@
 # convert(1)
 
     convert in.jpg out.png                                     # jpg to png. Supported formats: `identify -list format`
-
     convert -trim in.jpg out.jpg                               # trim whitespace around image
     convert -trim -fuzz 40% in.jpg out.jpg                     # trim more whitespace around image
     convert -scale 50% in.gif out.png                          # scale down to 50% and convert
