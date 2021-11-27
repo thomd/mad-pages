@@ -19,6 +19,6 @@ Describes the format and characteristics of one or more image files
 # exiftool(1)
 
     exiftool image.jpg
-    exiftool -ext jpg                                         # metedata for all *jpg files in current dir
-    exiftool -all= -overwrite_original image.jpg              # remove all metadata of a image file
-    exiftool -gps:all= \*.jpg                                  # remove all GPS metadata of *jpg files in current dir
+    exiftool -ext jpg                                          # metedata for all *jpg files in current dir
+    exiftool -all= -overwrite_original image.jpg               # remove all metadata of a image file
+    exiftool -gps:all= \*.jpg                                   # remove all GPS metadata of *jpg files in current dir
