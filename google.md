@@ -12,7 +12,7 @@
     foo after:2020                   # results after a given year with 'after:' operator
     foo before:2020-01-31            # results before a given specific date with 'before:' operator
 
-see also https://www.gwern.net/search
+see also _https://www.gwern.net/search_
 
 # googler(1)
 
