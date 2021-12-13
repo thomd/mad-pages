@@ -12,6 +12,8 @@
     foo after:2020                   # results after a given year with 'after:' operator
     foo before:2020-01-31            # results before a given specific date with 'before:' operator
 
+see also https://www.gwern.net/search
+
 # googler(1)
 
     googler foo
