@@ -32,7 +32,7 @@
     fd -x echo
     fd -x echo {/}                              # print basenames
     fd -e jpg -x convert {} {.}.png             # convert all jpg files to png files
-    fd -e jpg -x mv {} foo{/}                   # prefix all jpg file names with 'foo'
+    fd -e jpg -x mv {} {//}/foo{/}              # prefix all jpg files names with 'foo'
 
     {}      # documents/images/party.jpg
     {.}     # documents/images/party
