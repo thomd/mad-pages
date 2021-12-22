@@ -5,26 +5,26 @@ ripgrep
 
 ## Options
 
-    -i                                          # case insensitive search
-    -z                                          # search in compressed files
-    -t TYPE                                     # only search files matching TYPE
-    -T TYPE                                     # do not search files matching TYPE
-    --type-list                                 # show all supported file types
-    -A NUM                                      # show NUM lines after each match
-    -B NUM                                      # show NUM lines before each match
-    -C NUM                                      # show NUM lines before and after each match
-    -l                                          # only print the paths with at least one match
-    -g GLOB                                     # include or exclude files
-    --files                                     # print each file that would be searched
-    -c                                          # only show the count of matching lines for each file
-    -o                                          # print only matches parts of a line
-    -I                                          # never print the file path with the matched lines
-    -N                                          # suppress line numbers
-    -w                                          # only show matches surrounded by word boundaries
-    -M NUM                                      # don't print lines longer than this limit
-    -v                                          # invert match
-    --no-ignore                                 # also search in git-ignored files
-    --hidden                                    # search also in hidden files
+    -i                # case insensitive search
+    -z                # search in compressed files
+    -t TYPE           # only search files matching TYPE
+    -T TYPE           # do not search files matching TYPE
+    --type-list       # show all supported file types
+    -A NUM            # show NUM lines after each match
+    -B NUM            # show NUM lines before each match
+    -C NUM            # show NUM lines before and after each match
+    -l                # only print the paths with at least one match
+    -g GLOB           # include or exclude files
+    --files           # print each file that would be searched
+    -c                # only show the count of matching lines for each file
+    -o                # print only matches parts of a line
+    -I                # never print the file path with the matched lines
+    -N                # suppress line numbers
+    -w                # only show matches surrounded by word boundaries
+    -M NUM            # don't print lines longer than this limit
+    -v                # invert match
+    --no-ignore       # also search in git-ignored files
+    --hidden          # search also in hidden files
 
 ## Configuration
 
