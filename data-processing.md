@@ -1,4 +1,10 @@
-# XML Processing
+# Data
+
+Search-Replace in multiple files:
+
+    rg -l foo | xargs sed -i '' 's/foo/bar/g'
+
+# XML
 
 Count number of distinct attributes within a XML file:
 
