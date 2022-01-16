@@ -4,6 +4,10 @@ Search-Replace in multiple files:
 
     rg -l foo | xargs sed -i '' 's/foo/bar/g'
 
+List Distribution of File Extensions in Current Directory:
+
+    while read file; do echo ${file##*.}; done < <(find . -type f) | sort | uniq -c
+
 # XML
 
 Count number of distinct attributes within a XML file:
