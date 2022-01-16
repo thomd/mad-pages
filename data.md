@@ -6,7 +6,7 @@ Search-Replace in multiple files:
 
 List Distribution of File Extensions in Current Directory:
 
-    while read file; do echo ${file##*.}; done < <(find . -type f) | sort | uniq -c
+    while read file; do echo ${file\##*.}; done < <(find . -type f) | sort | uniq -c
 
 # XML
 
