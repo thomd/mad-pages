@@ -8,6 +8,10 @@ List Distribution of File Extensions in Current Directory:
 
     while read file; do echo ${file##\*.}; done < <(find . -type f) | sort | uniq -c
 
+Download fake-face-images with progress bar
+
+    for i in {1..10}; do wget --quiet https://thispersondoesnotexist.com/image -O "face-${i}.jpg"; echo $i; done | tqdm --total 10
+
 # XML
 
 Count number of distinct attributes within a XML file:
