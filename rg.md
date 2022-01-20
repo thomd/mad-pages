@@ -63,7 +63,7 @@ Configuration in `~/.ripgreprc`
 
 # ripgrep - grep - rosetta stone
 
-list files containing `pattern` in current directory and subdirectories:
+  list files containing `pattern` in current directory and subdirectories:
 
     rg -l pattern
     grep -rl pattern .
