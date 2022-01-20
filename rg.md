@@ -60,3 +60,10 @@ Configuration in `~/.ripgreprc`
 ## Multiline Search
 
     echo 'apple\norange\nbanana\nkiwi' | rg --multiline --multiline-dotall 'orange.*kiwi'
+
+# ripgrep - grep - rosetta stone
+
+list files containing `pattern` in current directory and subdirectories:
+
+    rg -l pattern
+    grep -rl pattern .
