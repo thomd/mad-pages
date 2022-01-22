@@ -1,8 +1,13 @@
 # Data
 
-Search-Replace in multiple files:
+Search-Replace in all JS files:
 
-    rg -l foo | xargs sed -i '' 's/foo/bar/g'
+    rg -l -t js foo | xargs sed -i '' 's/foo/bar/g'
+
+Grep PATTER within a large list of log files
+
+    while read f; do grep -E \<pattern> $f; done \< \<(find . -name "*.log")  
+    rg -t log \<pattern>
 
 List Distribution of File Extensions in Current Directory:
 
