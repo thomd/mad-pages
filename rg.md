@@ -1,7 +1,9 @@
 
 # rg(1)
 
-ripgrep
+    rg [OPTIONS] PATTERN [PATH...]
+
+    command | rg [OPTIONS] PATTERN
 
 ## Options
 
