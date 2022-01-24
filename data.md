@@ -1,4 +1,4 @@
-# Data
+# File Processing
 
 Search-Replace in all JS files:
 
@@ -16,6 +16,10 @@ List Distribution of File Extensions in Current Directory:
 Download fake-face-images with progress bar
 
     for i in {1..10}; do wget --quiet https://thispersondoesnotexist.com/image -O "face-${i}.jpg"; echo $i; done | tqdm --total 10
+
+Rename Files with Counter
+
+    n=1; for f in \*.jpg; do mv "$f" "$(printf "foo_%02i.jpg" "$n")"; ((n++)); done
 
 # XML
 
