@@ -11,7 +11,7 @@
 
 ## Examples
 
-    grep -rh foo .                                 # grep for foo in all files within the current directory
+    grep -r foo .                                   # grep for 'foo' in current folder
     grep -e '-X'                                    # use -e when pattern has a leading '-'
     grep -v '^$' file                               # remove blank lines
     ps ax | grep ssh | grep -v grep                 # list ssh processes without grep process
