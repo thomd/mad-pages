@@ -33,7 +33,7 @@ pdb Debugger Commands
     python -m venv .venv                          # create virtual env in `.venv`
     source .venv/bin/activate                     # activate virtual env
     pip install \<package>                         # install a package
-    pip install -r requirements.txt              # install packages
+    pip install -r requirements.txt               # install packages
     ...
     deactivate
 
