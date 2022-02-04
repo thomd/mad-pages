@@ -6,9 +6,11 @@
     -e EXT                                      # search for file extensions
     -p                                          # search within the entire pathname, not just the filename
     -s                                          # force case-sensitivity (default: ignore case unless an uppercase letter is in the pattern)
+
     -H, --hidden                                # search also in hidden files
     -I, -no-ignore                              # search also in ignored files
     -L, --follow                                # symbolic links are also traversed
+
     -x, --exec                                  # run an external command for each of the search results in parallel
     -X, --exec-batch                            # run the external command once, with all search results as arguments
     -l                                          # shortcut for `-X ls -alh`
