@@ -7,6 +7,7 @@ Usage
     pip install PACKAGE                                  # install a package
     pip install PACKAGE==VERSION                         # install version VERSION of package PACKAGE
     pip install PACKAGE==                                # show installable versions of package PACKAGE
+    pip install -r requirements.txt                      # install packages
 
 Check version
 
@@ -19,4 +20,3 @@ List lookup paths
 Create a Dependencies File
 
     pip freeze > requirements.txt                        # output installed packages in requirements format
-    pip install -r requirements.txt                      # activate a virtualenv and install packages
