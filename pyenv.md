@@ -15,10 +15,10 @@
     pyenv shell VERSION               # set version to be used in the current shell
     pyenv shell system                # set system-version to be used in the current shell
 
-pyenv's *lookup path* is:
+  pyenv's *lookup path* is:
 
-* the `PYENV_VERSION` variable (which you can set with `pyenv shell`)
-* the directory's `.python_version` file (which we can change with pyenv shell for a one-time change, or pyenv local for something more permanent)
-* the first `.python_version` file it can find, recursively searching each parent directory until it reaches root
-* the global `$(pyenv root)/version` file, which you can modify with `pyenv global`
+  * the `PYENV_VERSION` variable (which you can set with `pyenv shell`)
+  * the directory's `.python_version` file (which we can change with pyenv shell for a one-time change, or pyenv local for something more permanent)
+  * the first `.python_version` file it can find, recursively searching each parent directory until it reaches root
+  * the global `$(pyenv root)/version` file, which you can modify with `pyenv global`
 
