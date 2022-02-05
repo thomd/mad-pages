@@ -2,12 +2,12 @@
 
 ## pdb Debugger
 
-insert `breakpoint()` inside a `main.py` (since Python 3.7) and run
+  insert `breakpoint()` inside a `main.py` (since Python 3.7) and run
 
     python main.py                                # to debug from breakpoint
     PYTHONBREAKPOINT=0 python main.py             # ignore all breakpoint calls
 
-pdb Debugger Commands
+  pdb Debugger Commands
 
     b(reak) \<line> [, condition]                  # set a breakpoint at a <line>
     b(reak) \<function> [, condition]              # set a breakpoint at first line of <function>
