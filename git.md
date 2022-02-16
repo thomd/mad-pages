@@ -315,6 +315,15 @@ Alternatively consider:
 
     git commit --allow-empty -m "jenkins trigger" && git push
 
+## Remove Untracked Files
+
+    git clean -n                # STEP 1: show what will be deleted
+    git clean -f                # STEP 2: clean
+    
+    git clean -fd               # also remove directories
+    git clean -fX               # also remove ignored files
+    git clean -fx               # also remove ignored and non-ignired files
+
 # git-stash(1)
 
 Stash the changes in a dirty working directory away
