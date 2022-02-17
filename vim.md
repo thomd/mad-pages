@@ -9,8 +9,6 @@
 
     [operator][count][motion]
 
-Examples
-
     v3w                            # select three words
     cs])                           # change surrounding brackets to parantheses
 
@@ -41,3 +39,14 @@ Examples
     @a                             # replay
     N@a                            # replay N times ( VG:normal @a to replay until end of buffer)
 
+## Marks
+
+    :marks                         # list all current marks
+    ''	                           # position before the latest jump
+    '.                             # last edit
+    'a - 'z                        # lowercase marks, valid within one file
+
+    d'a                            # delete all lines from the cursor position to mark a
+    :'a,'bd                        # deletes lines from mark a to mark b, inclusive
+    :'a,'bw file.txt               # writes lines from mark a to b to file.txt
+    :'a,'bw >> file.txt            # append lines from mark a to b to file.txt
