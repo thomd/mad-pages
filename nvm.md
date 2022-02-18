@@ -6,6 +6,7 @@ use versions
     nvm ls                                  # list installed nodes
     nvm ls-remote                           # list installable nodes
     nvm use \<version>                       # use a specific version
+    nvm use default                         # use defined default version
     nvm alias default \<version>             # set \<version> as the default node
 
 install new version
