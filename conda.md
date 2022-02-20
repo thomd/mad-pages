@@ -34,7 +34,10 @@ If conda(1) does not work as expected, check `~/.bash_profile` for conda related
     conda install --revision 2                      # restore environment to a previous revision
     conda install --yes --file requirements.txt     # install packages from requirements file
 
-    gpip install PACKAGE                            # install a package using pip
-
     conda update PACKAGE                            # update a package into current environment
     conda update --all                              # update all package in an environment
+
+Install packages via PIP:
+
+    conda install pip
+    PIP_REQUIRE_VIRTUALENV=false ~/.miniconda3/envs/<name>/bin/pip install PACKAGE
