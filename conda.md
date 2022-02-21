@@ -11,7 +11,7 @@ If conda(1) does not work as expected, check `~/.bash_profile` for conda related
 
     conda env list                                  # list of environments, active env is marked with *
     conda create --name NAME                        # create a new environment named NAME (default version is python 3)
-    conda create --name NAME python=3.7             # create a new environment named NAME using python 3.7
+    conda create --name NAME python=3.9             # create a new environment named NAME using python 3.9
     conda create --clone NAME --name NEW_NAME       # make exact copy of an environment
     conda env remove --name NAME                    # delete an environment and everything in it
 
