@@ -52,7 +52,7 @@
     fd -e py -X rg foo                          # rip-grep for 'foo' in all python files
     fd -H -tf '^\.DS\_Store$' -X rm -i           # interactively delete all DS_Store files in current dir
     fd foo | as-tree                            # list search result as tree
-    fd --changed-within \`now -s`                # find changed files since last call of 'now'
+    fd -H -I --changed-within \`now -s`         # find changed files since last call of 'now'
     fd --changed-within 30min                   # find changed files within the last 30min
     fd -IH -td ^venv$ ~/develop -X dua          # calculate disk usage of all venv folders
     fd -IHL -td ^rc$ ~                          # find all rc folders in ~
