@@ -29,7 +29,8 @@ If conda(1) does not work as expected, check `~/.bash_profile` for conda related
     conda list                                      # installed packages
     conda list --revisions                          # history of each change to the current environment
 
-    conda install PACKAGE                           # install a package into current env
+    conda install PACKAGE                           # install a package
+    conda install PACKAGE=VERSION                   # install specific version of a package
     conda install --channel conda-forge PACKAGE     # install using conda-forge channel
     conda install --revision 2                      # restore environment to a previous revision
     conda install --yes --file requirements.txt     # install packages from requirements file
