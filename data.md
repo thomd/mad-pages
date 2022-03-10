@@ -12,6 +12,7 @@ Grep PATTER within a large list of log files
 List Distribution of File Extensions in Current Directory:
 
     while read file; do echo ${file##\*.}; done < <(find . -type f) | sort | uniq -c
+    fd -t f | sed 's/.*\.//' | sort | uniq -c
 
 Download fake-face-images with progress bar
 
