@@ -14,3 +14,4 @@ Examples
 
     alias t='tree -a -I ".git|.svn"'   # handy short cut
     ls -R                              # simulate tree
+    tree --filelimit 10
