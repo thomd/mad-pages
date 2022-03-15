@@ -11,7 +11,7 @@
     -I, -no-ignore                              # search also in ignored files
     -L, --follow                                # symbolic links are also traversed
 
-    -S, --size                                  # size of files using the format `\<+->\<NUM>\<UNIT>` and UNIT: b, k ,m ,g
+    -S, --size                                  # size of files using the format \<+->\<NUM>\<UNIT> and UNIT: b, k ,m ,g
 
     -x, --exec                                  # run an external command for each of the search results in parallel
     -X, --exec-batch                            # run the external command once, with all search results as arguments
