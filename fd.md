@@ -11,6 +11,8 @@
     -I, -no-ignore                              # search also in ignored files
     -L, --follow                                # symbolic links are also traversed
 
+    -S, --size                                  # size of files using the format \<+-\>\<NUM\>\<UNIT\> and UNIT: b, k ,m ,g
+
     -x, --exec                                  # run an external command for each of the search results in parallel
     -X, --exec-batch                            # run the external command once, with all search results as arguments
     -l                                          # shortcut for `-X ls -alh`
@@ -57,3 +59,5 @@
     fd -IH -td ^venv$ ~/develop -X dua          # calculate disk usage of all venv folders
     fd -IHL -td ^rc$ ~                          # find all rc folders in ~
     fd -IHL -tf -p /rc/package.json$ ~          # find all 'package.json' files within a 'rc' folder
+    fd -S +4m                                   # find files larger than 4MB
+
