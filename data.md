@@ -14,6 +14,10 @@ List Distribution of File Extensions in Current Directory:
     while read file; do echo ${file##\*.}; done < <(find . -type f) | sort | uniq -c
     fd -t f | sed 's/.*\.//' | sort | uniq -c
 
+Copy amount of random jpg images larger than 256px in width and height from source- into target-folder:
+
+    while read f; do cp $f target; done < <(fd -e jpg . source -x identify | awk '{gsub("x"," ",$3); print $3 " " $1}' | awk '{if($1 >= 256 && $2 >= 256){print $3}}' | shuf -n 4500)
+
 Download fake-face-images with progress bar
 
     for i in {1..10}; do wget --quiet https://thispersondoesnotexist.com/image -O "face-${i}.jpg"; echo $i; done | tqdm --total 10
