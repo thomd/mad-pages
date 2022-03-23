@@ -11,7 +11,7 @@ Grep PATTER within a large list of log files
 
 List Distribution of File Extensions in Current Directory:
 
-    while read file; do echo ${file##\*.}; done < <(find . -type f) | sort | uniq -c
+    while read file; do echo ${file\##\*.}; done \< \<(find . -type f) | sort | uniq -c
     fd -t f | sed 's/.*\.//' | sort | uniq -c
 
 Copy amount of random jpg images larger than 256px in width and height from source- into target-folder:
