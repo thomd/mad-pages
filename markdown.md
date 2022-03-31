@@ -136,3 +136,11 @@ Markdown is a lightweight markup language. Readability is emphasized above all e
     - [x] foo
     - [ ] bar
     - [ ] baz
+
+  Footnotes
+
+    This is foo[^1] and bar[^2] and baz.
+
+    [^1]: foo footnote
+
+    [^2]: bar footnote
