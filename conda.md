@@ -2,8 +2,8 @@
 
 If conda(1) does not work as expected, check `~/.bash_profile` for conda related lines.
 
-    conda info                                      # print global info
-    conda config --describe                         # list all available config parameters
+    conda info                                            # print global info
+    conda config --describe                               # list all available config parameters
 
 ## Manage Environment
 
