@@ -17,8 +17,8 @@ If conda(1) does not work as expected, check `~/.bash_profile` for conda related
 
 ## Save and Load Environments
 
-    conda env export > environment.yaml             # save environment to a yaml file
-    conda env create --file environment.yaml        # create environment from a text file
+    conda env export > environment.yml              # save environment to a yaml file
+    conda env create --file environment.yml         # create environment from a text file
     pip list --format=freeze > requirements.txt     # create pip dependencies file
 
 ## Use Environment
@@ -37,6 +37,8 @@ If conda(1) does not work as expected, check `~/.bash_profile` for conda related
 
     conda update PACKAGE                            # update a package into current environment
     conda update --all                              # update all package in an environment
+
+    conda env update --file environment.yml         # install dependencies of an activated env
 
 Install packages via PIP:
 
