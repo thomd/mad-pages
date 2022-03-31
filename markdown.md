@@ -128,3 +128,11 @@ Markdown is a lightweight markup language. Readability is emphasized above all e
   Link
 
     On [this|http://example.com] page.
+
+# GitHub Markdown
+
+  Task List
+
+    - [x] foo
+    - [ ] bar
+    - [ ] baz
