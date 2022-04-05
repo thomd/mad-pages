@@ -23,12 +23,12 @@
 ## POST
 
     -d "string"
-    -d @file
+    -d @file                       # post content of 'file'
 
   Multipart Formpost
 
     curl -F name=value
-    curl -F name=@file                 # post content of 'file'
+    curl -F name=@file
 
 ## PUT
 
