@@ -28,7 +28,7 @@
   Multipart Formpost
 
     curl -F name=value
-    curl -F name=@file
+    curl -F name=@file                 # post content of 'file'
 
 ## PUT
 
