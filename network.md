@@ -10,3 +10,6 @@
 
     cat /etc/resolv.conf
 
+## Local Webserver
+
+    python -m http.server 80
