@@ -20,7 +20,7 @@
     sfcc-ci sandbox:create -r \<realm-id>
     sfcc-ci sandbox:get -s \<sbx-id>
     sfcc-ci sandbox:update -s \<sbx-id> --ttl 0
-    sfcc-ci sandbox:get -s \<sbx-id> -O             # open sandbox in browser
+    sfcc-ci sandbox:get -s \<sbx-id> -O                  # open sandbox in browser
 
   Sandbox Management:
 
@@ -31,3 +31,13 @@
 
     sfcc-ci sandbox:delete -s \<sbx-id>
     sfcc-ci sandbox:delete -s \<sbx-id> --noprompt
+
+  Instance Management
+
+    sfcc-ci instance_list -v
+    sfcc-ci instance:add \<host> \<alias> -d             # set host as default instance with an alias
+
+  Code Management
+
+    sfcc-ci code:list                                   # list code versaions of default instance
+
