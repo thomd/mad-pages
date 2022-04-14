@@ -40,6 +40,9 @@ Configuration in `~/.ripgreprc`
     --type-add
     html:*.isml
 
+    --type-add
+    properties:*.properties
+
     # using glob patterns to include/exclude files or folders
     --glob=!node_modules/*
     --glob=!.git/*
