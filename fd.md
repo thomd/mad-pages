@@ -13,7 +13,7 @@
 
     -S, --size                                  # size of files using the format \<+->\<NUM>\<UNIT> and UNIT: b, k ,m ,g
 
-    -x, --exec                                  # run an external command for each of the search results in parallel
+    -x, --exec                                  # run an external command for each of the search results in parallel (use --threads=1 for sequential command execution)
     -X, --exec-batch                            # run the external command once, with all search results as arguments
     -l                                          # shortcut for `-X ls -alh`
     -E PATTERN                                  # exclude
@@ -37,6 +37,7 @@
     fd -x echo {/}                              # print basenames
     fd -e jpg -x convert {} {.}.png             # convert all jpg files to png files
     fd -e jpg -x mv {} {//}/foo{/}              # prefix all jpg files names with 'foo'
+    fd -x sh -c "cmd_1; cmd_2"                  # execute two commands in parallel
 
     {}      # documents/images/party.jpg
     {.}     # documents/images/party
@@ -60,4 +61,6 @@
     fd -IHL -td ^rc$ ~                          # find all rc folders in ~
     fd -IHL -tf -p /rc/package.json$ ~          # find all 'package.json' files within a 'rc' folder
     fd -S +4m                                   # find files larger than 4MB
+    
+    fd --threads=1 -e isml -x sh -c "awk -f script.awk {} > tmp; mv tmp > {}"               # replace with an awk script
 
