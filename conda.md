@@ -5,6 +5,12 @@ If conda(1) does not work as expected, check `~/.bash_profile` for conda related
     conda info                                            # print global info
     conda config --describe                               # list all available config parameters
 
+## Options
+
+    -y                                                    # do not ask for confirmation
+    -n ENV                                                # apply command to the environment ENV
+    --dry-run                                             # only display what would have been done
+
 ## Manage Environment
 
   environment locations are in `~/.miniconda3/envs/`
@@ -18,8 +24,8 @@ If conda(1) does not work as expected, check `~/.bash_profile` for conda related
 
 ## Save and Load Environments
 
-    conda env export > environment.yml                    # save environment to a yaml file
-    conda env create --file environment.yml               # create environment from a text file
+    conda env export | grep -v "prefix:" > my_env.yml     # save environment
+    conda env create -f my_env.yml                        # create environment
     pip list --format=freeze > requirements.txt           # create pip dependencies file
 
 ## Use Environment
