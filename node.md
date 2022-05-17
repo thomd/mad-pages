@@ -26,4 +26,3 @@
     > sb('script.js', 123)                   # set breakpoint in line 123 of script.js (must be loaded)
 
     > restart                                # Restart script
-    > backtrace, bt                          # Print backtrace of current execution frame
