@@ -27,7 +27,9 @@
 
     > restart                                # Restart script
 
-  REPL
+  Debug Variables in REPL:
 
-    > console.log(my_obj)
+    > console.dir(my_obj, {colors: true, depth: 1 })
     > console.log(JSON.stringify(my_obj, null, 4))
+
+  Debug in Chrome: Open Chrome Developer Tools and click on Node-Icon
