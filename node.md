@@ -26,3 +26,8 @@
     > sb('script.js', 123)                   # set breakpoint in line 123 of script.js (must be loaded)
 
     > restart                                # Restart script
+
+  REPL
+
+    > console.log(my_obj)
+    > console.log(JSON.stringify(my_obj, null, 4))
