@@ -13,8 +13,9 @@
     > next, n                                # Step next
     > step, s                                # Step in
     > out, o                                 # Step out
-    > pause                                  # Pause running code
+
     > repl                                   # evaluate code remotely (leave with CTRL-C)
+    > backtrace, bt                          # print backtrace of current execution frame (call stack)
 
     > watch('my_expression')
     > watchers                               # Print active watchers
