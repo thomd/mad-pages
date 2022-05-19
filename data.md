@@ -66,4 +66,4 @@ Replace all prices in a price-book with '7.77':
 
 Find large \<isset> tags
 
-    fd -e isml -X grep -oh -e "\<isset.*/>" | awk '{print length+1 " " $0}' | sort -n
+    fd -e isml -X grep -oh -e "\<isset.*/>" | awk '{print length($0) + 1 " " $0}' | sort -n
