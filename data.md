@@ -61,3 +61,9 @@ Replace all prices in a price-book with '7.77':
         | sed /parent/d \
         | perl -pe 's/(pricebook-id=").*"/${1}gbp-m-777-prices"/g' \
         | perl -pe 's/(\<display-name.\*>).*</${1}GBP 7.77 Prices</g'
+
+# ISML
+
+Find large \<isset> tags
+
+    fd -e isml -X grep -oh -e "<isset.*/>"
