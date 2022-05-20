@@ -34,6 +34,7 @@ If conda(1) does not work as expected, check `~/.bash_profile` for conda related
     conda deactivate
 
     conda list                                            # installed packages
+    conda list -n NAME                                    # installed packages of environment NAME
     conda list --revisions                                # history of each change to the current environment
 
     conda install PACKAGE                                 # install a package
