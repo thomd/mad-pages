@@ -9,9 +9,11 @@
     convert -extent 128x128 -gravity center in.png out.png     # extend image with whitespace and center
     convert -strip in.jpg out.jpg                              # strip metadata
 
+    convert -resize 1024 IMG_0123.HEIC file.jpg                # convert ot a email-attachment compatible size
+
 # identify(1)
 
-Describes the format and characteristics of one or more image files
+  Describes the format and characteristics of one or more image files
 
     identify -verbose image.jpg
     identify animated.gif                                      # discover number of frames
