@@ -60,7 +60,7 @@ Add modelines in files at the end or the begining
     :set nu                        # line numbers
     :set rnu                       # relative line numbers
     :set ic                        # ignore case in searches
-    :set is                        #  enable incremental search
+    :set is                        # enable incremental search
     :set wrap                      # word wrap
     :set tw=160                    # text width for automatic line break (no line break: :set tw=0)
     :set spell                     # enable spell checker
