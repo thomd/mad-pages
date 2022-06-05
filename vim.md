@@ -44,7 +44,7 @@ Add modelines in files at the end or the begining
 ## Marks
 
     :marks                         # list all current marks
-    ''	                           # position before the latest jump
+    ''                             # position before the latest jump
     '.                             # last edit
     'a - 'z                        # lowercase marks, valid within one file
 
@@ -67,7 +67,7 @@ Add modelines in files at the end or the begining
 
 File Options
 
-    :set ft=<lang>                 # set file type for syntax highlighting (shortcut: :setf <lang>)
+    :set ft=\<lang>                 # set file type for syntax highlighting (shortcut: :setf <lang>)
     :set ff=unix|dos               # set file format: DOS line endings (0D0A) to UNIX line endings (0A)
     :set fenc=utf-8                # change file encoding to UTF-8. Alternatively use `iconv`
     :set bomb                      # add UTF-8 Byte Order Mark
