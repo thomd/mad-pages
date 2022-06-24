@@ -24,6 +24,7 @@ Common Commands
     :% ! json2yml %                # convert json to yml
     :r ! date                      # insert date
     :% ! js-beautify               # format javascript
+    :% ! paste -sd,                # join lines with a comma
 
 ## Modeline
 
