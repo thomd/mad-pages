@@ -3,7 +3,7 @@
 
 Container
 
-    docker run -it \<image> /bin/bash              # Start an Ubuntu container with an interactive shell
+    docker run -it \<image> /bin/bash              # Start a container with an interactive shell
     docker run --rm \<image> env                   # show environment of a container
     docker inspect \<container>                    # Inspect a running container
     docker ps -aq | xargs docker rm               # remove all containers
