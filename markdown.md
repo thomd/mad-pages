@@ -79,7 +79,7 @@ Markdown is a lightweight markup language. Readability is emphasized above all e
 
   Emphasis
 
-    **bold**
+    \*\*bold\*\*
 
     \_italics\_
 
@@ -110,10 +110,10 @@ Markdown is a lightweight markup language. Readability is emphasized above all e
     var foo;
     {code}
 
-    ```javascript
+    \```javascript
     // block of code
     var foo;
-    ```
+    \```
 
   Quote
 
