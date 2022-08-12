@@ -119,6 +119,8 @@ Markdown is a lightweight markup language. Readability is emphasized above all e
 
     bq. a single line quote
 
+    > Blockquote: Foo Bar Baz!
+    
     {quote}
     multiline quote
     multiline quote
