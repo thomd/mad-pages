@@ -79,11 +79,11 @@ Markdown is a lightweight markup language. Readability is emphasized above all e
 
   Emphasis
 
-    \*bold\*
+    **bold**
 
     \_italics\_
 
-    -strike through-
+    -~strikethrough-~
 
     +underlined+
 
@@ -110,6 +110,11 @@ Markdown is a lightweight markup language. Readability is emphasized above all e
     var foo;
     {code}
 
+    ```javascript
+    // block of code
+    var foo;
+    ```
+
   Quote
 
     bq. a single line quote
@@ -121,8 +126,17 @@ Markdown is a lightweight markup language. Readability is emphasized above all e
 
   Panel
 
-    {panel:title=My title}
-    my panel text
+    {panel:title=My Title}
+    Info panel
+    {panel}
+
+    {panel:bgColor=#e3fcef}
+    **Success panel**
+    {panel}
+
+    {panel:title=Error Lists|bgColor=#ffebe6}
+    1. Error
+    2. Error
     {panel}
 
   Link
