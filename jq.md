@@ -20,6 +20,10 @@
 
     npx sfcc-ci code:list --json | jq '.data[] | select(.active == true) | .id'
 
+  Append JSON key:
+
+    cat file.json | jq '. += {"foo": "bar"}'
+
   String Interpolation
 
     jq '. | "value: \(.foo) \(.bar)"'
