@@ -2,8 +2,9 @@
 # vim(1)
 
     vim large.xml "+syntax off"
-    vim -                                  # read text from stdin, e.g. `ls -al | vim -`
-    vim -u NONE                            # ignore `~/.vimrc`
+    vim -                                         # read text from stdin, e.g. `ls -al | vim -`
+    vim -u NONE                                   # ignore `~/.vimrc`
+    vim -p `git status -su | cut -d ' ' -f2-`     # open changed files
 
 Vim's Grammar
 
