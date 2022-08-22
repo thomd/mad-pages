@@ -14,6 +14,6 @@
 
 ## Manage Data in Org
 
-    sfdx force:data:record:create -s <object> -v <values>                 # creates and inserts a record
-    sfdx force:data:tree:export -q "<soql>" -d <folder>                   # export data from an org into <folder>
-    sfdx force:data:soql:query -q "<soql>"                                # execute a SOQL query
+    sfdx force:data:record:create -s \<object> -v \<values>                 # creates and inserts a record
+    sfdx force:data:tree:export -q "\<soql>" -d \<folder>                   # export data from an org into <folder>
+    sfdx force:data:soql:query -q "\<soql>"                                # execute a SOQL query
