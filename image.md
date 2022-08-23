@@ -1,4 +1,6 @@
-# convert(1)
+# Image Tools
+
+## convert(1)
 
     convert in.jpg out.png                                     # jpg to png. Supported formats: `identify -list format`
     convert -trim in.jpg out.jpg                               # trim whitespace around image
@@ -11,16 +13,22 @@
 
     convert -resize 1024 IMG_0123.HEIC file.jpg                # convert ot a email-attachment compatible size
 
-# identify(1)
+## identify(1)
 
   Describes the format and characteristics of one or more image files
 
     identify -verbose image.jpg
     identify animated.gif                                      # discover number of frames
 
-# exiftool(1)
+## exiftool(1)
 
     exiftool image.jpg
     exiftool -ext jpg                                          # metedata for all *jpg files in current dir
     exiftool -all= -overwrite_original image.jpg               # remove all metadata of a image file
     exiftool -gps:all= \*.jpg                                   # remove all GPS metadata of *jpg files in current dir
+
+# Image Besst Practices
+
+## Encode Image as Data URI
+
+    convert image.png - | openssl enc -base64 -A | sed -e 's/^/data:image\/png;base64,/'
