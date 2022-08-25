@@ -17,3 +17,10 @@
     sfdx force:data:record:create -s \<object> -v \<values>                 # creates and inserts a record
     sfdx force:data:tree:export -q "\<soql>" -d \<folder>                   # export data from an org into <folder>
     sfdx force:data:soql:query -q "\<soql>"                                # execute a SOQL query
+
+## Configuration
+
+    sfdx config:list
+    sfdx config:set defaultdevhubusername=\<name/alias> -g                 # set default Dev Hub username globally
+    sfdx config:set defaultusername=\<name/alias>                          # set default Scratch Org username
+
