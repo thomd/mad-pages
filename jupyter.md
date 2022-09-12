@@ -1,5 +1,12 @@
 # Jupyter Notebooks
 
+## Install
+
+    pip install jupyterlab
+    pip install jupyter_contrib_nbextensions
+    pip install jupyter_nbextensions_configurator
+    pip install watermark
+
 ## Jupyter Shortcuts
 
     CONTROL SHIFT +          # next tab
