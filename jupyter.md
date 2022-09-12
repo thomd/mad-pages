@@ -3,8 +3,8 @@
 ## Install
 
     pip install jupyterlab
-    pip install jupyter_contrib_nbextensions
-    pip install jupyter_nbextensions_configurator
+    pip install jupyter\_contrib_nbextensions
+    pip install jupyter\_nbextensions_configurator
     pip install watermark
 
 ## Jupyter Shortcuts
