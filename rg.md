@@ -5,6 +5,8 @@
 
     command | rg [OPTIONS] PATTERN
 
+Configuration is in `~/.ripgreprc`
+
 ## Options
 
     -i                # case insensitive search
@@ -27,31 +29,6 @@
     -v                # invert match
     --no-ignore       # also search in git-ignored files
     --hidden          # search also in hidden files
-
-## Configuration
-
-Configuration in `~/.ripgreprc`
-
-    # don't let ripgrep vomit really long lines to my terminal, and show a preview.
-    --max-columns=160
-    --max-columns-preview
-
-    # custom types
-    --type-add
-    html:*.isml
-
-    --type-add
-    properties:*.properties
-
-    # using glob patterns to include/exclude files or folders
-    --glob=!node_modules/*
-    --glob=!.git/*
-
-    # because who cares about case!?
-    --smart-case
-
-    # of course we search in hidden files
-    --hidden
 
 ## Examples
 
