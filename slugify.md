@@ -6,7 +6,8 @@ Example: `Ghost File.txt` -> `ghost_file.txt`
     slugify -n "Ghost File.txt"          # test filenames that don't exist
     slugify -iad *
     slugify *.txt
-    
+
+    slugify -i                           # Case -> case
     slugify -u                           # underscore -> space
     slugify -t                           # dash -> space
     slugify -d                           # space -> dash
