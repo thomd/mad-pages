@@ -14,8 +14,8 @@
 
     vim file.txt
     :set fenc?                                       # detemine file encoding
-    :set fenc=utf-8 	                             # change file encoding to UTF-8
-    :set fenc=iso-8859-1 	                         # change file encoding to ISO-8859-1
+    :set fenc=utf-8 	                               # change file encoding to UTF-8
+    :set fenc=iso-8859-1 	                       # change file encoding to ISO-8859-1
 
     :set bomb?                                       # determine byte-order-mark
 
