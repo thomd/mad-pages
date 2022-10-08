@@ -137,31 +137,31 @@
 
 # Remove Untracked Files
 
-    git clean -n                # STEP 1: show what will be deleted
-    git clean -f                # STEP 2: clean
+    git clean -n                        # STEP 1: show what will be deleted
+    git clean -f                        # STEP 2: clean
 
-    git clean -fd               # also remove directories
-    git clean -fX               # also remove ignored files
-    git clean -fx               # also remove ignored and non-ignired files
+    git clean -fd                       # also remove directories
+    git clean -fX                       # also remove ignored files
+    git clean -fx                       # also remove ignored and non-ignired files
 
 
 # Stashing Changes
 
     git stash
-    git stash -p                                 # interactively specify changes included in this stash
-    git stash -u                                 # include also untracked files
-    git stash push -- file.txt                   # stash only a specific file
+    git stash -p                        # interactively specify changes included in this stash
+    git stash -u                        # include also untracked files
+    git stash push -- file.txt          # stash only a specific file
 
-    git stash list                               # list all stashes; alias git s
-    git stash show                               # show files of first stash
-    git stash show stash@{1}                     # show files of a specific stash
+    git stash list                      # list all stashes; alias git s
+    git stash show                      # show files of first stash
+    git stash show stash@{1}            # show files of a specific stash
 
-    git stash pop stash@{1}                      # apply a stash and drop from stack
-    git stash pop                                # apply first stash and drop from stack
+    git stash pop stash@{1}             # apply a stash and drop from stack
+    git stash pop                       # apply first stash and drop from stack
 
-    git stash drop                               # drop latest stash
-    git stash drop stash@{1}                     # drop a stash
-    git stash clear                              # clear all stashes
+    git stash drop                      # drop latest stash
+    git stash drop stash@{1}            # drop a stash
+    git stash clear                     # clear all stashes
 
 
 # Branching a Stash
