@@ -1,19 +1,3 @@
-# Git User Management
-
-  Set Git User
-
-    git config user.name NAME
-    git config user.email EMAIL
-
-  Set SSH Identity
-
-    ssh-add -D
-    ssh-add -K ~/.ssh/azure_thomduerr           # Azure
-    ssh-add -K ~/.ssh/azure_devops              # Azure
-    ssh-add -K ~/.ssh/id_rsa                    # Bitbucket
-    ssh-add -K ~/.ssh/github_thomd              # Github
-    ssh-add -E md5 -l
-
 # What have I done in my branch?
 
     git log develop..
@@ -24,11 +8,6 @@
 
     git log ..develop
     git diff ...develop
-
-
-# Find largest file in my repository
-
-    git ls-tree HEAD -l -r | sort -n -k4 | tail -1
 
 
 # How to remove a committed file
@@ -145,13 +124,16 @@
 
     git push origin :refs/tags/\<tag>
 
+
 # create hotfix branch based on tag
 
     git checkout -b hotfix/\<tag> \<tag>
 
+
 # Empty Commit
 
     git commit --allow-empty -m "jenkins trigger" && git push
+
 
 # Remove Untracked Files
 
@@ -192,3 +174,9 @@
 
     git log --all -- '**/file.txt'
     git branch -a --contains \<sha>
+
+
+# Find largest file in my repository
+
+    git ls-tree HEAD -l -r | sort -n -k4 | tail -1
+
