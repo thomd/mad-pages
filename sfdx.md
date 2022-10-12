@@ -1,5 +1,11 @@
 # sfdx
 
+## Configuration
+
+    sfdx config:list
+    sfdx config:set defaultdevhubusername=\<name/alias> -g                 # set default Dev Hub username globally
+    sfdx config:set defaultusername=\<name/alias>                          # set default Scratch Org username
+
 ## Create a Scratch Org
 
     sfdx auth:web:login -a myDevHub
@@ -11,12 +17,6 @@
     sfdx force:org:list
     sfdx force:org:open -u myScratch
     sfdx force:org:delete -u myScratch
-
-## Configuration
-
-    sfdx config:list
-    sfdx config:set defaultdevhubusername=\<name/alias> -g                 # set default Dev Hub username globally
-    sfdx config:set defaultusername=\<name/alias>                          # set default Scratch Org username
 
 ## Start local Development Server for LWC
 
