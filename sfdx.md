@@ -3,8 +3,8 @@
 ## Configuration
 
     sfdx config:list
-    sfdx config:set defaultdevhubusername=\<name/alias> -g                 # set default Dev Hub username globally
-    sfdx config:set defaultusername=\<name/alias>                          # set default Scratch Org username
+    sfdx config:set defaultdevhubusername=\<name/alias> -g                             # set default Dev Hub username globally
+    sfdx config:set defaultusername=\<name/alias>                                      # set default Scratch Org username
 
 ## Create a Scratch Org
 
@@ -23,3 +23,7 @@
 
     sfdx force:lightning:lwc:start
     open http://localhost:3333
+
+## Deploy Source
+
+    sfdx force:source:deploy -m LightningComponentBundle:helloWorld                    # deploy a single component
