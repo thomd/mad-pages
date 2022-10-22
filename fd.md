@@ -39,11 +39,11 @@
     fd -e jpg -x mv {} {//}/foo{/}              # prefix all jpg files names with 'foo'
     fd -x sh -c "cmd1; cmd2"                    # execute two commands in parallel
 
-    {}      # documents/images/party.jpg
-    {.}     # documents/images/party
-    {//}    # documents/images
-    {/}     # party.jpg
-    {/.}    # party
+    {}      # foo/bar/baz.txt
+    {.}     # foo/bar/baz
+    {//}    # foo/bar
+    {/}     # baz.txt
+    {/.}    # baz
  
 ## Examples
 
