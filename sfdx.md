@@ -26,5 +26,5 @@
 
 ## Source Format
 
-    sfdx force:source:deploy -m LightningComponentBundle:helloWorld                    # deploy a single component
+    sfdx force:source:deploy -m LightningComponentBundle:helloWorld                    # deploy a single lightning web component
     sfdx force:source:retrieve -m ExperienceBundle                                     # retrieve metadata of digital experience pages
