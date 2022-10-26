@@ -24,6 +24,7 @@
     sfdx force:lightning:lwc:start
     open http://localhost:3333
 
-## Deploy Source
+## Source Format
 
     sfdx force:source:deploy -m LightningComponentBundle:helloWorld                    # deploy a single component
+    sfdx force:source:retrieve -m ExperienceBundle                                     # retrieve metadata of digital experience pages
