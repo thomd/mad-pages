@@ -2,7 +2,7 @@
 
     language:\<lang>                    # search for code based on what language it's written in
     filename:\<name>                    # match code files with a certain filename
-    extension:|<ext>                    # match code files with a certain file extension
+    extension:\<ext>                    # match code files with a certain file extension
 
     in:path                             # matches code where search term appears in the file path
     in:file                             # matches code where search term appears in the file content
