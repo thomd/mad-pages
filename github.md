@@ -48,6 +48,7 @@ gh is GitHub on the command line.
     gh gist create file1.py file2.py              # create a gitst with multiple files
 
     gh api search/repositories -X=GET -F q='toon' -q '.items[].html_url'
+    gh api search/code -X=GET -F q='filename:visidatarc' -q '.items[].html_url'
 
 # act(1)
 
