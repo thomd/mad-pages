@@ -37,4 +37,4 @@
 ## SOQL
 
     sfdx force:data:soql:query -q "SELECT Name FROM Site"
-    sfdx force:data:soql:query -q "SELECT `sfdx force:schema:sobject:describe -s Site | jq -r '.fields[].name' | paste -sd, -` FROM Site"
+    sfdx force:data:soql:query -q "SELECT \`sfdx force:schema:sobject:describe -s Site | jq -r '.fields[].name' | paste -sd, -` FROM Site"
