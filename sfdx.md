@@ -1,4 +1,4 @@
-# sfdx
+# sfdx(1)
 
 ## Configuration
 
@@ -33,3 +33,7 @@
 
     sfdx force:schema:sobject:list -c custom                                           # list all custom objects
     sfdx force:schema:sobject:describe -s \<Object> | jq '.fields[].name'               # list all field names of \<object>
+
+## SOQL
+
+    sfdx force:data:soql:query -q "SELECT Name FROM Site"
