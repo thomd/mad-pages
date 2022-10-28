@@ -29,6 +29,7 @@
     sfdx force:source:deploy -m LightningComponentBundle:helloWorld                    # deploy a single lightning web component
     sfdx force:source:retrieve -m ExperienceBundle                                     # retrieve metadata of digital experience pages
 
-## Objects
+## Standard and Custom Objects
 
     sfdx force:schema:sobject:list -c custom                                           # list all custom objects
+    sfdx force:schema:sobject:describe -s \<Object> | jq '.fields[].name'               # list all field names of \<object>
