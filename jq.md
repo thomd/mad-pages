@@ -2,17 +2,17 @@
 
 ## Filter
 
-    jq '.'                                   # pretty format
-    jq '.foo'                                # return value of key 'foo'
-    jq '.foo, .bar'                          # return value of key 'foo' and key 'bar'
-    jq '.[]'                                 # return all of the elements of an array
-    jq '.foo[0]'                             # return first element of foo-array
+    jq '.'                                       # pretty format
+    jq '.foo'                                    # return value of key 'foo'
+    jq '.foo, .bar'                              # return value of key 'foo' and key 'bar'
+    jq '.[]'                                     # return all of the elements of an array
+    jq '.foo[0]'                                 # return first element of foo-array
 
 ## Operators & Functions
 
-    jq 'keys'                                # return keys in an array
-    jq '.foo | keys'                         # return keys of key foo
-    jq '.foo | length'                       # return number of elements
+    jq 'keys'                                    # return keys in an array
+    jq '.foo | keys'                             # return keys of key foo
+    jq '.foo | length'                           # return number of elements
 
 # jq examples
 
@@ -26,7 +26,7 @@
 
   Replace value of JSON key:
 
-    cat file.json | jq '(.foo) |= "baz"'        # replace values of `foo` with `baz`
+    cat file.json | jq '(.foo) |= "baz"'         # replace values of `foo`
 
   String Interpolation
 
