@@ -24,6 +24,10 @@
 
     cat file.json | jq '. += {"foo": "bar"}'
 
+  Replace value of JSON key:
+
+    cat file.json | jq '(.foo) |= "baz"'        # replace values of `foo` with `baz`
+
   String Interpolation
 
     jq '. | "value: \(.foo) \(.bar)"'
