@@ -1,6 +1,7 @@
 # zip(1)
 
-    zip -e protected.zip -r /folder/to/protect/                # create a password protected Zip archive
+    zip -er protected.zip protected/                 # create a password protected zip archive
+    zip -eur protected.zip protected/                # update existing password protected zip archive
 
 # unzip(1)
 
