@@ -51,4 +51,6 @@ If conda(1) does not work as expected, check `~/.bash_profile` for conda related
 Install packages via PIP:
 
     conda install pip
-    PIP\_REQUIRE\_VIRTUALENV=false ~/.miniconda3/envs/NAME/bin/pip install PACKAGE
+    export PIP\_REQUIRE\_VIRTUALENV=false
+    ~/.miniconda3/envs/NAME/bin/pip install PACKAGE
+
