@@ -32,7 +32,7 @@ Ctrl r reload sheet (memory undo)
 Ctrl e examine the latest general error
 g Ctrl e examine all general errors encountered
 
-    #      # set column type integer
+    \#      # set column type integer
 % set column type float
 $ set column type currency
 @ set column type date
