@@ -17,6 +17,10 @@
     npx figlet-cli text                                  # ascii text generator
     echo hello | npx lolcatjs                            # colorful rainbow text
 
+  PlantUML
+
+    npx --package node-plantuml puml generate --unicode --text "A -> B: Hello
+
   Export medium stories
 
     npx mediumexporter \<medium-url> > file.md            # export a medium story to markdown
