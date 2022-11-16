@@ -19,7 +19,7 @@
 
   PlantUML
 
-    npx --package node-plantuml puml generate --unicode --text "A -> B: Hello
+    npx --package node-plantuml puml generate --unicode --text "A -> B: Hello"
 
   Export medium stories
 
