@@ -27,7 +27,9 @@
 
 ## Source and Metadata
 
-    sfdx force:mdapi:listallmetadata > temp && vd -f json temp                         # inspect metadata in tabular tool
+    sfdx force:mdapi:describemetadata | jq '.metadataObjects[].xmlName'                # get all metadata object xml-names
+    sfdx force:mdapi:listallmetadata > temp && vd -f json temp                         # inspect all meta data in vd
+    sfdx force:mdapi:listmetadata -m ApexClass                                         # list all Apex classes
 
     sfdx force:mdapi:describemetadata | jq '.metadataObjects[].xmlName'                # get list of metadata object names
     sfdx force:source:deploy -m LightningComponentBundle:helloWorld                    # deploy a single lightning web component
