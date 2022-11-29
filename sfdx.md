@@ -27,6 +27,8 @@
 
 ## Source and Metadata
 
+    sfdx force:mdapi:listallmetadata > temp && vd -f json temp                         # inspect metadata in tabular tool
+
     sfdx force:mdapi:describemetadata | jq '.metadataObjects[].xmlName'                # get list of metadata object names
     sfdx force:source:deploy -m LightningComponentBundle:helloWorld                    # deploy a single lightning web component
     sfdx force:source:retrieve -m ExperienceBundle                                     # retrieve metadata of digital experience pages
