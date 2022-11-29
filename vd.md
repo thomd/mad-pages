@@ -1,5 +1,10 @@
 # vd(1)
 
+    vd                                                 # browse current directory and sub directories
+    vd data.zip                                        # interactively open a zip file
+    vd -b input.csv -o output.json                     # convert from csv to json
+    ls -l | vd -f fixed --skip 1 --header 0            # parse the output of ls -l into usable data
+
 ## Commands
 
     F        # frequency table
