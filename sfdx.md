@@ -25,7 +25,7 @@
     sfdx force:lightning:lwc:start
     open http://localhost:3333
 
-## Metadata and SOurce
+## Metadata and Source
 
     sfdx force:mdapi:describemetadata | jq '.metadataObjects[].xmlName'                # get all metadata object xml-names
     sfdx force:mdapi:listallmetadata > temp && vd -f json temp                         # inspect all meta data in vd
