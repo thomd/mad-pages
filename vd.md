@@ -4,6 +4,7 @@
     vd data.zip                                        # interactively open a zip file
     vd -b input.csv -o output.json                     # convert from csv to json
     ls -l | vd -f fixed --skip 1 --header 0            # parse the output of ls -l into usable data
+    vd --csv-delimiter ";" data.csv                    # use ; as delimiter (default is ,)
 
 ## Commands
 
