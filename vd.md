@@ -30,8 +30,11 @@
 
     :        # create new column by splitting current column on regex
     Ctrl ^   # toggle between current and previous sheet
-    Ctrl s   # save current sheet to filename
     gY       # copy selected rows to clipboard
+
+    e        # edit (in memory) current cell
+    ^        # rename current column
+    Ctrl s   # save current sheet to filename
 
     #        # set column type integer
     %        # set column type float
