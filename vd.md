@@ -33,7 +33,7 @@
     gY       # copy selected rows to clipboard
 
     e        # edit (in memory) current cell
-    ^        # rename current column
+    ^        # rename current column header
     Ctrl s   # save current sheet to filename
 
     #        # set column type integer
