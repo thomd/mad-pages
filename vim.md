@@ -56,6 +56,15 @@ Add modelines in files at the end or the begining
     :'a,'bw file.txt               # writes lines from mark a to b to file.txt
     :'a,'bw >> file.txt            # append lines from mark a to b to file.txt
 
+## Multiselect
+
+    ctrl n                         # start selecting words
+    N / n                          # select previous / next word
+    q                              # skip current selection
+    Q                              # remove current selection
+    [ / ]                          # jump to previous / next word
+    shift arrow                    # select one character
+
 ## Options
 
   Editor Options
