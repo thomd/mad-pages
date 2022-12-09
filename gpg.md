@@ -2,7 +2,7 @@
 
     gpg -K                              # list secret keys
     gpg -k                              # list public keys
-    gpg -a --export <id>                # export public key in ASCII format to stdout
+    gpg -a --export \<id>                # export public key in ASCII format to stdout
 
 Symmetric (via passphrase)
 
