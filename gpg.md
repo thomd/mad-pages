@@ -4,11 +4,12 @@
     gpg -k                              # list public keys
     gpg -a --export \<id>                # export public key in ASCII format to stdout
 
-Symmetric (via passphrase)
+Symmetric (AES-128)
 
-    gpg -c file.txt                     # encrypt using a passphrase (with a symmetric cipher)
-    gpg file.txt.gpg                    # decrypt the file using the same passphrase
+    gpg -c file.txt                     # encrypt with a symmetric cipher (--no-symkey-cache to disable passphrase caching)
+    gpg -d file.txt.gpg                 # decrypt the file with the same passphrase (using gpg-agent)
 
-Asymmetric (via public key)
+Asymmetric (with Public Key)
 
-
+    gpg -e -r \<id> file.txt             # encrypt for recipient \<id> with recipients public key
+    gpg -d file.txt.gpg                 # decrypt file using recipients private key
