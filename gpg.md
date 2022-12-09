@@ -6,7 +6,7 @@
 
 Symmetric (AES-128)
 
-    gpg -c file.txt                     # encrypt with a symmetric cipher (--no-symkey-cache to disable passphrase caching)
+    gpg -c file.txt                     # encrypt with a symmetric cipher (use '--no-symkey-cache' to disable passphrase caching)
     gpg -d file.txt.gpg                 # decrypt the file with the same passphrase (using gpg-agent)
 
 Asymmetric (with Public Key)
