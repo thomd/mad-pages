@@ -32,14 +32,12 @@
     conda list -n NAME                                    # installed packages of environment NAME
     conda list --revisions                                # history of each change to the current environment
 
-    conda install PACKAGE                                 # install a package
     conda install PACKAGE=VERSION                         # install specific version of a package
     conda install --channel conda-forge PACKAGE           # install using conda-forge channel
     conda install --revision 2                            # restore environment to a previous revision
     conda install --yes --file requirements.txt           # install packages from requirements file
 
     conda update PACKAGE                                  # update a package into current environment
-    conda update --all                                    # update all package in an environment
 
     conda env update --file environment.yml               # install dependencies of an activated env
 
