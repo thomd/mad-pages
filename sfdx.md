@@ -1,5 +1,9 @@
 # sfdx(1)
 
+## Authorize
+
+    sfdx auth:web:login -r https://test.salesforce.com -a \<alias>                     # authorize a sandbox
+
 ## Configuration
 
     sfdx config:list
