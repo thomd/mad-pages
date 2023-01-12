@@ -43,7 +43,8 @@
 ## Standard and Custom Objects
 
     sfdx force:schema:sobject:list -c custom                                                # list all custom objects
-    sfdx force:schema:sobject:describe -s \<Object> | jq '.fields[].name'                    # list all field names of \<object>
+    sfdx force:schema:sobject:describe -s \<Obj> | jq '.fields[].name'                       # list all field names of \<object>
+    sfdx force:schema:sobject:describe -s \<Obj> | jq '.fields[] | "\(.label),\(.name),\(.type)"' | column -t -s","
 
 ## SOQL
 
