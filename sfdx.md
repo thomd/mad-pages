@@ -37,7 +37,7 @@
     sfdx force:mdapi:describemetadata | jq '.metadataObjects[].xmlName'                     # get list of metadata object names
 
     sfdx force:source:deploy -m LightningComponentBundle:helloWorld                         # deploy a single lightning web component
-    sfdx force:source:deploy -x manifest/package.xml --checkonly --verbose -u \<alias>       # verify deployment
+    sfdx force:source:deploy -x manifest/package.xml --checkonly -u \<alias>                 # verify deployment
     sfdx force:source:retrieve -m ExperienceBundle                                          # retrieve metadata of digital experience pages
 
 ## Standard and Custom Objects
