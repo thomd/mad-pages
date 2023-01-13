@@ -5,6 +5,7 @@
     vd -b input.csv -o output.json                     # convert from csv to json
     ls -l | vd -f fixed --skip 1 --header 0            # parse the output of ls -l into usable data
     vd --csv-delimiter ";" data.csv                    # use ; as delimiter (default is ,)
+    curl -sL https://git.io/IRIStsv | vd -f tsv        # open tab-delimiter file
 
 ## Commands
 
