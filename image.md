@@ -2,7 +2,14 @@
 
 ## convert(1)
 
-    convert in.jpg out.png                                     # jpg to png. Supported formats: `identify -list format`
+  Supported Formats:
+
+    identify -list format
+
+  Image Conversions:
+
+    convert in.jpg out.png                                     # jpg to png. 
+    convert -background none in.svg out.png                    # svg to png with transparency
     convert -trim in.jpg out.jpg                               # trim whitespace around image
     convert -trim -fuzz 40% in.jpg out.jpg                     # trim more whitespace around image
     convert -scale 50% in.gif out.png                          # scale down to 50% and convert
@@ -10,8 +17,6 @@
     convert -crop 500x900+50+100 in.png out.png                # crop from top-left 50x100 with width 500 and height 900
     convert -extent 128x128 -gravity center in.png out.png     # extend image with whitespace and center
     convert -strip in.jpg out.jpg                              # strip metadata
-
-    convert -resize 1024 IMG_0123.HEIC file.jpg                # convert ot a email-attachment compatible size
 
 ## identify(1)
 
