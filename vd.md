@@ -30,6 +30,8 @@
     "        # create new sheet of selected rows
 
     za       # add a new blank column
+    a        # add a new blank row
+    ga \<N>   # add \<N> new blank rows
     :        # create new column by splitting current column on regex
     =        # bring up the prompt `new column expr=`
     Ctrl ^   # toggle between current and previous sheet
