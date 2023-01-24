@@ -57,5 +57,5 @@
 
   Find Object Type from Record ID:
 
-    Id recordId = '00561000000Mjya';
+    Id recordId = '8013L000001VkiLQAS';
     System.debug('object is '+ recordId.getsobjecttype());
