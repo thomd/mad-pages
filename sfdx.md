@@ -55,4 +55,7 @@
 
     sfdx force:apex:execute                                                                # executes anonymous Apex code in REPL, execute with `CTRL + D`
 
-        Id recordId = '00561000000Mjya'; System.debug('object is '+ recordId.getsobjecttype());
+  Find Object Type from Record ID:
+
+    Id recordId = '00561000000Mjya';
+    System.debug('object is '+ recordId.getsobjecttype());
