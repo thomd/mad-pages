@@ -50,3 +50,9 @@
 
     sfdx force:data:soql:query -q "SELECT Name FROM Site"
     sfdx force:data:soql:query -q "SELECT \`sfdx force:schema:sobject:describe -s Site | jq -r '.fields[].name' | paste -sd, -` FROM Site" -r csv > logs && vd logs
+
+## Apex Code
+
+    sfdx force:apex:execute                                                                # executes anonymous Apex code in REPL, execute with `CTRL + D`
+
+        Id recordId = '00561000000Mjya'; System.debug('object is '+ recordId.getsobjecttype());
