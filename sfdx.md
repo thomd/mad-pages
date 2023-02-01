@@ -46,10 +46,10 @@
     sfdx force:schema:sobject:describe -s \<Obj> | jq '.fields[].name'                       # list all field names of \<object>
     sfdx force:schema:sobject:describe -s \<Obj> | jq -r '.fields[] | "\(.label),\(.name),\(.type)"' | column -t -s,
 
-## SOQL
+## Query
 
-    sfdx force:data:soql:query -q "SELECT Name FROM Site"
-    sfdx force:data:soql:query -q "SELECT \`sfdx force:schema:sobject:describe -s Site | jq -r '.fields[].name' | paste -sd, -` FROM Site" -r csv > logs && vd logs
+    sfdx force:data:query -q "SELECT Name FROM Site"
+    sfdx force:data:query -q "SELECT \`sfdx force:schema:sobject:describe -s Site | jq -r '.fields[].name' | paste -sd, -` FROM Site" -r csv > logs && vd logs
 
 ## Apex Code
 
