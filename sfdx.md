@@ -48,8 +48,8 @@
 
 ## Query
 
-    sfdx force:data:query -q "SELECT Name FROM Site"
-    sfdx force:data:query -q "SELECT \`sfdx force:schema:sobject:describe -s Site | jq -r '.fields[].name' | paste -sd, -` FROM Site" -r csv > logs && vd logs
+    sfdx data query -q "SELECT Name FROM Site"
+    sfdx data query -q "SELECT \`sfdx force:schema:sobject:describe -s Site | jq -r '.fields[].name' | paste -sd, -` FROM Site" -r csv > logs && vd logs
 
 ## Apex Code
 
