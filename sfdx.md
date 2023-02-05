@@ -24,11 +24,6 @@
     ...
     sfdx force:org:delete -u myScratch1
 
-## Start local Development Server for LWC
-
-    sfdx force:lightning:lwc:start
-    open http://localhost:3333
-
 ## Metadata and Source
 
     sfdx force:mdapi:describemetadata | jq '.metadataObjects[].xmlName'                     # get all metadata object xml-names
