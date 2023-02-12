@@ -38,7 +38,7 @@
     ApexClass
     CustomObject
     CustomField
-    customLabel
+    CustomLabel
     ExperienceBundle
     Flow
     LightningComponentBundle
