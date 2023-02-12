@@ -43,6 +43,10 @@
     Flow
     LightningComponentBundle
 
+  Minimal DX Project `sfdx-project.json`
+
+    {"packageDirectories": [{"path": "."}]}
+
 ## Standard and Custom Objects
 
     sfdx force schema sobject list -c custom                                                # list all custom objects
