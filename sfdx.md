@@ -30,10 +30,18 @@
     sfdx force:mdapi:listmetadata -m ApexClass                                              # list all Apex classes
     sfdx force:mdapi:describemetadata | jq '.metadataObjects[].xmlName'                     # get list of metadata object names
 
-    sfdx force source deploy -m LightningComponentBundle:helloWorld                         # deploy a single lightning web component
-    sfdx force source retrieve -m ExperienceBundle                                          # retrieve metadata of digital experience pages
-
+    sfdx force source retrieve -m \<type>:\<member>                                           # retrieve metadata
     sfdx force source deploy -x manifest/package.xml --checkonly -o \<alias>                 # verify deployment
+
+  Metadata Types
+
+    ApexClass
+    CustomObject
+    CustomField
+    customLabel
+    ExperienceBundle
+    Flow
+    LightningComponentBundle
 
 ## Standard and Custom Objects
 
