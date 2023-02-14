@@ -29,7 +29,7 @@
     sfdx force:mdapi:describemetadata | jq '.metadataObjects[].xmlName'                     # get list of metadata object names
 
     sfdx force source retrieve -m \<type>:\<member>                                           # retrieve metadata
-    sfdx force source deploy -x manifest/package.xml --checkonly -o \<alias>                 # verify deployment
+    sfdx force source deploy -x manifest/package.xml --checkonly -u \<alias>                 # verify deployment
 
   Metadata Types
 
