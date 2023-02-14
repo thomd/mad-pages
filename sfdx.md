@@ -64,3 +64,9 @@
 
     Id recordId = '8013L000001VkiLQAS';
     System.debug('object is '+ recordId.getsobjecttype());
+
+## B2B Theme
+
+    (cd frontend && npm run frontend:build)
+    sfdx force:source:deploy -m StaticResource:b2bTheme
+    sfdx force:source:deploy -m AuraDefinitionBundle:b2bTheme
