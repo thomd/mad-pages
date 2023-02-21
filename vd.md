@@ -45,3 +45,10 @@
     %        # set column type float
     @        # set column type date
     ~        # set column type text
+
+    .        # plot
+
+## VisiData Best Practices
+
+
+
