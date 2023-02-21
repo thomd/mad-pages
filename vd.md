@@ -54,7 +54,7 @@ format date column from 'mm/dd/yyyy' to 'mm/yyyy'
 
     :  /                                    # split 'date' into three new columns 'date\_re0', 'date\_re1' and 'date\_re2'
     -                                       # delete 'date\_re1' column
-    =  date_re1 + date_re2                  # concat to a new column
+    =  date\_re1 + date\_re2                  # concat to a new column
 
 
 
