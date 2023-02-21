@@ -70,6 +70,8 @@ Markdown is a lightweight markup language. Readability is emphasized above all e
 
 # JIRA Markdown
 
+see [Text Formatting Notation Help](https://jira.atlassian.com/secure/WikiRendererHelpAction.jspa?section=all)
+
   Headline
 
     h1. headline h1
