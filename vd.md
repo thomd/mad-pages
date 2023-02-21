@@ -50,7 +50,7 @@
 
 ## VisiData Best Practices
 
-format date column from 'mm/dd/yyyy' to 'mm/yyyy'
+  format date column from 'mm/dd/yyyy' to 'mm/yyyy'
 
     :  /                                    # split 'date' into three new columns 'date\_re0', 'date\_re1' and 'date\_re2'
     -                                       # delete 'date\_re1' column
