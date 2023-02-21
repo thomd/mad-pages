@@ -32,7 +32,7 @@
     za       # add a new blank column
     a        # add a new blank row
     ga \<N>   # add \<N> new blank rows
-    :        # create new column by splitting current column on regex
+    :        # create new column by splitting current column on regex, e.g. split 01/01/2023 by / to get three new columns
     =        # bring up the prompt `new column expr=`
     Ctrl ^   # toggle between current and previous sheet
     gY       # copy selected rows to clipboard
@@ -46,9 +46,17 @@
     @        # set column type date
     ~        # set column type text
 
-    .        # plot
+    .        # plot numerical data
 
 ## VisiData Best Practices
+
+format date column from 'mm/dd/yyyy' to 'mm/yyyy'
+
+    :  /                                    # split 'date' into three new columns 'date_re0', 'date_re1' and 'date_re2'
+    -                                       # delete 'date_re1' column
+    =  date_re1 + date_re2                  # concat to a new column
+
+
 
 
 
