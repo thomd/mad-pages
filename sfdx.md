@@ -35,7 +35,7 @@
 
   Metadata Types
 
-    sfdx force mdapi describemetadata | jq -r '.metadataObjects[].xmlName'                   # get all metadata type names
+    sfdx force mdapi describemetadata | jq -r '.metadataObjects[].xmlName'                  # get all metadata type names
 
         ApexClass
         CustomObject
@@ -46,7 +46,7 @@
         LightningComponentBundle
 
     sfdx force mdapi listmetadata -m \<name> | jq -r '.[].fullName'                          # get all metadata type-members
-    sfdx force source retrieve -m \<name>:\<member>                                          # retrieve metadata
+    sfdx force source retrieve -m \<name>:\<member>                                           # retrieve metadata
 
 ## Standard and Custom Objects
 
