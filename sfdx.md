@@ -23,7 +23,6 @@
 
 ## Metadata and Source
 
-    sfdx force mdapi listallmetadata > temp && vd -f json temp                              # inspect all meta data in vd
     sfdx force mdapi listmetadata -m ApexClass                                              # list all Apex classes
     sfdx force mdapi describemetadata | jq '.metadataObjects[].xmlName'                     # get list of metadata object names
 
