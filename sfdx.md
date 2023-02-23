@@ -23,15 +23,12 @@
 
 ## Metadata and Source
 
-    sfdx force mdapi listmetadata -m ApexClass                                              # list all Apex classes
-    sfdx force mdapi describemetadata | jq '.metadataObjects[].xmlName'                     # get list of metadata object names
-
     sfdx force source retrieve -m \<type>:\<member>                                           # retrieve metadata
     sfdx force source deploy -x manifest/package.xml --checkonly -u \<alias>                 # verify deployment
 
   Metadata Types
 
-    sfdx force mdapi describemetadata | jq -r '.metadataObjects[].xmlName'                  # get all metadata types
+    sfdx force mdapi describemetadata | jq -r '.metadataObjects[].xmlName'                  # get all metadata type-names
 
         ApexClass
         CustomObject
@@ -40,6 +37,8 @@
         ExperienceBundle
         Flow
         LightningComponentBundle
+
+    sfdx force mdapi listmetadata -m \<type-names> -u b2bdev | jq '.[].fullName'            # get all metadata type-members
 
   Minimal DX Project `sfdx-project.json`
 
