@@ -21,14 +21,21 @@
     ...
     sfdx force org delete -o myScratch1
 
-## Metadata and Source
+## Source
 
-    sfdx force source retrieve -m \<type>:\<member>                                           # retrieve metadata
+  Package based Deployment
+
     sfdx force source deploy -x manifest/package.xml --checkonly -u \<alias>                 # verify deployment
+
+  Minimal DX Project `sfdx-project.json`
+
+    {"packageDirectories": [{"path": "."}]}
+
+## Metadata
 
   Metadata Types
 
-    sfdx force mdapi describemetadata | jq -r '.metadataObjects[].xmlName'                  # get all metadata type-names
+    sfdx force mdapi describemetadata | jq -r '.metadataObjects[].xmlName'                   # get all metadata type names
 
         ApexClass
         CustomObject
@@ -38,11 +45,8 @@
         Flow
         LightningComponentBundle
 
-    sfdx force mdapi listmetadata -m \<type-names> -u b2bdev | jq '.[].fullName'            # get all metadata type-members
-
-  Minimal DX Project `sfdx-project.json`
-
-    {"packageDirectories": [{"path": "."}]}
+    sfdx force mdapi listmetadata -m \<name> | jq -r '.[].fullName'                          # get all metadata type-members
+    sfdx force source retrieve -m \<name>:\<member>                                          # retrieve metadata
 
 ## Standard and Custom Objects
 
