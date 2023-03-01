@@ -73,3 +73,7 @@
     (cd frontend && npm run frontend:build)
     sfdx force:source:deploy -m StaticResource:b2bTheme
     sfdx force:source:deploy -m AuraDefinitionBundle:b2bTheme
+
+## Experience Builder
+
+    sfdx force community publish -n \<site> -o \<org>                                        # publish site
