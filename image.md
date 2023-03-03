@@ -42,7 +42,7 @@
 
   Distribution of file extensions
 
-    while read f; do echo ${f\##*.}; done < <(fd -t f) | sort | uniq -c | sort
+    while read f; do echo ${f##*.}; done < <(fd -t f) | sort | uniq -c | sort
 
 
 
