@@ -32,8 +32,20 @@
     exiftool -all= -overwrite_original image.jpg               # remove all metadata of a image file
     exiftool -gps:all= \*.jpg                                   # remove all GPS metadata of *jpg files in current dir
 
-# Image Besst Practices
+# Image Best Practices
 
-## Encode Image as Data URI
+  Encode Image as Data URI
 
     convert image.png - | openssl enc -base64 -A | sed -e 's/^/data:image\/png;base64,/'
+
+# Image Management
+
+  Distribution of file extensions
+
+    while read f; do echo ${f##*.}; done < <(fd -t f) | sort | uniq -c | sort
+
+
+
+
+
+
