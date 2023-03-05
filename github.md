@@ -2,6 +2,7 @@
 
     language:\<lang>                    # search for code based on what language it's written in
     filename:\<name>                    # match code files with a certain filename
+    owner:\<name>                       # search in repos of \<name> only
     extension:\<ext>                    # match code files with a certain file extension
 
     in:path                             # matches code where search term appears in the file path
@@ -22,7 +23,7 @@
     foo -language:css
     sfcc in:name
     sfcc in:name,description,readme
-
+    Makefile owner:thomd
 
 # gh(1)
 
