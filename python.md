@@ -32,6 +32,7 @@
 
     python -m venv .venv                          # create virtual env in `.venv`
     source .venv/bin/activate                     # activate virtual env
+    pip freeze > requirements.txt                 # output installed packages in requirements format
     pip install \<package>                         # install a package
     pip install -r requirements.txt               # install packages
     ...
