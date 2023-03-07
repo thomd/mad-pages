@@ -1,8 +1,3 @@
-
-# Markdown
-
-Markdown is a lightweight markup language. Readability is emphasized above all else.
-
 # Standard Markdown
 
   Paragraphs
