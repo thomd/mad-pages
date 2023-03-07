@@ -162,3 +162,12 @@ see [Text Formatting Notation Help](https://jira.atlassian.com/secure/WikiRender
     [^1]: foo footnote
 
     [^2]: bar footnote
+
+# Azure DevOps Wiki Markdown
+
+  Image
+
+    ![Image alt text](/media/markdown-guidance/image.png)             # absolute path to azure git
+    ![Image alt text](./image.png)                                    # relative upload path
+    ![Image alt text](./image.png =500x200)                           # scale to 500x200
+    ![Image alt text](./image.png =500x)                              # scale to width=500 and keep aspect-ratio
