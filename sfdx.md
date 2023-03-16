@@ -14,9 +14,7 @@
 
     sfdx project generate -x -n myProject
     cat config/project-scratch-def.json | jq '. += {"language": "en_US"}' > tmp; mv tmp config/project-scratch-def.json
-    npm install
     sfdx org create -s -f config/project-scratch-def.json -d 30 -a myScratch1 -v DevHub
-    sfdx org list
     sfdx org open -o myScratch1
     ...
     sfdx org delete -o myScratch1
