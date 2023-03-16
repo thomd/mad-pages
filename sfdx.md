@@ -56,7 +56,7 @@
 ## Query
 
     sfdx data query -q "SELECT Name FROM Site"
-    sfdx data query -q "SELECT \`sfdx force schema sobject describe -s Site | jq -r '.fields[].name' | paste -sd, -` FROM Site" -r csv > logs && vd logs
+    sfdx data query -q "SELECT \`sfdx force schema sobject describe -s User | jq -r '.fields[].name' | paste -sd, -` FROM User" -r csv > user.csv && vd user.csv
 
 ## Apex Code
 
