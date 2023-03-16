@@ -24,6 +24,7 @@
   Package based Deployment
 
     sfdx force source deploy -x manifest/package.xml --checkonly -u \<alias>                 # verify deployment
+    nodemon --watch force-app --ext "cls,xml,js,html" --exec "sfdx force source deploy -m LightningComponentBundle:*,ApexClass:*"
 
   Minimal DX Project `sfdx-project.json`
 
