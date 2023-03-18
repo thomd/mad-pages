@@ -26,9 +26,10 @@
     sfdx force source deploy -x manifest/package.xml --checkonly -u \<alias>                 # verify deployment
     nodemon --watch force-app --ext "cls,xml,js,html" --exec "sfdx force source deploy -m LightningComponentBundle:\*,ApexClass:\*"
 
-  Minimal DX Project:
+  Quickstart DX Project:
 
     echo '{"packageDirectories": [{"path": "."}]}' > sfdx-project.json
+    sfdx config set defaultusername=\<alias>                                           # set default Scratch Org username
 
 ## Metadata
 
