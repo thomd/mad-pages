@@ -23,14 +23,13 @@
 
   Package based Deployment
 
-    sfdx force source deploy -x manifest/package.xml --checkonly -u \<alias>                 # verify deployment
+    sfdx force source deploy -x manifest/package.xml --checkonly -u \<alias>
     nodemon --watch force-app --ext "cls,xml,js,html" --exec "sfdx force source deploy -m LightningComponentBundle:\*,ApexClass:\*"
 
   Quickstart DX Project:
 
-    echo '{"packageDirectories": [{"path": "."}]}' > sfdx-project.json
-    sfdx config set defaultusername=\<alias>                                           # set default Scratch Org username
-    mkdir force-app
+    echo '{"packageDirectories": [{"path": "force-app"}]}' > sfdx-project.json
+    sfdx config set defaultusername=\<alias>
 
 ## Metadata
 
