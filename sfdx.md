@@ -30,6 +30,8 @@
 
     echo '{"packageDirectories": [{"path": "force-app"}]}' > sfdx-project.json
     sfdx config set defaultusername=\<alias>
+    code .
+    sfdx force source deploy -p force-app
 
 ## Metadata
 
