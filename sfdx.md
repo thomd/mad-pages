@@ -30,6 +30,7 @@
 
     echo '{"packageDirectories": [{"path": "."}]}' > sfdx-project.json
     sfdx config set defaultusername=\<alias>                                           # set default Scratch Org username
+    mkdir force-app
 
 ## Metadata
 
