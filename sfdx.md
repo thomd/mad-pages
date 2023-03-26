@@ -60,16 +60,18 @@
 ## Query
 
     sfdx data query -q "SELECT Name FROM Site"
-    sfdx data query -q "SELECT \`sfdx force schema sobject describe -s User | jq -r '.fields[].name' | paste -sd, -` FROM User" -r csv > user.csv && vd user.csv
+
+  Retrieve all data of an object:
+
+    sfdx data query -q "SELECT \`sfdx force schema sobject describe -s User | jq -r '.fields[].name' | paste -sd, -` FROM User" -r csv
+
+  Check CRUD permissions:
+
+    sfdx data query -q "SELECT RecordId, MaxAccessLevel, HasAllAccess, HasDeleteAccess, HasEditAccess, HasReadAccess, HasTransferAccess FROM UserRecordAccess WHERE UserId = '\<id>' AND RecordId = '\<id>'
 
 ## Apex Code
 
     sfdx force apex execute                                                                # executes anonymous Apex code in REPL, execute with `CTRL + D`
-
-  Find Object Type from Record ID:
-
-    Id recordId = '8013L000001VkiLQAS';
-    System.debug('object is '+ recordId.getsobjecttype());
 
 ## B2B Theme
 
