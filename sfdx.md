@@ -72,6 +72,8 @@
 ## Apex Code
 
     sfdx force apex execute                                                                # executes anonymous Apex code in REPL, execute with `CTRL + D`
+    sfdx force apex test run -l RunAllTestsInOrg -c -r human -y                            # run all test in org and display code coverage
+    sfdx force apex test run -t MyTestClass -y                                             # run a specific test class
 
 ## B2B Theme
 
