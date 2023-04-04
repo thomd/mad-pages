@@ -2,6 +2,7 @@
 
 ## Info
 
+    brew --cellar                     # cellar path
     brew search \<package>
     brew info \<package>               # show package short info 
     brew list                         # list installed packages
