@@ -2,13 +2,13 @@
 
 ## Authorize
 
-    sfdx auth web login -r https://test.salesforce.com -a \<alias>                     # authorize sandbox
-    sfdx auth web login -r https://login.salesforce.com -a \<alias>                    # authorize playground or production-org
+    sfdx auth web login -r https://test.salesforce.com -a \<alias>      # authorize sandbox
+    sfdx auth web login -r https://login.salesforce.com -a \<alias>     # authorize playground or production-org
 
 ## Configuration
 
     sfdx config list
-    sfdx config set defaultusername=\<alias>                                           # set default Scratch Org username
+    sfdx config set defaultusername=\<alias>                            # set default Scratch Org username
 
 ## Create a Scratch Org
 
