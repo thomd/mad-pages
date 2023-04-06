@@ -29,6 +29,7 @@
   Quickstart DX Project:
 
     echo '{"packageDirectories": [{"path": "force-app"}]}' > sfdx-project.json
+    mkdir force-app
     sfdx config set defaultusername=\<alias>
     sfdx org open
     code .
@@ -36,20 +37,17 @@
 
 ## Metadata
 
-  Metadata Types
+  1. Get Metadata Type Names
 
-    sfdx force mdapi describemetadata | jq -r '.metadataObjects[].xmlName'                  # get all metadata type names
+    sfdx force mdapi describemetadata | jq -r '.metadataObjects[].xmlName'
 
-        ApexClass
-        CustomObject
-        CustomField
-        CustomLabel
-        ExperienceBundle
-        Flow
-        LightningComponentBundle
+  2. Get Metadata Type Members
 
-    sfdx force mdapi listmetadata -m \<name> | jq -r '.[].fullName'                          # get all metadata type-members
-    sfdx force source retrieve -m \<name>:\<member>                                           # retrieve metadata
+    sfdx force mdapi listmetadata -m \<name> | jq -r '.[].fullName'
+
+  3. Retrieve Metadata
+
+    sfdx force source retrieve -m \<name>:\<member>
 
 ## Standard and Custom Objects
 
