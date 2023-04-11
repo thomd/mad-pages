@@ -40,6 +40,7 @@
   Get Metadata Type Names
 
     sfdx force mdapi describemetadata | jq -r '.metadataObjects[].xmlName'
+    sfdx force mdapi describemetadata | jq -r '.metadataObjects[] | if (.childXmlNames | length) == 0 then .xmlName else .childXmlNames[] end'
 
   Get Metadata Type Members
 
@@ -52,6 +53,7 @@
   Retrieve all Metadata:
 
     while read -r t; do sfdx force source retrieve -m $t; done < <(sfdx force mdapi describemetadata | jq -r '.metadataObjects[].xmlName')
+    while read -r t; do sfdx force source retrieve -m $t; done < <(sfdx force mdapi describemetadata | jq -r '.metadataObjects[] | if (.childXmlNames | length) == 0 then .xmlName else .childXmlNames[] end')
 
 ## Standard and Custom Objects
 
