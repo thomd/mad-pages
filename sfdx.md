@@ -37,17 +37,21 @@
 
 ## Metadata
 
-  1. Get Metadata Type Names
+  Get Metadata Type Names
 
     sfdx force mdapi describemetadata | jq -r '.metadataObjects[].xmlName'
 
-  2. Get Metadata Type Members
+  Get Metadata Type Members
 
     sfdx force mdapi listmetadata -m \<name> | jq -r '.[].fullName'
 
-  3. Retrieve Metadata
+  Retrieve Metadata of one Type Member
 
     sfdx force source retrieve -m \<name>:\<member>
+
+  Retrieve all Metadata:
+
+    while read -r t; do sfdx force source retrieve -m $t; done < <(sfdx force mdapi describemetadata | jq -r '.metadataObjects[].xmlName')
 
 ## Standard and Custom Objects
 
