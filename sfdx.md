@@ -90,6 +90,8 @@
     sfdx force:source:deploy -m StaticResource:b2bTheme
     sfdx force:source:deploy -m AuraDefinitionBundle:b2bTheme
 
+    nodemon -w frontend -e "scss" -x "(cd frontend && npm run frontend:build:deploy)"
+
 ## Experience Builder
 
     sfdx force community publish -n \<site> -o \<org>                                        # publish site
