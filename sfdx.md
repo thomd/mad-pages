@@ -55,6 +55,11 @@
     while read -r t; do sfdx force source retrieve -m $t; done < <(sfdx force mdapi describemetadata | jq -r '.metadataObjects[].xmlName')
     while read -r t; do sfdx force source retrieve -m $t; done < <(sfdx force mdapi describemetadata | jq -r '.metadataObjects[] | if (.childXmlNames | length) == 0 then .xmlName else .childXmlNames[] end')
 
+  Generate incremental deployments manifests
+
+    sfdx sgd source delta -f develop -o .
+    sfdx force source deploy -x package/package.xml --postdestructivechanges destructiveChanges/destructiveChanges.xml
+
 ## Standard and Custom Objects
 
     sfdx force schema sobject list -c custom                                                # list all custom objects
@@ -88,3 +93,4 @@
 ## Experience Builder
 
     sfdx force community publish -n \<site> -o \<org>                                        # publish site
+
