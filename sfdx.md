@@ -12,7 +12,7 @@
 
 ## Create a Scratch Org
 
-    sfdx project generate -x -n myProject
+    sfdx project generate -x -n myProject && cd myProject
     cat config/project-scratch-def.json | jq '. += {"language": "en_US"}' > tmp; mv tmp config/project-scratch-def.json
     sfdx org create scratch -f config/project-scratch-def.json -v DevHub -a scratch1
     sfdx org open -o scratch1
