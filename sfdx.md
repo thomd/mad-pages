@@ -17,7 +17,7 @@
     sfdx org create scratch -f config/project-scratch-def.json -v DevHub -a scratch1
     sfdx org open -o scratch1
     ...
-    sfdx org delete -o scratch1
+    sfdx org delete scratch -o scratch1
 
 ## Source
 
