@@ -58,6 +58,7 @@
   Generate incremental deployments manifests
 
     sfdx sgd source delta -f develop -o .
+    sfdx sgd source delta -f HEAD~1 -t HEAD -o .
     sfdx force source deploy -x package/package.xml --postdestructivechanges destructiveChanges/destructiveChanges.xml
 
 ## Standard and Custom Objects
