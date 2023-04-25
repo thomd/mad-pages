@@ -14,7 +14,7 @@
 
     sfdx project generate -x -n myProject && cd myProject
     cat config/project-scratch-def.json | jq '. += {"language": "en_US"}' > tmp; mv tmp config/project-scratch-def.json
-    sfdx org create scratch -f config/project-scratch-def.json -v DevHub -a scratch1
+    sfdx org create scratch -f config/project-scratch-def.json -y 30 -v DevHub -a scratch1
     sfdx org open -o scratch1
     ...
     sfdx org delete scratch -o scratch1
