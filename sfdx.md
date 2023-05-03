@@ -94,5 +94,5 @@
 
 ## Experience Builder
 
-    sfdx force community publish -n \<site> -o \<org>                                        # publish site
+    sfdx community publish -n \<site> -o \<org>                                        # publish site
 
