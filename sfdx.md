@@ -8,7 +8,7 @@
 ## Configuration
 
     sfdx config list
-    sfdx config set defaultusername=\<alias>                            # set default Scratch Org username
+    sfdx config set target-org=\<alias>                            # set default Scratch Org username
 
 ## Create a Scratch Org
 
@@ -81,14 +81,14 @@
 
 ## Apex Code
 
-    sfdx force apex test run -l RunAllTestsInOrg -c -r human -y                            # run all test in org and display code coverage
-    sfdx force apex test run -t MyTestClass -y                                             # run a specific test class
+    sfdx apex run test -l RunAllTestsInOrg -c -r human -y                            # run all test in org and display code coverage
+    sfdx apex run test -t MyTestClass -y                                             # run a specific test class
 
 ## B2B Theme
 
     (cd frontend && npm run frontend:build)
-    sfdx force:source:deploy -m StaticResource:b2bTheme
-    sfdx force:source:deploy -m AuraDefinitionBundle:b2bTheme
+    sfdx force source deploy -m StaticResource:b2bTheme
+    sfdx force source deploy -m AuraDefinitionBundle:b2bTheme
 
     nodemon -w frontend -e "scss" -x "(cd frontend && npm run frontend:build:deploy)"
 
