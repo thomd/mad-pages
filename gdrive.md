@@ -45,4 +45,4 @@
 
   or
 
-    export GDRIVE\_CONFIG_DIR="/Users/thomasduerr/.gdrive-work"
+    export GDRIVE\_CONFIG_DIR="$HOME/.gdrive-work"
