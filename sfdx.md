@@ -67,7 +67,7 @@
     sfdx force schema sobject describe -s \<Obj> | jq '.fields[].name'                       # list all field names of \<object>
     sfdx force schema sobject describe -s \<Obj> | jq -r '.fields[] | "\(.label),\(.name),\(.type)"' | column -t -s,
 
-## Query
+## SOQL Queries
 
     sfdx data query -q "SELECT Name FROM Site"
 
@@ -78,6 +78,10 @@
   Check CRUD permissions:
 
     sfdx data query -q "SELECT RecordId, MaxAccessLevel, HasAllAccess, HasDeleteAccess, HasEditAccess, HasReadAccess, HasTransferAccess FROM UserRecordAccess WHERE UserId = '\<id>' AND RecordId = '\<id>'
+
+  Get Users by Salesforce License:
+
+    SELECT Id, Name, Username, Profile.Name FROM User WHERE Profile.UserLicense.Name = 'Salesforce' AND IsActive = true
 
 ## Apex Code
 
