@@ -81,7 +81,7 @@
 
   Get Users by Salesforce License:
 
-    sfdx data query -q "SELECT Id, Name, Username, Profile.Name FROM User WHERE Profile.UserLicense.Name = 'Salesforce' AND IsActive = true"
+    sfdx data query -q "SELECT Id, Name, Username, Profile.Name FROM User WHERE Profile.UserLicense.Name = 'Salesforce' AND IsActive = true" -o \<alias>
 
 ## Apex Code
 
