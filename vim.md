@@ -13,7 +13,7 @@ Vim's Grammar
     v3w                            # select three words
     cs])                           # change surrounding brackets to parantheses
 
-Common Commands
+## Useful Commands
 
     d0                             # delete before cursor position
     100i-\<ESC>                     # write 100 dashes
