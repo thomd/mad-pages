@@ -1,7 +1,7 @@
 # GitHub Code Search
 
     language:\<lang>                    # search for code based on what language it's written in
-    filename:\<name>                    # match code files with a certain filename
+    path:**/\<file>                     # match code files with a certain filename
     owner:\<name>                       # search in repos of \<name> only
     extension:\<ext>                    # match code files with a certain file extension
 
