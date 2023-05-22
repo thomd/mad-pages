@@ -46,10 +46,12 @@ Add modelines in files at the end or the begining
 
 ## Marks
 
+    ma                             # set mark `a`
+
     :marks                         # list all current marks
     ''                             # position before the latest jump
     '.                             # last edit
-    'a - 'z                        # lowercase marks, valid within one file
+    'a                             # jump to mark
 
     d'a                            # delete all lines from the cursor position to mark a
     :'a,'bd                        # deletes lines from mark a to mark b, inclusive
