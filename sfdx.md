@@ -86,7 +86,7 @@
 ## Apex Code
 
     sfdx apex run test -l RunAllTestsInOrg -c -r human -y                            # run all test in org and display code coverage
-    sfdx apex run test -t MyTestClass -y                                             # run a specific test class
+    sfdx apex run test -n MyClassTest -c -r human -y                                 # run a specific test class
 
 ## B2B Theme
 
