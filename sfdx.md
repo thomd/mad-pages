@@ -83,7 +83,7 @@
 
     sfdx data query -q "SELECT Id, Name, Username, UserRole.Name, Profile.Name FROM User WHERE Profile.UserLicense.Name = 'Salesforce' AND IsActive = true" -o \<alias>
 
-## Apex Code
+## Apex Unit Test
 
     sfdx apex run test -l RunAllTestsInOrg -c -r human -y                            # run all test in org and display code coverage
     sfdx apex run test -n MyClassTest -c -r human -y                                 # run a specific test class
