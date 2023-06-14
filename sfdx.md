@@ -26,6 +26,10 @@
     sfdx force source deploy -x manifest/package.xml --checkonly -u \<alias>
     nodemon --watch force-app --ext "cls,xml,js,html" --exec "sfdx force source deploy -m LightningComponentBundle:\*,ApexClass:\*"
 
+  Deploy Validate
+
+    sfdx force source deploy -x manifest/package.xml -u b2bdevqa -l RunSpecifiedTests -r `cat scripts/test/unit-test-list.txt | awk '{ printf("%s", $0) }'` -c --verbose
+
   Quickstart Salesforce DX Project:
 
     echo '{"packageDirectories": [{"path": "force-app"}]}' > sfdx-project.json
