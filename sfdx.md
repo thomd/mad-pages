@@ -28,7 +28,7 @@
 
   Deploy Validate
 
-    sfdx force source deploy -x manifest/package.xml -u b2bdevqa -l RunSpecifiedTests -r `cat scripts/test/unit-test-list.txt | awk '{ printf("%s", $0) }'` -c --verbose
+    sfdx force source deploy -x manifest/package.xml -u b2bdevqa -l RunSpecifiedTests -r \`cat scripts/test/unit-test-list.txt | awk '{ printf("%s", $0) }'\` -c --verbose
 
   Quickstart Salesforce DX Project:
 
