@@ -65,10 +65,10 @@
     sfdx sgd source delta -f HEAD~1 -t HEAD -o .
     sfdx force source deploy -x package/package.xml --postdestructivechanges destructiveChanges/destructiveChanges.xml
 
-## Standard and Custom Objects
+## Objects Fields
 
-    sfdx force schema sobject list -c custom                                                # list all custom objects
-    sfdx force schema sobject describe -s \<Obj> | jq '.fields[].name'                       # list all field names of \<object>
+    sfdx force schema sobject list -c custom                                                                              # list all custom objects
+    sfdx force schema sobject describe -s \<Obj> | jq '.fields[].name' | paste -sd, -                                      # list all field names of \<object> comma-separated
     sfdx force schema sobject describe -s \<Obj> | jq -r '.fields[] | "\(.label),\(.name),\(.type)"' | column -t -s,
 
 ## SOQL Queries
