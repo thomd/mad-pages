@@ -56,8 +56,8 @@
 
   Retrieve all Metadata:
 
-    while read -r t; do sfdx force source retrieve -m $t; done < <(sfdx force mdapi describemetadata | jq -r '.metadataObjects[].xmlName')
-    while read -r t; do echo $t; sfdx force source retrieve -m $t; done < <(sfdx force mdapi describemetadata | jq -r '.metadataObjects[] | if (.childXmlNames | length) == 0 then .xmlName else .childXmlNames[] end')
+    while read -r t; do sfdx force source retrieve -m $t; done < <(sfdx org list metadata-types | jq -r '.metadataObjects[].xmlName')
+    while read -r t; do echo $t; sfdx force source retrieve -m $t; done < <(sfdx org list metadata-types | jq -r '.metadataObjects[] | if (.childXmlNames | length) == 0 then .xmlName else .childXmlNames[] end')
 
   Generate incremental deployments manifests
 
