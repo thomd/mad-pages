@@ -67,7 +67,7 @@
 
 ## Data
 
-    sfdx sobject list -c custom                                                                              # list all custom objects [all|custom|standard]
+    sfdx sobject list -s custom                                                                              # list all custom objects [all|custom|standard]
     sfdx sobject describe -s \<Obj> | jq '.fields[].name' | paste -sd, -                                      # list all field names of \<object> comma-separated
     sfdx sobject describe -s \<Obj> | jq -r '.fields[] | "\(.label),\(.name),\(.type)"' | column -t -s,
 
