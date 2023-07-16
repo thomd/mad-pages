@@ -67,25 +67,19 @@
 
 ## Data
 
+  Fields
+
     sfdx sobject list -s custom                                                                              # list all custom objects [all|custom|standard]
     sfdx sobject describe -s \<obj> | jq '.fields[].name' | paste -sd, -                                      # list all field names of \<obj> comma-separated
     sfdx sobject describe -s \<obj> | jq -r '.fields[] | "\(.label),\(.name),\(.type)"' | column -t -s,       # list all field names, labels and type of \<obj> in a table
 
-## SOQL Queries
-
-    sfdx data query -q "SELECT Name FROM Site"
-
-  Retrieve all data of an object:
+  Records
 
     sfdx data query -q "SELECT \`sfdx force schema sobject describe -s User | jq -r '.fields[].name' | paste -sd, -` FROM User" -r csv
 
-  Check CRUD permissions:
+  SOQL Queries
 
-    sfdx data query -q "SELECT RecordId, MaxAccessLevel, HasAllAccess, HasDeleteAccess, HasEditAccess, HasReadAccess, HasTransferAccess FROM UserRecordAccess WHERE UserId = '\<id>' AND RecordId = '\<id>'
-
-  Get Users by Salesforce License:
-
-    sfdx data query -q "SELECT Id, Name, Username, UserRole.Name, Profile.Name FROM User WHERE Profile.UserLicense.Name = 'Salesforce' AND IsActive = true" -o \<alias>
+    sfdx data query -q "SELECT Name FROM Site"
 
 ## Apex Unit Test
 
