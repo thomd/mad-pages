@@ -69,9 +69,9 @@
 
   Get Fields of an Object
 
-    sfdx sobject list -s custom                                                                              # list all custom objects [all|custom|standard]
-    sfdx sobject describe -s \<obj> | jq '.fields[].name' | paste -sd, -                                      # list all field names of \<obj> comma-separated
-    sfdx sobject describe -s \<obj> | jq -r '.fields[] | "\(.label),\(.name),\(.type)"' | column -t -s,       # list all field names, labels and type of \<obj> in a table
+    sfdx sobject list -s custom                                                                           # list all custom objects [all|custom|standard]
+    sfdx sobject describe -s \<obj> | jq '.fields[].name' | paste -sd, -                                   # list all field names of \<obj> comma-separated
+    sfdx sobject describe -s \<obj> | jq -r '.fields[] | "\(.label),\(.name),\(.type)"' | column -t -s,    # list all field names, labels and type of \<obj> in a table
 
   Get Records of an Object
 
