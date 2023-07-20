@@ -24,6 +24,7 @@
 
     s        # select a row
     u        # unselect a row
+    gu       # unselect all rows
     gt       # toggle all rows between selected / unselected
     ,        # select all rows matching current cell
     |        # select all rows matching a regex
