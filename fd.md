@@ -63,5 +63,5 @@
     fd -S +4m                                   # find files larger than 4MB
     fd -e pdf -X cpdf -o all.pdf                # merge multiple pdf into one
 
-    fd --threads=1 -e isml -x sh -c "awk -f script.awk {} > tmp; mv tmp > {}"               # replace with an awk script
+    fd --threads=1 -e isml -x sh -c "awk -f script.awk {} > tmp; mv tmp > {}"    # replace with an awk script
 
