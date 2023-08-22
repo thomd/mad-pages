@@ -79,7 +79,7 @@
 
   SOQL Queries
 
-    sfdx data query -q "SELECT Name FROM Site"
+    sfdx data query -q "SELECT Name FROM Site" -r csv
 
 ## Apex Unit Test
 
