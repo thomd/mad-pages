@@ -28,7 +28,8 @@ Configuration is in `~/.ripgreprc`
     -M NUM            # don't print lines longer than this limit
     -v                # invert match
     --no-ignore       # also search in git-ignored files
-    --hidden          # search also in hidden files
+    --hidden, -.      # search also in hidden files
+    --no-hidden       # do not search in hidden files
 
 ## Examples
 
