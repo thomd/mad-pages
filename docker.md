@@ -1,4 +1,3 @@
-
 # docker(1)
 
 Container
@@ -37,3 +36,9 @@ Dockerized Webserver
 
     docker run -d --rm -v $(pwd):/var/www/html -p 80:80 php:8-apache
     echo -e "\<?php phpinfo(); ?>" > index.php
+
+# Docker Best Practices
+
+Run interactive Ubuntu
+
+    docker run -it ubuntu /bin/bash
