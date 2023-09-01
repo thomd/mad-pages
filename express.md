@@ -7,7 +7,10 @@ GET Route
 
     const express = require('express')
     const app = express()
-    app.get('/', (req, res) => res.json(req.headers))
+    app.get('/', (req, res) => {
+        consoloe.og(req.headers)
+        res.send('ok')
+    })
     app.listen(80)
 
   Request Object:
