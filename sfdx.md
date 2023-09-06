@@ -4,6 +4,7 @@
 
     sfdx auth web login -r https://test.salesforce.com -a \<alias>      # authorize sandbox
     sfdx auth web login -r https://login.salesforce.com -a \<alias>     # authorize playground or production-org
+    sfdx auth logout -o \<alias>
 
 ## Configuration
 
