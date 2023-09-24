@@ -30,6 +30,7 @@ Configuration is in `~/.ripgreprc`
     --no-ignore       # also search in git-ignored files
     --hidden, -.      # search also in hidden files
     --no-hidden       # do not search in hidden files
+    -L, --follow      # follow symbolic links
 
 ## Examples
 
