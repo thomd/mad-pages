@@ -1,35 +1,11 @@
 # Resolve Merge Conflict
 
-    git merge --abort                           # Option 1: abort the merge and get back to the state before `git merge develop`
-    vim \<file>                                  # Option 2: manually resolve conflicts in the file
-    git checkout --theirs \<file>                # Option 3: accept remote version
-    git checkout --ours \<file>                  # Option 4: use local version
+    git merge --abort                 # Option 1: abort the merge and get back to the state before `git merge develop`
+    vim \<file>                        # Option 2: manually resolve conflicts in the file
+    git checkout --theirs \<file>      # Option 3: accept remote version
+    git checkout --ours \<file>        # Option 4: use local version
     git add \<file>
-    git merge --continue                        # checks whether there is a (interrupted) merge in progress before calling `git commit`
-
-
-# What have I done in my branch?
-
-    git log develop..
-    git diff develop...
-
-
-# What have others done since I branched
-
-    git log ..develop
-    git diff ...develop
-
-
-# How to remove a committed file
-
-  remove from index but not from the working tree
-
-    git rm --cached \<file>
-
-  remove from index
-
-    git rm \<file>
-    git rm -r \<folder>
+    git merge --continue              # checks whether there is a (interrupted) merge in progress before calling `git commit`
 
 
 # Show change history of a file
