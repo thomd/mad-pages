@@ -1,3 +1,13 @@
+# Resolve Merge Conflict
+
+    git merge --abort                           # Option 1: abort the merge and get back to the state before `git merge develop`
+    vim \<file>                                  # Option 2: manually resolve conflicts in the file
+    git checkout --theirs \<file>                # Option 3: accept remote version
+    git checkout --ours \<file>                  # Option 4: use local version
+    git add \<file>
+    git merge --continue                        # checks whether there is a (interrupted) merge in progress before calling `git commit`
+
+
 # What have I done in my branch?
 
     git log develop..
