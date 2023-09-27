@@ -11,10 +11,7 @@
 # Show change history of a file
 
     git log --follow -p -- \<file>
-
-  or
-
-    tig \<file>
+    tig \<file>                        # alternatively use `tig`
 
 
 # Find and restore deleted files
