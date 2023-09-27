@@ -1,9 +1,9 @@
 # Resolve Merge Conflict
 
-    git merge --abort                 # Option 1: abort the merge and get back to the state before `git merge develop`
-    vim \<file>                        # Option 2: manually resolve conflicts in the file
-    git checkout --theirs \<file>      # Option 3: accept remote version
-    git checkout --ours \<file>        # Option 4: use local version
+    git merge --abort                 # OPTION 1: abort the merge and get back to the state before `git merge develop`
+    vim \<file>                        # OPTION 2: manually resolve conflicts in the file
+    git checkout --theirs \<file>      # OPTION 3: accept remote version
+    git checkout --ours \<file>        # OPTION 4: use local version
     git add \<file>
     git merge --continue              # checks whether there is a (interrupted) merge in progress before calling `git commit`
 
@@ -32,11 +32,6 @@
     git checkout \<commit>~1 \<file>
 
 
-# Uncommit a file
-
-    git reset @~ <file> && git commit --amend --no-edit
-
-
 # Restore a commit from the past
 
     git log -S"foo" -p
@@ -46,6 +41,11 @@
 # Undo your last commit, but don't throw away your changes
 
     git reset --soft HEAD^
+
+
+# Uncommit a file
+
+    git reset @~ <file> && git commit --amend --no-edit
 
 
 # Restore old state of a specific file
@@ -100,35 +100,9 @@
     git log --patch -m -G regexForMissingCode
 
 
-# delete a tag on remote
-
-  delete a tag named \<tag>
-
-    git tag -d \<tag>
-
-  remove tag \<tag> from remote repo
-
-    git push origin :refs/tags/\<tag>
-
-
-# create hotfix branch based on tag
-
-    git checkout -b hotfix/\<tag> \<tag>
-
-
 # Empty Commit
 
     git commit --allow-empty -m "jenkins trigger" && git push
-
-
-# Remove Untracked Files
-
-    git clean -n                        # STEP 1: show what will be deleted
-    git clean -f                        # STEP 2: clean
-
-    git clean -fd                       # also remove directories
-    git clean -fX                       # also remove ignored files
-    git clean -fx                       # also remove ignored and non-ignired files
 
 
 # Stashing Changes
@@ -148,12 +122,6 @@
     git stash drop                      # drop latest stash
     git stash drop stash@{1}            # drop a stash
     git stash clear                     # clear all stashes
-
-
-# Branching a Stash
-
-    git stash
-    git stash branch feature                     # create and checkout a new branch 'feature' and apply stash@{0} to it
 
 
 # Find Branch which Contains a Specific File
