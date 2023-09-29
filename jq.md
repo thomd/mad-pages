@@ -36,3 +36,7 @@
   Decode JWT token
 
     cat jwt.txt | jq -R 'split(".") | .[1] | @base64d | fromjson'
+
+  Print all Values of a Key except if the Key is null:
+
+    cat file.json | jq '.[]  | select(.Key != null) | .Key'
