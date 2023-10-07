@@ -1,7 +1,7 @@
 
 # sed(1)
 
-    sed -n 10,20p file                    // print lines 10-20
+    sed -n 10,20p file                    # print lines 10-20
     sed /pattern/d file                   // delet all lines matching pattern
     sed -n /pattern/p file                // print all lines matching pattern
     sed -n /pattern/!p file               // print all lines except matching pattern
