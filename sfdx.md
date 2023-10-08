@@ -44,8 +44,8 @@
 
   Get Metadata Type Names
 
-    sfdx force mdapi describemetadata | jq -r '.metadataObjects[].xmlName'
-    sfdx force mdapi describemetadata | jq -r '.metadataObjects[] | if (.childXmlNames | length) == 0 then .xmlName else .childXmlNames[] end'
+    sfdx org list metadata-types | jq -r '.metadataObjects[].xmlName'
+    sfdx org list metadata-types | jq -r '.metadataObjects[] | if (.childXmlNames | length) == 0 then .xmlName else .childXmlNames[] end'
 
   Get Metadata Type Members
 
@@ -53,14 +53,9 @@
 
   Retrieve Metadata of one Type Member
 
-    sfdx force source retrieve -m \<name>:\<member>
+    sfdx project retrieve start -m \<name>:\<member>
 
-  Retrieve all Metadata:
-
-    while read -r t; do sfdx force source retrieve -m $t; done < <(sfdx org list metadata-types | jq -r '.metadataObjects[].xmlName')
-    while read -r t; do echo $t; sfdx force source retrieve -m $t; done < <(sfdx org list metadata-types | jq -r '.metadataObjects[] | if (.childXmlNames | length) == 0 then .xmlName else .childXmlNames[] end')
-
-  Generate incremental deployments manifests
+  Generate Incremental Deployments Manifests
 
     sfdx sgd source delta -f develop -o .
     sfdx sgd source delta -f HEAD~1 -t HEAD -o .
