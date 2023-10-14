@@ -26,9 +26,7 @@
     q(uit)                                        # quit
     \<statement>                                   # Python statement (prefix with ! if statement is equal to a command)
 
-## venv
-
-  create virtual environment
+## Create Virtual Environment
 
     python -m venv .venv                          # create virtual env in `.venv`
     source .venv/bin/activate                     # activate virtual env
