@@ -30,8 +30,6 @@
 
   create virtual environment
 
-    pyenv versions                                # list available python versions
-    pyenv shell VERSION                           # set version to be used in the current shell
     python -m venv .venv                          # create virtual env in `.venv`
     source .venv/bin/activate                     # activate virtual env
     pip install \<package>                         # install a package
