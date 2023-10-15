@@ -9,11 +9,15 @@ Usage
     pip install PACKAGE==                                # show installable versions of package PACKAGE
     pip install -r requirements.txt                      # install packages
 
-Check version
+List Installed Packages
+
+    pip list
+
+Check Version of a Package
 
     python -c "import flask; print(flask.\_\_version__)"
 
-List lookup paths
+List Lookup Paths of Packages
 
     python -c "import sys; print(sys.path)"
 
