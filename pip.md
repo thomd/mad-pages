@@ -8,10 +8,12 @@ Usage
     pip install PACKAGE==VERSION                         # install version VERSION of package PACKAGE
     pip install PACKAGE==                                # show installable versions of package PACKAGE
     pip install -r requirements.txt                      # install packages
+    pip install --upgrade PACKAGE                        # update package
 
 List Installed Packages
 
     pip list
+    pip list -o                                          # list outdated packages
 
 Check Version of a Package
 
