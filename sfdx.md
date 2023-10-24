@@ -42,8 +42,8 @@
 
 ## Debug Log
 
-    sfdx apex log tail -c -s
-    script -q /dev/null sfdx apex log tail -c -s | tee debug.log
+    sfdx apex log tail -c -s -o \<org>
+    script -q /dev/null sfdx apex log tail -c -s -o \<org> | tee debug.log
 
 ## Metadata
 
