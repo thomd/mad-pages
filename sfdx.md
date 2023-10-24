@@ -40,6 +40,11 @@
     code .
     sfdx force source deploy -p force-app
 
+## Debug Log
+
+    sfdx apex log tail -c -s
+    script -q /dev/null sfdx apex log tail -c -s | tee debug.log
+
 ## Metadata
 
   Get Metadata Type Names
