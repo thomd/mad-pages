@@ -41,4 +41,4 @@ Dockerized Webserver
 
 Run interactive Ubuntu
 
-    docker run -it ubuntu /bin/bash
+    docker run -it --rm ubuntu /bin/bash
