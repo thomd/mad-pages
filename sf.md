@@ -13,16 +13,18 @@
 
 ## Validation & Deployment
 
-  Package based Deployment
+  Deployment
 
-    sfdx force source deploy -x manifest/package.xml --checkonly -u \<alias>
-    nodemon --watch force-app --ext "cls,xml,js,html" --exec "sfdx force source deploy -m LightningComponentBundle:\*,ApexClass:\*"
+    sf project deploy start -x manifest/package.xml --concise -o \<org>
+    sf project deploy start -m LightningComponentBundle:\* -m ApexClass:\* -o \<org>
+    nodemon --watch force-app --ext "cls,xml,js,html" --exec "sf project deploy start -m LightningComponentBundle:\* -m ApexClass:\*"
 
-  Deploy Validate
+  Validate
 
-    sfdx force source deploy -x manifest/package.xml -u b2bdevqa -l RunSpecifiedTests -r \`cat scripts/test/unit-test-list.txt | awk '{ printf("%s", $0) }'\` -c --verbose
+    sf project deploy validate -x manifest/package.xml -o \<org>
+    sf project deploy validate -x manifest/package.xml -l RunSpecifiedTests `sed s/,$// scripts/test/unit-test-list.txt | awk '{ printf(" -t %s", $0) }'` -o \<org>
 
-  Quickstart Salesforce DX Project:
+## Quickstart Salesforce DX Project
 
     echo '{"packageDirectories": [{"path": "force-app"}]}' > sfdx-project.json
     mkdir force-app
