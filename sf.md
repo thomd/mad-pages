@@ -11,15 +11,13 @@
     sf config list
     sf config set target-org \<alias>                                  # set default username
 
-## Validation & Deployment
-
-  Deployment
+## Deployment
 
     sf project deploy start -x manifest/package.xml --concise -o \<org>
     sf project deploy start -m LightningComponentBundle:\* -m ApexClass:\* -o \<org>
     nodemon --watch force-app --ext "cls,xml,js,html" --exec "sf project deploy start -m LightningComponentBundle:\* -m ApexClass:\*"
 
-  Validate
+## Validation
 
     sf project deploy validate -x manifest/package.xml -o \<org>
     sf project deploy validate -x manifest/package.xml -l RunSpecifiedTests `sed s/,$// scripts/test/unit-test-list.txt | awk '{ printf(" -t %s", $0) }'` -o \<org>
