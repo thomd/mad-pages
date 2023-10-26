@@ -11,7 +11,7 @@
     sf config list
     sf config set target-org \<alias>                                  # set default username
 
-## Source
+## Validation & Deployment
 
   Package based Deployment
 
