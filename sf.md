@@ -11,16 +11,21 @@
     sf config list
     sf config set target-org \<alias>                                  # set default username
 
-## Deployment
+## Validation
+
+    sf project deploy validate -x manifest/package.xml -o \<org>
+    sf project deploy validate -x manifest/package.xml -l RunSpecifiedTests `sed s/,$// scripts/test/unit-test-list.txt | awk '{ printf(" -t %s", $0) }'` -o \<org>
+
+## Deploy to Org
 
     sf project deploy start -x manifest/package.xml --concise -o \<org>
     sf project deploy start -m LightningComponentBundle:\* -m ApexClass:\* -o \<org>
     nodemon --watch force-app --ext "cls,xml,js,html" --exec "sf project deploy start -m LightningComponentBundle:\* -m ApexClass:\*"
 
-## Validation
+## Retrieve from Org
 
-    sf project deploy validate -x manifest/package.xml -o \<org>
-    sf project deploy validate -x manifest/package.xml -l RunSpecifiedTests `sed s/,$// scripts/test/unit-test-list.txt | awk '{ printf(" -t %s", $0) }'` -o \<org>
+    sf project retrieve start -x manifest/package.xml -o \<org>
+    sf project retrieve start -m ApexClass:MyApexClass -o \<org>
 
 ## Quickstart Salesforce DX Project
 
