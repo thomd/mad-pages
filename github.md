@@ -39,6 +39,11 @@ gh is GitHub on the command line.
     gh search code foo --repo user/repo           # search code matching 'foo' in the 'repo' repository of user 'user'
     gh search code foo --filename file.txt        # search code matching keyword 'foo' in 'file.txt' files
 
+    gh search repos cli shell                     # search repositories matching set of keywords "cli" and "shell"
+    gh search repos "vim plugin"                  # search repositories matching phrase "vim plugin"
+    gh search repos --owner=microsoft             # search repositories public repos in the microsoft organization
+    gh search repos --topic=unix,terminal         # search repositories with a set of topics
+
     gh repo create my-project                     # create new repo user/my-project
     gh repo create                                # create new repo based on name of CWD
 
