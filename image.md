@@ -17,6 +17,7 @@
     convert -crop 500x900+50+100 in.png out.png                # crop from top-left 50x100 with width 500 and height 900
     convert -extent 128x128 -gravity center in.png out.png     # extend image with whitespace and center
     convert -strip in.jpg out.jpg                              # strip metadata
+    convert -fill white -colorize 50% in.jpg out.jpg           # fade image 50% transparent
 
 ## identify(1)
 
