@@ -31,15 +31,15 @@
 
     echo '{"packageDirectories": [{"path": "force-app"}]}' > sfdx-project.json
     mkdir force-app
-    sfdx config set defaultusername=\<alias>
-    sfdx org open
+    sf config set target-org \<alias>
+    sf org open
     code .
-    sfdx force source deploy -p force-app
+    sf project deploy start -p force-app
 
 ## Debug Log
 
-    sfdx apex log tail -c -s -o \<org>
-    script -q /dev/null sfdx apex log tail -c -s -o \<org> | tee debug.log
+    sf apex tail log -c -s
+    script -q /dev/null sf apex tail log -c -s | tee debug.log
 
 ## Metadata
 
