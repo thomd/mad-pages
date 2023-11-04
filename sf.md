@@ -14,7 +14,7 @@
 ## Validation
 
     sf project deploy validate -x manifest/package.xml -o \<org>
-    sf project deploy validate -x manifest/package.xml -l RunSpecifiedTests `sed s/,$// scripts/test/unit-test-list.txt | awk '{ printf(" -t %s", $0) }'` -o \<org>
+    sf project deploy validate -x manifest/package.xml -l RunSpecifiedTests \`sed s/,$// scripts/test/unit-test-list.txt | awk '{ printf(" -t %s", $0) }'\` -o \<org>
 
 ## Deploy to Org
 
