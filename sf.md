@@ -20,7 +20,7 @@
 
     sf project deploy start -x manifest/package.xml --concise -o \<org>
     sf project deploy start -m LightningComponentBundle:\* -m ApexClass:\* -o \<org>
-    nodemon --watch force-app --ext "cls,xml,js,html" --exec "sf project deploy start -m LightningComponentBundle:\* -m ApexClass:\*"
+    nodemon -w force-app -e "cls,xml,js,html" -x "sf project deploy start -m LightningComponentBundle:\* -m ApexClass:\*"
 
 ## Retrieve from Org
 
