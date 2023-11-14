@@ -10,6 +10,7 @@ Configuration is in `~/.ripgreprc`
 ## Options
 
     -i                # case insensitive search
+    -s                # case sensitive search
     -z                # search in compressed files
     -t TYPE           # only search files matching TYPE
     -T TYPE           # do not search files matching TYPE
