@@ -2,15 +2,15 @@
 
 ## Authorize
 
-    sf org login web -r https://test.salesforce.com -a \<alias>        # authorize sandbox
-    sf org login web -r https://login.salesforce.com -a \<alias>       # authorize playground or production-org
-    sf org logout -o \<alias>
+    sf org login web -r https://test.salesforce.com -a \<org>        # authorize sandbox
+    sf org login web -r https://login.salesforce.com -a \<org>       # authorize playground or production-org
+    sf org logout -o \<org>
 
 ## Configuration
 
     sf config list
-    sf config set target-org \<alias>                                  # set default org
-    sf config set target-dev-hub \<alias>                              # set default DevHub org
+    sf config set target-org \<org>                                  # set default org
+    sf config set target-dev-hub \<org>                              # set default DevHub org
 
 ## Validation
 
