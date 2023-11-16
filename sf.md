@@ -10,7 +10,7 @@
 
     sf config list
     sf config set target-org \<alias>                                  # set default org
-    sf config set target-dev-hub \<alias>                             # set default DevHub org
+    sf config set target-dev-hub \<alias>                              # set default DevHub org
 
 ## Validation
 
