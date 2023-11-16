@@ -9,7 +9,8 @@
 ## Configuration
 
     sf config list
-    sf config set target-org \<alias>                                  # set default username
+    sf config set target-org \<alias>                                  # set default target org
+    sf config set target-dev-hub  \<alias>                             # set default Dev Hub org
 
 ## Validation
 
