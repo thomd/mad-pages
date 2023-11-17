@@ -35,5 +35,5 @@
 
 ## Query Data
 
-    sd data query -q "\<soql>" -r csv
+    sf data query -q "\<soql>" -r csv
 
