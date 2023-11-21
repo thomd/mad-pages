@@ -16,10 +16,11 @@
 
 # jq examples
 
-  Search in JSON array:
+  Search/Filter in JSON array:
 
     npx sfcc-ci code:list --json | jq '.data[] | select(.active == true) | .id'
-    cat data.jwon | jq '.[] | select(.name == "Foo") | .name'
+    cat data.json | jq '.[] | select(.name == "Foo") | .name'                               # all `name: "Foo"`
+    cat data.json | jq '.[] | select(.name == "Foo" | not) | .name'
 
   Append JSON key:
 
