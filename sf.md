@@ -10,6 +10,7 @@
 
     sf config list
     sf config set target-org \<org>                                  # set default org
+    sf config set -g target-org \<org>                               # set default org globally
     sf config set target-dev-hub \<org>                              # set default DevHub org
 
 ## Validation
