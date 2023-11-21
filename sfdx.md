@@ -10,6 +10,7 @@
 
     sfdx config list
     sfdx config set target-org=\<alias>                            # set default Scratch Org username
+    sfdx config set -g target-org=\<alias>                         # set default Scratch Org username globally
 
 ## Create a Scratch Org
 
