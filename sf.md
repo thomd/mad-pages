@@ -31,6 +31,7 @@
 
 ## Debug Log
 
+    sf apex list log
     sf apex tail log -c -s
     script -q /dev/null sf apex tail log -c -s | tee debug.log
 
