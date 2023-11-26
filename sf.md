@@ -39,3 +39,8 @@
 
     sf data query -q "\<soql>" -r csv
 
+## Execute Apex Test
+
+    sf apex run test -yc -n MyClassTest                          # run a specific test class MyClassTest
+    sf apex run test -yc -l \<test-level>                         # with test-level = RunSpecifiedTests | RunLocalTests | RunAllTestsInOrg
+
