@@ -44,3 +44,6 @@
     sf apex run test -yc -n MyClassTest
     sf apex run test -yc -l \<test-level>                         # with test-level = RunSpecifiedTests | RunLocalTests | RunAllTestsInOrg
 
+## Determine Object Type
+
+    sf data query -t -q "SELECT Label, QualifiedApiName FROM EntityDefinition WHERE KeyPrefix='005'"
