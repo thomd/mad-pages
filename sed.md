@@ -1,9 +1,9 @@
 
 # sed(1)
 
-    -n, --quiet        # not print anything unless an explicit request to print is found
-    -i EXT             # edit in place, saving backup with the extension EXT
-    -i                 # edit in place without backup (-i '' on OSX)
+    -n, --quiet                      # not print anything unless an explicit request to print is found
+    -i EXT                           # edit in place, saving backup with the extension EXT
+    -i                               # edit in place without backup (-i '' on OSX)
 
 ## Example
 
