@@ -1,6 +1,12 @@
 
 # sed(1)
 
+    -n, --quiet        # not print anything unless an explicit request to print is found
+    -i EXT             # edit in place, saving backup with the extension EXT
+    -i                 # edit in place without backup (-i '' on OSX)
+
+## Example
+
     sed -n 10,20p file               # print lines 10-20
     sed /pattern/d file              # delet all lines matching pattern
     sed -n /pattern/p file           # print all lines matching pattern
