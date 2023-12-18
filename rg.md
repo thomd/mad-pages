@@ -1,10 +1,6 @@
 
 # rg(1)
 
-    rg [OPTIONS] PATTERN [PATH]
-
-    command | rg [OPTIONS] PATTERN [PATH]
-
 Configuration is in `~/.ripgreprc`
 
 ## Options
