@@ -10,10 +10,13 @@ Usage
     pip install -r requirements.txt                      # install packages
     pip install --upgrade PACKAGE                        # update package
 
+    PIP_REQUIRE_VIRTUALENV=false pip install PACKAGE     # install without required virtualenv
+
 List Installed Packages
 
     pip list
     pip list -o                                          # list outdated packages
+    pip show PACKAGE                                     # show information about a package
 
 Check Version of a Package
 
