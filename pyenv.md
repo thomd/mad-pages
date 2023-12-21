@@ -17,8 +17,8 @@
 
   pyenv's *lookup path* is:
 
-  * the `PYENV_VERSION` variable (which you can set with `pyenv shell`)
-  * the directory's `.python_version` file (which we can change with pyenv shell for a one-time change, or pyenv local for something more permanent)
-  * the first `.python_version` file it can find, recursively searching each parent directory until it reaches root
-  * the global `$(pyenv root)/version` file, which you can modify with `pyenv global`
+  1. the `PYENV_VERSION` variable (which you can set with `pyenv shell`)
+  2. the directory's `.python_version` file (which we can change with pyenv shell for a one-time change, or pyenv local for something more permanent)
+  3. the first `.python_version` file it can find, recursively searching each parent directory until it reaches root
+  4. the global `$(pyenv root)/version` file, which you can modify with `pyenv global`
 
