@@ -10,7 +10,7 @@ Usage
     pip install -r requirements.txt                      # install packages
     pip install --upgrade PACKAGE                        # update package
 
-    PIP\_REQUIRE\_VIRTUALENV=false pip install PACKAGE     # install without required virtualenv
+    PIP\_REQUIRE\_VIRTUALENV=false pip install PACKAGE     # install without required virtualenv; or use `gpip`
 
 List Installed Packages
 
