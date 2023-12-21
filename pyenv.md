@@ -2,22 +2,22 @@
 
   Install new Python Version
 
-    pyenv version                     # list current version
-    pyenv versions                    # list installed versions
-    pyenv install --list              # list all available versions
-    pyenv install VERSION             # install version VERSION
-    pyenv uninstall VERSION           # uninstall version VERSION
+    pyenv version                               # list current version
+    pyenv versions                              # list installed versions
+    pyenv install --list                        # list all available versions
+    pyenv install VERSION                       # install version `VERSION`
+    pyenv uninstall VERSION                     # uninstall version `VERSION`
 
   Use a Python Version
 
-    pyenv global VERSION              # set default global version
-    pyenv local VERSION               # set version to be used in a particular directory (see .python-version file)
-    pyenv shell VERSION               # set version to be used in the current shell
-    pyenv shell system                # set system-version to be used in the current shell
+    pyenv global VERSION                        # set default global version
+    pyenv local VERSION                         # set version to be used in a particular directory; see `.python-version`
+    pyenv shell VERSION                         # set version to be used in the current shell
+    pyenv shell system                          # set system-version to be used in the current shell
 
 ## Lookup Path
 
-    python -c "import sys; print(sys.path)"         # list lookup paths
+    python -c "import sys; print(sys.path)"     # list lookup paths
 
 pyenv's lookup path is
 
