@@ -22,3 +22,4 @@
   3. the first `.python_version` file it can find, recursively searching each parent directory until it reaches root
   4. the global `$(pyenv root)/version` file, which you can modify with `pyenv global`
 
+    python -c "import sys; print(sys.path)"         # list lookup paths
