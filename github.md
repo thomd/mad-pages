@@ -45,6 +45,7 @@ gh is GitHub on the command line.
     gh search code foo --repo user/repo           # search code matching 'foo' in the 'repo' repository of user 'user'
     gh search code foo --filename file.txt        # search code matching keyword 'foo' in 'file.txt' files
     gh search code foo --extension xml            # search xml files matching keyword 'foo'
+    gh search code foo -w                         # open search result in browser
 
     gh repo view user/repo                        # view info of repo 'user/repo'
     gh repo view user/repo -w                     # open repo 'user/repo' in browser
