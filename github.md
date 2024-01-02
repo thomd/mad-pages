@@ -1,3 +1,9 @@
+# Personal Access Token (PAT)
+
+Clone repositories protected by SAML SSO using a PAT:
+
+    git clone https://\<user>:\<pat>@github.com/orga/repo.git
+
 # GitHub Code Search
 
     language:\<lang>                    # search for code based on what language it's written in
@@ -42,7 +48,7 @@ gh is GitHub on the command line.
 
     gh repo view user/repo                        # view info of repo 'user/repo'
     gh repo view user/repo --web                  # open repo 'user/repo' in browser
-    
+
     gh search repos cli shell                     # search repositories matching set of keywords "cli" and "shell"
     gh search repos "vim plugin"                  # search repositories matching phrase "vim plugin"
     gh search repos --owner=microsoft             # search repositories public repos in the microsoft organization
@@ -74,10 +80,4 @@ Run GitHub Actions locally
     act -j test                                   # run a specific job
     act -n                                        # run in dry-run mode
     act -v                                        # enable verbose-logging
-
-# Personal Access Token (PAT)
-
-Clone repositories protected by SAML SSO using a PAT:
-
-    git clone https://\<user>:\<pat>@github.com/orga/repo.git
 
