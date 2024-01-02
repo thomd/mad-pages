@@ -40,14 +40,14 @@ gh is GitHub on the command line.
 
     gh search code foo bar                        # search code matching "foo" and "bar"
     gh search code "foo bar"                      # search code matching 'foo bar'
-    gh search code foo --language=python          # search code matching 'foo' in Python files
-    gh search code foo --owner=salesforce         # search in repos owned by an organization, e.g. 'salesforce', 'SalesforceLabs', 'developerforce' or 'forcedotcom'
+    gh search code foo --language python          # search code matching 'foo' in Python files
+    gh search code foo --owner salesforce         # search in repos owned by an organization, e.g. 'salesforce', 'SalesforceLabs', 'developerforce' or 'forcedotcom'
     gh search code foo --repo user/repo           # search code matching 'foo' in the 'repo' repository of user 'user'
     gh search code foo --filename file.txt        # search code matching keyword 'foo' in 'file.txt' files
     gh search code foo --extension xml            # search xml files matching keyword 'foo'
 
     gh repo view user/repo                        # view info of repo 'user/repo'
-    gh repo view user/repo --web                  # open repo 'user/repo' in browser
+    gh repo view user/repo -w                     # open repo 'user/repo' in browser
 
     gh search repos cli shell                     # search repositories matching set of keywords "cli" and "shell"
     gh search repos "vim plugin"                  # search repositories matching phrase "vim plugin"
