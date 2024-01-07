@@ -47,6 +47,8 @@
     @        # set column type date
     ~        # set column type text
 
+    zY       # copy value of current cell
+
     .        # plot numerical data
 
 ## VisiData Best Practices
