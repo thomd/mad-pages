@@ -76,6 +76,8 @@ Codespace
     gh repo create --add-readme --public <name>
     gh codespace list
     gh codespace create --repo <user>/<name> --machine basicLinux32gb --retention-period 1h
+    gh codespave view
+
     gh codespace ssh --codespace \`gh codespace list --json name --jq first.name`
     ...
     gh codespace stop
