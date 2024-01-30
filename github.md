@@ -73,7 +73,13 @@ gh is GitHub on the command line.
 
 Codespace
 
-    gh
+    gh repo create --add-readme --public codespacetest
+    gh codespace list
+    gh codespace create --repo thomd/codespacetest --machine basicLinux32gb --retention-period 1h
+    gh codespace ssh --codespace `gh codespace list --json name --jq first.name`
+    ...
+    gh codespace stop
+    gh codespace delete
 
 # act(1)
 
