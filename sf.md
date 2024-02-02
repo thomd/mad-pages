@@ -37,6 +37,7 @@
 
 ## Query Data
 
+    sf sobject describe -s OBJECT -o ORG
     sf data query -q "\<soql>" -r csv
 
 ## Execute Apex Test
