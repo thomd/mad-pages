@@ -14,5 +14,5 @@
 
 ## Verify Certificate
 
-    openssl verify -CAfile \<(cat \<INTERMEDIATE-CA> \<CA-CERT>) \<CERT-TO-CHECK>
+    openssl verify -CAfile \<(cat INTERMEDIATE-CA CA-CERT) CERT-TO-CHECK
 
