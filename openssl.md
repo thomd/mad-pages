@@ -1,5 +1,7 @@
 # openssl(1)
 
+# OpenSSL Best Practices
+
 ## Verify if Certificate fits to Private Key
 
   extract public key from private key:
