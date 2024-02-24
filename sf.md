@@ -32,7 +32,7 @@
 ## Debug Log
 
     sf apex list log
-    sf apex tail log -c -s
+    sf apex tail log -c -s | spacer
     script -q /dev/null sf apex tail log -c -s | tee debug.log
 
 ## Query Data
