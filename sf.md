@@ -41,6 +41,11 @@
     sf sobject describe -s \<object>
     sf data query -q "select \<fields> from \<object>" -r csv
 
+## Execute Anonymous Apex Code
+
+    nodemon -e "sf apex run -f" my.apex
+    vim my.apex
+
 ## Execute Apex Test
 
     sf apex run test -yc -n MyClassTest
