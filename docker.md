@@ -39,6 +39,6 @@ Dockerized Webserver
 
 # Docker Best Practices
 
-Run interactive Ubuntu
+  Run interactive Ubuntu
 
     docker run -it --rm ubuntu /bin/bash
