@@ -5,7 +5,7 @@
     sudo vim /etc/hosts                    # assign hostname to IP
     sudo dscacheutil -flushcache           # flush DNS cache
 
-  /etc/hosts:
+  Example `/etc/hosts`:
 
     127.0.0.1 my-domain.com
 
