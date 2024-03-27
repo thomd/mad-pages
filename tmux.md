@@ -1,5 +1,8 @@
-
 # tmux(1)
+
+Kill Session
+
+    tmux kill-session
 
 Show key bindings: `ctrl-a ?`
 
