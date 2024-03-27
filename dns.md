@@ -5,6 +5,10 @@
     sudo vim /etc/hosts                    # assign hostname to IP
     sudo dscacheutil -flushcache           # flush DNS cache
 
+  /etc/hosts:
+
+    127.0.0.1 my-domain.com
+
   In Chrome, open `chrome://net-internals/#dns`
 
 ## dig(1)
