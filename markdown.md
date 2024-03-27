@@ -158,6 +158,23 @@ see [Text Formatting Notation Help](https://jira.atlassian.com/secure/WikiRender
 
     [^2]: bar footnote
 
+  Simple Notes and Alerts
+
+    > [!NOTE]
+    > This is a note.
+
+    > [!TIP]
+    > This is a tip.
+
+    > [!IMPORTANT]
+    > Crutial information comes here.
+
+    > [!CAUTION]
+    > Negative potential consequences of an action.
+
+    > [!WARNING]
+    > Critical content comes here.
+
 # Azure DevOps Wiki Markdown
 
   Image
