@@ -2,7 +2,7 @@
 
 ## hosts file
 
-    sudo vim /ets/hosts                    # assign hostname to IP
+    sudo vim /etc/hosts                    # assign hostname to IP
     sudo dscacheutil -flushcache           # flush DNS cache
 
   In Chrome, open `chrome://net-internals/#dns`
