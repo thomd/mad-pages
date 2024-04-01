@@ -1,6 +1,6 @@
 # gh(1)
 
-gh is GitHub on the command line.
+  gh is GitHub on the command line.
 
     gh auth status                                # see who is logged in
     gh auth login
@@ -38,7 +38,7 @@ gh is GitHub on the command line.
     gh api search/repositories -X=GET -F q='toon' -q '.items[].html_url'
     gh api search/code -X=GET -F q='filename:visidatarc' -q '.items[].html_url'
 
-Codespace
+  Codespace
 
     gh repo create --add-readme --public \<name>
     gh codespace list
