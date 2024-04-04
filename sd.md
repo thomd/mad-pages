@@ -4,7 +4,7 @@ find & replace
 
 ## Options
 
-    -p                # display changes in a human reviewable format
+    -p                # preview changes (dry-run)
     -F                # treat FIND and REPLACE_WITH args as literal strings
     -f                # Regex flags. May be combined like `-f mc`
                         # c - case-sensitive
