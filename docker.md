@@ -13,9 +13,9 @@ Container
 Create and run a Docker Image from a _Dockerfile_
 
     docker build -t \<image> .
-    docker run --rm --name \<name> -d -p 8080:8080 \<image>
-    docker logs \<name>
-    docker exec -it \<name> /bin/bash 
+    docker run --rm --name \<container> -d -p 8080:8080 \<image>
+    docker logs \<container>
+    docker exec -it \<container> /bin/bash 
 
 Push Image to Docker-Hub (https://hub.docker.com/u/thomd)
 
