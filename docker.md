@@ -1,5 +1,8 @@
 # docker(1)
 
+    docker system df                              # docker disk usage
+    docker system prune -f                        # remove unused containers, volumes, networks and images
+
 Container
 
     docker run -it \<image> /bin/bash              # Start a container with an interactive shell
