@@ -53,4 +53,4 @@
 
 ## Determine Object Type
 
-    sf data query -t -q "SELECT Label, QualifiedApiName FROM EntityDefinition WHERE KeyPrefix='005'"
+    sf data query -t -q "SELECT Label, QualifiedApiName FROM EntityDefinition WHERE KeyPrefix='001'"
