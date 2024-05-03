@@ -1,7 +1,8 @@
 # Network
 
-## Print listening ports and programs
+## Port Usage
 
+    lsof -i tcp:8000                               # is port 8000 used?
     netstat -an | grep LISTEN                      # List listening ports
     sudo lsof -i -P | grep LISTEN                  # List listening ports and programs
     nc -v -z localhost 1-1023
