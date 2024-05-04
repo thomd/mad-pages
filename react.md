@@ -1,9 +1,17 @@
 # create-react-app(1)
 
-Create app scaffolding
+Create App Scaffolding
 
     npx create-react-app myapp
+    cd myapp
+    npm start
+
+Create App with Simple Template
+
     npx create-react-app myapp --template cra-template-simple
     cd myapp
     npm start
 
+Upgrade Existing Project
+
+    npm install react-scripts@latest
