@@ -19,6 +19,11 @@
     convert -strip in.jpg out.jpg                              # strip metadata
     convert -fill white -colorize 50% in.jpg out.jpg           # fade image 50% transparent
 
+Convert Image to SVG:
+
+    convert image.png image.pnm
+    potrace image.pnm -s -o image.svg
+
 ## identify(1)
 
   Describes the format and characteristics of one or more image files
