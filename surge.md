@@ -1,5 +1,9 @@
 # surge(1)
 
+Install
+
+    npm install -g surge
+
 Upload
 
     surge login                                     # authentication (see ~/.netrc)
