@@ -2,9 +2,7 @@
 
 ## Update
 
-    npm install -g @salesforce/cli
-    sf plugins reset
-    sf info releasenotes display
+    npm install -g @salesforce/cli; sf plugins reset; sf info releasenotes display
 
 ## Authorize
 
