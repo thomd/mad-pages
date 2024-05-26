@@ -5,16 +5,17 @@
     shellcheck -f gcc script.sh | wc -l                    # count errors
     shellcheck --color=always script.sh | less -r          # preserve colors when piping to less
 
-Disable Shellcheck Rules
-add at top of file to disable rules in a file:
+Shellcheck Rules: https://www.shellcheck.net/wiki/
 
-#!/usr/bin/env bash
-# shellcheck disable=SC2003,SC2219
+## Disable Rules in a File
 
-add at a specific line to disable line:
+    #!/usr/bin/env bash
+    # shellcheck disable=SC2003,SC2219
 
-hexToAscii() {
-  # shellcheck disable=SC2059
-  printf "\x$1"
-}
+## Disable Rule for a Specific Line
+
+    hexToAscii() {
+        # shellcheck disable=SC2059
+        printf "\x$1"
+    }
 
