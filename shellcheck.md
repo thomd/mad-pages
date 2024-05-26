@@ -14,8 +14,7 @@ Shellcheck Rules: https://www.shellcheck.net/wiki/
 
 ## Disable Rule for a Specific Line
 
-    hexToAscii() {
-        # shellcheck disable=SC2059
-        printf "\x$1"
-    }
+    # shellcheck disable=SC2059
+    printf "\x$1"
+
 
