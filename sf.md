@@ -1,5 +1,11 @@
 # sf(1)
 
+## Update
+
+    npm install -g @salesforce/cli
+    sf plugins reset
+    sf info releasenotes display
+
 ## Authorize
 
     sf org login web -r https://test.salesforce.com -a \<org>        # authorize sandbox
