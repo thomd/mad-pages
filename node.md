@@ -29,7 +29,9 @@
 
   Debug Variables in REPL:
 
-    > console.dir(my_obj, {colors: true, depth: 1 })
+    > repl
+    > console.dir(my_obj, {colors: true, depth: null})
     > console.log(JSON.stringify(my_obj, null, 4))
+    > console.table(my_obj)
 
   Debug in Chrome: Open Chrome Developer Tools in arbitrary site and click on Node-Icon
