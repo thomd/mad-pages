@@ -33,7 +33,7 @@
 
   Replace value of JSON key:
 
-    cat file.json | jq '(.foo) |= "baz"'         # replace values of `foo`
+    cat file.json | jq '(.foo) |= "baz"'         # replace values of 'foo'
 
   String Interpolation
 
