@@ -26,6 +26,10 @@
 
     cat file.json | jq '. += {"foo": "bar"}'
 
+  Delete a key `foo`:
+
+    cat file.json | jq 'del(..|.foo?)'
+
   Replace value of JSON key:
 
     cat file.json | jq '(.foo) |= "baz"'         # replace values of `foo`
