@@ -19,8 +19,8 @@
   Search/Filter in JSON array:
 
     npx sfcc-ci code:list --json | jq '.data[] | select(.active == true) | .id'
-    cat data.json | jq '.[] | select(.name == "Foo") | .name'                               # all "Foo"
-    cat data.json | jq '.[] | select(.name == "Foo" or .name == "Bar" | not) | .name'       # all except "Foo" and "Bar"
+    cat data.json | jq '.[] | select(.name == "Foo") | .name'                               # all 'Foo'
+    cat data.json | jq '.[] | select(.name == "Foo" or .name == "Bar" | not) | .name'       # all except 'Foo' and 'Bar'
 
   Append JSON key:
 
@@ -28,8 +28,8 @@
 
   Delete a key:
 
-    cat file.json | jq 'del(.foo)'               # delete `foo` keys from first level
-    cat file.json | jq 'del(..|.foo?)'           # delete `foo` keys from all levels
+    cat file.json | jq 'del(.foo)'               # delete 'foo' key from first level
+    cat file.json | jq 'del(..|.foo?)'           # delete 'foo' keys from all levels
 
   Replace value of JSON key:
 
