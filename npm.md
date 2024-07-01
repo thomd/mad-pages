@@ -31,3 +31,8 @@
 
     npm list -g --depth 0                        # list globally installed packages
 
+# npm-check(1)
+
+    npx npm-check
+    npx npm-check -u                   # interactive update
+    npx npm-check -g                   # look for global modules
