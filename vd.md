@@ -53,13 +53,17 @@
 
 ## VisiData Best Practices
 
-  format date column from 'mm/dd/yyyy' to 'mm/yyyy'
+  Format date column from 'mm/dd/yyyy' to 'mm/yyyy'
 
     :  /                                    # split 'date' into three new columns 'date\_re0', 'date\_re1' and 'date\_re2'
     -                                       # delete 'date\_re1' column
     =  date\_re1 + date\_re2                  # concat to a new column
 
+  Select Data with Frequency Tables:
 
+    F                                       # to show frequency table
+    Enter                                   # on a row to see the source rows for that value
+    g '                                     # to freeze the sheet, converting it to a regular sheet for further manipulation
 
 
 
