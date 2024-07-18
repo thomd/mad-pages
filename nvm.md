@@ -13,6 +13,7 @@ install new version
 
     nvm install \<version>                   # install <version>
     nvm install --lts                       # install latest LTS version
+    nvm install \<lts_name>                  # install specific LTS version
     nvm reinstall-packages \<version>        # reinstall global npm packages contained in <version> to current version
 
 cleanup
