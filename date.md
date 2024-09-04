@@ -1,5 +1,10 @@
 # date(1)
 
+Special Dates
+
+    date +%V                         # calendar-week (KW)
+    date +%s                         # time since UNIX EPOCH
+
 Date Diffs
 
     date -v -2d                      # date two days ago
