@@ -66,10 +66,10 @@
     Enter                                   # on a row to see the source rows for that value
     g '                                     # to freeze the sheet, converting it to a regular sheet for further manipulation
 
-  Find all Emails not post-fixed with `.invalid`:
+  Find all Emails not post-fixed with '.invalid':
 
     | \.invalid$
     gt
-    ""
+    "
 
 
