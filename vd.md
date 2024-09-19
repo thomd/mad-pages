@@ -22,10 +22,11 @@
     c        # find column name by regex
     -        # hide column
 
-    s        # select a row
-    u        # unselect a row
+    s        # select current row
+    u        # unselect current row
     gu       # unselect all rows
-    gt       # toggle all rows between selected / unselected
+    t        # toggle selection of current row
+    gt       # toggle selection of all rows
     ,        # select all rows matching current cell
     |        # select all rows matching a regex
     "        # create new sheet of selected rows
@@ -65,5 +66,10 @@
     Enter                                   # on a row to see the source rows for that value
     g '                                     # to freeze the sheet, converting it to a regular sheet for further manipulation
 
+  Find all Emails not post-fixed with `.invalid`:
+
+    | \.invalid$
+    gt
+    ""
 
 
