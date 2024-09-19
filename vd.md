@@ -68,7 +68,7 @@
 
   Find all Emails not post-fixed with '.invalid':
 
-    | \.invalid$
+    |  \.invalid$
     gt
     "
 
