@@ -1,3 +1,9 @@
+# Git Best Practices
+
+Show changes of a specific commit
+
+    git log A^..A -p
+
 # Resolve Merge Conflict
 
     git merge --abort                 # OPTION 1: abort the merge and get back to the state before `git merge develop`
