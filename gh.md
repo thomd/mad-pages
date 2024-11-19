@@ -13,6 +13,7 @@
     gh search code foo --filename file.txt        # search code matching keyword 'foo' in 'file.txt' files
     gh search code foo --extension xml            # search xml files matching keyword 'foo'
     gh search code foo -w                         # open search result in browser
+    gh search code --extension apex --json url,path,textMatches,repository          # search for '*.apex' files
 
     gh repo view user/repo                        # view info of repo 'user/repo'
     gh repo view user/repo -w                     # open repo 'user/repo' in browser
