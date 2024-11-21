@@ -7,7 +7,7 @@
 ## Authorize
 
     sf org login web -r https://test.salesforce.com -a \<org>                                      # authorize sandbox
-    sf org login web -r https://DomainName--SandboxName.sandbox.my.salesforce.com -a \<org>        # authorize sandbox
+    sf org login web -r https://DomainName--\<org>.sandbox.my.salesforce.com -a \<org>             # authorize sandbox
     sf org login web -r https://login.salesforce.com -a \<org>                                     # authorize playground or production-org
     sf org logout -o \<org>
 
