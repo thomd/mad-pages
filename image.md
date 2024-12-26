@@ -2,13 +2,13 @@
 
 ## convert(1)
 
-  Supported Formats:
+Supported Formats:
 
     identify -list format
 
-  Image Conversions:
+Image Conversions:
 
-    convert in.jpg out.png                                     # jpg to png. 
+    convert in.jpg out.png                                     # jpg to png.
     convert -background none in.svg out.png                    # svg to png with transparency
     convert -trim in.jpg out.jpg                               # trim whitespace around image
     convert -trim -fuzz 40% in.jpg out.jpg                     # trim more whitespace around image
@@ -26,7 +26,7 @@ Convert Image to SVG:
 
 ## identify(1)
 
-  Describes the format and characteristics of one or more image files
+Describes the format and characteristics of one or more image files
 
     identify -verbose image.jpg
     identify animated.gif                                      # discover number of frames
@@ -40,18 +40,17 @@ Convert Image to SVG:
 
 # Image Best Practices
 
-  Encode Image as Data URI
+Encode Image as Data URI
 
     convert image.png - | openssl enc -base64 -A | sed -e 's/^/data:image\/png;base64,/'
 
+Convert all HEIC images to PNG
+
+    fd -e heic -x magick {} -scale 50% {.}.png
+    fd -e heic -x trash
+
 # Image Management
 
-  Distribution of file extensions
+Distribution of file extensions
 
     while read f; do echo ${f##*.}; done < <(fd -t f) | sort | uniq -c | sort
-
-
-
-
-
-
