@@ -8,7 +8,7 @@ Supported Formats:
 
 Image Conversions:
 
-    convert in.jpg out.png                                     # jpg to png.
+    convert in.jpg out.png                                     # jpg to png
     convert -background none in.svg out.png                    # svg to png with transparency
     convert -trim in.jpg out.jpg                               # trim whitespace around image
     convert -trim -fuzz 40% in.jpg out.jpg                     # trim more whitespace around image
