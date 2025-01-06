@@ -8,7 +8,7 @@ Create App Scaffolding
 
 Create App with Simple Template
 
-    npx create-react-app myapp --template @thomd/cra-template-simple
+    npx -f create-react-app myapp --template @thomd/cra-template-simple
     cd myapp
     npm start
 
