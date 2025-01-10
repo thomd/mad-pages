@@ -3,7 +3,6 @@
 ## Examples
 
     npx alex README.md                                   # check text for insensitive or inconsiderate writing
-    cat README.md | npx alex
 
     npx http-server                                      # run a static web server in your current directory
     npx json-server data.json                            # run a mock REST API server
@@ -20,7 +19,8 @@
     echo hello | npx lolcatjs                            # colorful rainbow text
     npx firew0rks                                        # ascii firework
     npx firew0rks fireplace -1                           # ascii fireplace
-    npx benny-hill                                       # play Benny Hill music
+    npx benny-hill npm install                           # play Benny Hill music while running a command
+    npx qrip https://example.com                         # generate QR code
 
   PlantUML
 
