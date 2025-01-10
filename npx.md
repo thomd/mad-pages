@@ -14,8 +14,12 @@
     npx npm-check                                        # interactively update npm dependencies
     npx npm-check --skip-unused --update
 
+  Terminal Effects
+
     npx figlet-cli text                                  # ascii text generator
     echo hello | npx lolcatjs                            # colorful rainbow text
+    npx firew0rks                                        # ascii firework
+    npx firew0rks fireplace -1                           # ascii fireplace
 
   PlantUML
 
