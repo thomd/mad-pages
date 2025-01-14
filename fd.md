@@ -7,6 +7,7 @@
     -p                                          # search within the entire pathname, not just the filename
     -s                                          # force case-sensitivity (default: ignore case unless an uppercase letter is in the pattern)
 
+    -E PATTERN                                  # exclude
     -H, --hidden                                # search also in hidden files
     -I, -no-ignore                              # search also in ignored files
     -L, --follow                                # symbolic links are also traversed
@@ -62,6 +63,7 @@
     fd -IHL -tf -p /rc/package.json$ ~          # find all 'package.json' files within a 'rc' folder
     fd -S +4m                                   # find files larger than 4MB
     fd -e pdf -X cpdf -o all.pdf                # merge multiple pdf into one
+    fd -e js -E node_modules                    # find all js files but not in `node_modules`
 
     fd --threads=1 -e isml -x sh -c "awk -f script.awk {} > tmp; mv tmp > {}"    # replace with an awk script
 
