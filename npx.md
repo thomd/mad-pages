@@ -13,6 +13,8 @@
     npx npm-check                                        # interactively update npm dependencies
     npx npm-check --skip-unused --update
 
+    npx npkill                                           # finds and removes old and heavy `node_modules` folders
+
   Fun
 
     npx figlet-cli text                                  # ascii text generator
