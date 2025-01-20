@@ -15,7 +15,7 @@
 
     npx npkill                                           # finds and removes old and heavy `node_modules` folders
 
-  Fun `fun` fun
+  Fun
 
     npx figlet-cli text                                  # ascii text generator
     echo hello | npx lolcatjs                            # colorful rainbow text
