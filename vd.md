@@ -34,8 +34,8 @@
     za       # add a new blank column
     a        # add a new blank row
     ga \<N>   # add \<N> new blank rows
-    :        # create new column by splitting current column on regex, e.g. split 01/01/2023 by / to get three new columns
-    =        # bring up the prompt `new column expr=`
+    :        # create new column by splitting with `split regex:`
+    =        # create new column by expression `new column expr=`
     Ctrl ^   # toggle between current and previous sheet
     gY       # copy selected rows to clipboard
 
