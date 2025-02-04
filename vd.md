@@ -54,6 +54,11 @@
 
 ## VisiData Best Practices
 
+  New Column based on Pattern
+
+    ;  (ABC-[0-9]{4})
+    (
+
   Format date column from 'mm/dd/yyyy' to 'mm/yyyy':
 
     :  /                                    # split 'date' into three new columns 'date\_re0', 'date\_re1' and 'date\_re2'
