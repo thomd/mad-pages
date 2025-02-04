@@ -54,10 +54,10 @@
 
 ## VisiData Best Practices
 
-  New Column based on Pattern
+  Extract pattern and create new column
 
-    ;  (ABC-[0-9]{4})
-    (
+    ;  ([0-9]{4})                           # create new colum containing all 4-digit numbers within current column
+    (                                       # expand column
 
   Format date column from 'mm/dd/yyyy' to 'mm/yyyy':
 
