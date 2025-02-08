@@ -2,5 +2,4 @@
 
 ## Use Prettier in Vim
 
-    npm install prettier
-    jo tabWidth=4 semi@F singleQuote@T > .prettierrc
+    npm install prettier; jo tabWidth=4 semi@F singleQuote@T > .prettierrc
