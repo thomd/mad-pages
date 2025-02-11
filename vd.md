@@ -77,4 +77,9 @@
     gt
     "
 
+  Histogram over Date
 
+    @                                       # convert to date
+    F                                       # frequnecy table
+                                            # select 'count' column and 
+    .                                       # create graph
