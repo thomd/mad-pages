@@ -56,7 +56,6 @@
     fd -e py -X rg foo                          # rip-grep for 'foo' in all python files
     fd -HI -t f '^\.DS\_Store$' -X rm -i         # interactively delete all DS_Store files in current dir
     fd foo | as-tree                            # list search result as tree
-    fd -H -I --changed-within \`now -s`          # find changed files since last call of 'now'
     fd --changed-within 30min                   # find changed files within the last 30min
     fd -IH -td ^venv$ ~/develop -X dua          # calculate disk usage of all venv folders
     fd -IHL -td ^rc$ ~                          # find all rc folders in ~
@@ -66,4 +65,6 @@
     fd -e js -E node\_modules                    # find all js files but not in `node_modules`
 
     fd --threads=1 -e isml -x sh -c "awk -f script.awk {} > tmp; mv tmp > {}"    # replace with an awk script
+
+    fd -H -I --changed-within \`now -s` . ~      # find changed files within home folder since last call of 'now'
 
