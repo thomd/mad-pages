@@ -79,7 +79,8 @@
 
   Histogram over Date
 
-    @                                       # convert to date
+    @                                       # convert y-axis to date
+    !                                       # and set as key column
     F                                       # frequnecy table
-                                            # select 'count' column and 
+                                            # select 'count' column - or mae existing count column numeric with `#`
     .                                       # create graph
