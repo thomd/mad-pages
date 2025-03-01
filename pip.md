@@ -17,6 +17,7 @@ List Installed Packages
     pip list
     pip list -o                                          # list outdated packages
     pip show PACKAGE                                     # show information about a package
+    pip freeze > requirements.txt                        # output installed packages in requirements format
 
 Check Version of a Package
 
