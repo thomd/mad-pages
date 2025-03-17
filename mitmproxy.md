@@ -14,9 +14,9 @@
 Set Custom Header
 
         # custom-header.py
-       from mitmproxy import http
-       def request(flow):
-           flow.request.headers["myheader"] = "value"
+         from mitmproxy import http
+         def request(flow):
+             flow.request.headers["myheader"] = "value"
 
     mitmproxy -s custom-header.py
 
