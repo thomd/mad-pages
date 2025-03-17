@@ -20,3 +20,17 @@ Set Custom Header
 
     mitmproxy -s custom-header.py
 
+## Intercept Requests
+
+Intercept Requests with Node.js
+
+    export HTTP_PROXY="http://localhost:8080"
+    export HTTPS_PROXY="http://localhost:8080"
+    export NODE_TLS_REJECT_UNAUTHORIZED=0
+    export NODE_NO_WARNINGS=1
+
+Intercept Requests with Python
+
+    export HTTP_PROXY="http://localhost:8080"
+    export HTTPS_PROXY="https://localhost:8080"
+    export REQUESTS_CA_BUNDLE="/Users/tduerr/.mitmproxy/mitmproxy-ca.pem"
