@@ -7,16 +7,16 @@
     mitmproxy -p 8888                                           # run with custom port (default: 8080)
     mitmproxy -s script.py                                      # execute a script
 
-    mitmproxy --anticache --replacements "/~s/foo/bar"         # replace 'foo' with 'bar'
+    mitmproxy --anticache --replacements "/~s/foo/bar"          # replace 'foo' with 'bar'
 
 ## Scripts
 
 Set Custom Header
 
         # custom-header.py
-        from mitmproxy import http
-        def request(flow):
-            flow.request.headers["myheader"] = "value"
+       from mitmproxy import http
+       def request(flow):
+           flow.request.headers["myheader"] = "value"
 
     mitmproxy -s custom-header.py
 
