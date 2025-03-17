@@ -24,13 +24,13 @@ Set Custom Header
 
 Intercept Requests with Node.js
 
-    export HTTP_PROXY="http://localhost:8080"
-    export HTTPS_PROXY="http://localhost:8080"
-    export NODE_TLS_REJECT_UNAUTHORIZED=0
-    export NODE_NO_WARNINGS=1
+    export HTTP\_PROXY="http://localhost:8080"
+    export HTTPS\_PROXY="http://localhost:8080"
+    export NODE\_TLS\_REJECT\_UNAUTHORIZED=0
+    export NODE\_NO\_WARNINGS=1
 
 Intercept Requests with Python
 
-    export HTTP_PROXY="http://localhost:8080"
-    export HTTPS_PROXY="https://localhost:8080"
-    export REQUESTS_CA_BUNDLE="/Users/tduerr/.mitmproxy/mitmproxy-ca.pem"
+    export HTTP\_PROXY="http://localhost:8080"
+    export HTTPS\_PROXY="https://localhost:8080"
+    export REQUESTS\_CA\_BUNDLE="/Users/tduerr/.mitmproxy/mitmproxy-ca.pem"
