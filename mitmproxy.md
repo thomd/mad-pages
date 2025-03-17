@@ -9,6 +9,10 @@
 
     mitmproxy --anticache --replacements "/~s/foo/bar"          # replace 'foo' with 'bar'
 
+## SSL Certificate
+
+  Mitmproxy certificate is locagted in `~/.mitmproxy`
+
 ## Scripts
 
   Set Custom Header
