@@ -28,7 +28,8 @@
     t        # toggle selection of current row
     gt       # toggle selection of all rows
     ,        # select all rows matching current cell
-    |        # select all rows matching a regex
+    |        # select all rows matching a regex in current colum
+    g|       # select all rows matching a regex in any visible column
     "        # create new sheet of selected rows
 
     za       # add a new blank column
