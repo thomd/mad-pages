@@ -6,7 +6,7 @@
     ls -l | vd -f fixed --skip 1 --header 0            # parse the output of ls -l into usable data
     vd --csv-delimiter ";" data.csv                    # use ; as delimiter (default is ,)
     curl -sL https://git.io/IRIStsv | vd -f tsv        # open tab-delimiter file
-    cat "1,2" | vd --header 0                          # do not use first row as header
+    echo "1,2" | vd --header 0                         # do NOT use first row as header
 
 ## Commands
 
