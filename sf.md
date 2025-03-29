@@ -21,6 +21,8 @@
 ## Create Minimal SFDX Project
 
     echo '{"packageDirectories": [{"path": "force-app"}]}' > sfdx-project.json; mkdir force-app
+    sf config set target-org \<org>
+    code .
 
 ## Debug Log
 
