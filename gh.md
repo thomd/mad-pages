@@ -45,7 +45,7 @@
   Workflow Actions
 
     gh workflow list
-    gh workflow list -r thomd/latex-template
+    gh workflow list -R thomd/latex-template
 
   Codespace
 
