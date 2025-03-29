@@ -28,6 +28,7 @@
     gh gist list --public
     gh gist list --secret
     gh gist view ID
+    gh gist view ID -f file.txt                   # view file.txt from the gist
     gh gist edit ID
     gh gist clone ID                              # clone a gist
     gh gist clone ID TARGET                       # clone a gist into a 'TARGET' folder
