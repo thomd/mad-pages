@@ -13,7 +13,10 @@
     gh search code foo --filename file.txt        # search code matching keyword 'foo' in 'file.txt' files
     gh search code foo --extension xml            # search xml files matching keyword 'foo'
     gh search code foo -w                         # open search result in browser
-    gh search code --extension apex --json url,path,textMatches,repository          # search for '*.apex' files
+    gh search code --extension apex --json url,path,textMatches,repository                     # search for '*.apex' files
+
+    gh api search/repositories -X=GET -F q='toon' -q '.items[].html_url'                       # print repo URLs containing the pattern 'toon'
+    gh api search/code -X=GET -F q='filename:visidatarc' -q '.items[].html_url'                # print repo URLs having a file 'visidatarc'
 
     gh repo view user/repo                        # view info of repo 'user/repo'
     gh repo view user/repo -w                     # open repo 'user/repo' in browser
@@ -36,9 +39,6 @@
     gh gist create file.py -d "description"       # create gist with one file and a description
     gh gist create file.py --public               # create a public gist
     gh gist create file1.py file2.py              # create a gitst with multiple files
-
-    gh api search/repositories -X=GET -F q='toon' -q '.items[].html_url'
-    gh api search/code -X=GET -F q='filename:visidatarc' -q '.items[].html_url'
 
   Codespace
 
