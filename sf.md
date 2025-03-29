@@ -18,21 +18,9 @@
     sf config set -g target-org \<org>                               # set default org globally
     sf config set target-dev-hub \<org>                              # set default DevHub org
 
-## Validation
+## Create Minimal SFDX Project
 
-    sf project deploy start -x manifest/package.xml --dry-run --concise -l NoTestRun -g -o \<org>
-    sf project deploy validate -x manifest/package.xml -l RunSpecifiedTests \`sed s/,$// scripts/test/unit-test-list.txt | awk '{ printf(" -t %s", $0) }'\` -o \<org>
-
-## Deploy to Org
-
-    sf project deploy start -x manifest/package.xml --concise -o \<org>
-    sf project deploy start -m LightningComponentBundle:\* -m ApexClass:\* -o \<org>
-    nodemon -w force-app -e "cls,xml,js,html" -x "sf project deploy start -m LightningComponentBundle:\* -m ApexClass:\*"
-
-## Retrieve from Org
-
-    sf project retrieve start -x manifest/package.xml -o \<org>
-    sf project retrieve start -m ApexClass:MyApexClass -o \<org>
+    echo '{"packageDirectories": [{"path": "force-app"}]}' > sfdx-project.json; mkdir force-app
 
 ## Debug Log
 
