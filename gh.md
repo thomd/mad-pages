@@ -26,6 +26,8 @@
     gh search repos --owner=microsoft             # search repositories public repos in the microsoft organization
     gh search repos --topic=unix,terminal         # search repositories with a set of topics
 
+  Gists
+
     gh gist list
     gh gist list -L 100                           # list 100 gists (default 10)
     gh gist list --public
@@ -39,6 +41,11 @@
     gh gist create file.py -d "description"       # create gist with one file and a description
     gh gist create file.py --public               # create a public gist
     gh gist create file1.py file2.py              # create a gitst with multiple files
+
+  Workflow Actions
+
+    gh workflow list
+    gh workflow list -r thomd/latex-template
 
   Codespace
 
