@@ -2,15 +2,15 @@
 
 ## Options
 
-    -s, --system TEXT                                # system prompt to use
-    -m, --model NAME                                 # model to use
-    -t, --template NAME                              # template to use
-    --no-stream                                      # do not stream output
-    -n, --no-log                                     # don't log to database
-    -c, --continue                                   # continue the most recent conversation.
-    --cid, --conversation ID                         # continue the conversation with the given ID.
-    --key KEY                                        # API key to use
-    --save NAME                                      # save prompt with this template name
+    -s, --system TEXT                                  # system prompt to use
+    -m, --model NAME                                   # model to use
+    -t, --template NAME                                # template to use
+    --no-stream                                        # do not stream output
+    -n, --no-log                                       # don't log to database
+    -c, --continue                                     # continue the most recent conversation.
+    --cid, --conversation ID                           # continue the conversation with the given ID.
+    --key KEY                                          # API key to use
+    --save NAME                                        # save prompt with this template name
 
 ## API Keys
 
@@ -29,10 +29,12 @@
 
 ## Usage
 
-    llm chat                                           # use llm in interactive chat modus
-    llm -s "be a helpful assistant"                    # run a system prompt
-    llm "ten names for a cat"                          # run a user prompt
-    llm -c "now for dogs"                              # continue the last prompt
+    llm "Ten names for a cat"                                         # run a prompt using the default model
+    llm -c "now for dogs"                                             # continue the last prompt
+    cat myfile.py | llm -s "Explain this code"                        # run a system prompt against a file
+    llm -a scanned-document.jpg "extract text"                        # extract text from an image
+    llm -f https://example.com/article 'bullet point summary'         # summarize resource via URL
+    llm -f /path/to/file 'bullet point summary'                       # summarize file
 
-    llm "extract text" -a scanned-document.jpg         # extract text from an image
+    llm -m NAME "Ten names for a cat"                                 # use a specific model
 
