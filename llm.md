@@ -32,7 +32,7 @@
     llm "Ten names for a cat"                                         # run a prompt using the default model
     llm -c "now for dogs"                                             # continue the last prompt
     cat myfile.py | llm -s "Explain this code"                        # run a system prompt against a file
-    llm -a scanned-document.jpg "extract text"                        # extract text from an image
+    llm -a scanned-document.jpg "extract text"                        # extract text from an image (only with OpenAI model)
     llm -f https://example.com/article 'bullet point summary'         # summarize resource via URL
     llm -f /path/to/file 'bullet point summary'                       # summarize file
 
