@@ -21,8 +21,10 @@
 ## Create Minimal SFDX Project
 
     echo '{"packageDirectories": [{"path": "force-app"}]}' > sfdx-project.json; mkdir force-app
+    git init; git add .; git ci -m init
     sf config set target-org \<org>
     code .
+    sf-deploy
 
 ## Debug Log
 
