@@ -27,7 +27,7 @@
  4. Setup local project
 
     echo '{"packageDirectories": [{"path": "force-app"}]}' > sfdx-project.json; mkdir force-app
-    echo "**/__tests__/**" > .forceignore
+    echo "\**/\__tests__/**" > .forceignore
     git init; git add .; git ci -m init
     sf config set target-org tryout
     code .
