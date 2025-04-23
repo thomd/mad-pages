@@ -3,7 +3,8 @@
 Special Dates
 
     date +%V                                                          # calendar-week (KW)
-    date +%s                                                          # time since UNIX EPOCH
+    date +%s                                                          # time since UNIX EPOCH in seconds
+    gdate +%s%3N                                                      # time since UNIX EPOCH in milli-seconds
 
 Date Diffs
 
