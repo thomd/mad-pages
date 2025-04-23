@@ -14,4 +14,4 @@ Date Diffs
 
 Transformations
 
-    date -j -f %s 1583429905 +%Y-%m-%d_%H:%M:%S         # transform unix timestamp to readable date
+    date -j -f %s 1583429905 +%Y-%m-%d_%H:%M:%S             # transform unix timestamp to readable date
