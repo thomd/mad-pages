@@ -15,4 +15,4 @@ Date Diffs
 Transformations
 
     date -j -f %s 1583429905 +%Y-%m-%d_%H:%M:%S                       # transform unix timestamp to readable date-time
-    date -j -f "%Y-%m-%d_%H:%M:%S" "2020-03-05_18:38:25" +"%s"        # transform readable date-time to unix-timestamp
+    date -j -f "%Y-%m-%d %H:%M:%S" "2020-03-05 18:38:25" +"%s"        # transform readable date-time to unix-timestamp
