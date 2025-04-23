@@ -2,8 +2,8 @@
 
 Special Dates
 
-    date +%V                                                # calendar-week (KW)
-    date +%s                                                # time since UNIX EPOCH
+    date +%V                                                          # calendar-week (KW)
+    date +%s                                                          # time since UNIX EPOCH
 
 Date Diffs
 
