@@ -20,16 +20,16 @@
 
 ## Create Minimal SF Project
 
- 1. Create a new playground, e.g. `tryout`
- 2. Get your Login Credentials of new Playground, e.g. `tryout123`
+ 1. Create a new playground, e.g. `playground`
+ 2. Get your Login Credentials of new Playground, e.g. `playground123`
  3. Setup > Digital Experiences > Settings > Enable Digital Experiences
- 4. Create new site 'Build Your Own (LWR)' with name `tryout`
+ 4. Create new site 'Build Your Own (LWR)' with name `playground`
  4. Setup local project
 
     echo '{"packageDirectories": [{"path": "force-app"}]}' > sfdx-project.json; mkdir force-app
     echo "\*\*/\_\_tests\_\_/\*\*" > .forceignore
     git init; git add .; git ci -m init
-    sf config set target-org tryout
+    sf config set target-org playground
     code .
     sf-deploy
 
