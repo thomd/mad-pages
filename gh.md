@@ -26,6 +26,12 @@
     gh search repos --owner=microsoft             # search repositories public repos in the microsoft organization
     gh search repos --topic=unix,terminal         # search repositories with a set of topics
 
+  Releases
+
+    gh release view -R USER/REPO                  # view info of latest release
+    gh release download -R USER/REPO -p ARCHIVE   # download file ARCHIVE of a release
+    tar -xzf ARCHIVE -C ~/bin/ FILE               # unzip binary into ~/bin folder
+
   Gists
 
     gh gist list
