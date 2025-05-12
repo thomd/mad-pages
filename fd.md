@@ -39,6 +39,7 @@
     fd -e jpg -x convert {} {.}.png             # convert all jpg files to png files
     fd -e jpg -x mv {} {//}/foo{/}              # prefix all jpg files names with 'foo'
     fd -x sh -c "cmd1; cmd2"                    # execute two commands in parallel
+    fd -x sh -c "echo {} > {/.}.txt"            # execute multiple commands with placeholder
 
     {}      # foo/bar/baz.txt
     {.}     # foo/bar/baz
