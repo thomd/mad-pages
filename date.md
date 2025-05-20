@@ -2,6 +2,7 @@
 
 Special Dates
 
+    date +%Y-%m-%d_%H:%M:%S                                           # formatted current date
     date +%V                                                          # calendar-week (KW)
     date +%s                                                          # time since UNIX EPOCH in seconds
     gdate +%s%3N                                                      # time since UNIX EPOCH in milli-seconds
