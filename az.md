@@ -22,3 +22,7 @@ Create a PAT token in Azure DevOps > User Settings > Security > Personal Access 
     az group list -o table
     az group create -n \<group> -l \<location>
     az group delete -n \<group> --no-wait -y
+
+# Azure DevOps
+
+    az pipelines list -p "$AZDO_PROJECT" -o table
