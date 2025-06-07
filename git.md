@@ -31,7 +31,7 @@
     git stash -p                        # interactively specify changes included in this stash
     git stash -u                        # include also untracked files
     git stash -k                        # stash only unstaged changes (--keep-index)
-    git stash push -- file.txt          # stash only a specific file
+    git stash push -- FILE              # stash only a specific file
 
     git stash list                      # list all stashes; alias git s
     git stash show                      # show files of first stash
@@ -40,7 +40,5 @@
     git stash pop stash@{1}             # apply a stash and drop from stack
     git stash pop                       # apply first stash and drop from stack
 
-    git stash drop                      # drop latest stash
-    git stash drop stash@{1}            # drop a stash
     git stash clear                     # clear all stashes
 
