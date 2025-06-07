@@ -4,10 +4,11 @@
 
   Commit Perspective
 
-    git log COMMIT^..COMMIT -p
-    git diff COMMIT^...COMMIT -- FILE
+    git log COMMIT^..COMMIT -p                                # what changed on COMMIT ?
 
   File Perspective
+
+    git diff COMMIT^...COMMIT -- FILE                         # How did FILE change on commit COMMIT ?
 
     git show BRANCH:FILE                                      # state of FILE in BRANCH
     git diff BRANCH..BRANCH -- FILE                           # compare FILE from two BRANCHES
