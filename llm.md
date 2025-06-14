@@ -38,3 +38,6 @@
 
     llm -m NAME "Ten names for a cat"                                 # use a specific model
 
+    curl -s https://www.nytimes.com | strip-tags .story-wrapper | ttok -t 4000 | llm -s "summary bullet points" | md        # summarize a news page
+    fd -e py | files-to-prompt | llm -s "Act as a Python developer and do a code review" | md                               # code review with files provided in user prompt
+
