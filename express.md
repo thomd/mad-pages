@@ -9,7 +9,7 @@ GET Route
     const app = express()
     app.get('/', (req, res) => {
         console.log(req.headers)
-        res.send('ok')
+        res.status(200).send('ok')
     })
     app.listen(80)
 
@@ -24,7 +24,10 @@ POST Route
     const express = require('express')
     const app = express()
     app.use(express.json())                               # <- parse request body as JSON
-    app.post('/', (req, res) => res.json(req.body))
+    app.post('/', (req, res) => {
+       console.log(req.body)
+       res.status(200).send('ok')
+    })
     app.listen(80)
 
     > curl -d '{"a":1}' -H 'content-type: application/json' localhost
