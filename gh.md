@@ -3,6 +3,7 @@
   gh is GitHub on the command line.
 
     gh auth status                                # see who is logged in
+    gh auth switch                                # switch accounts
     gh auth login
 
     gh search code foo bar                        # search code matching "foo" and "bar"
