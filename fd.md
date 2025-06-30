@@ -64,6 +64,7 @@
     fd -S +4m                                   # find files larger than 4MB
     fd -e pdf -X cpdf -o all.pdf                # merge multiple pdf into one
     fd -e js -E node\_modules                    # find all js files but not in `node_modules`
+    fd -HI -S +1g . ~                           # find files larger then 1GB within home directory
 
     fd --threads=1 -e isml -x sh -c "awk -f script.awk {} > tmp; mv tmp > {}"    # replace with an awk script
 
