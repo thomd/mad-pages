@@ -19,8 +19,9 @@
   Search/Filter in JSON array:
 
     npx sfcc-ci code:list --json | jq '.data[] | select(.active == true) | .id'
-    cat data.json | jq '.[] | select(.name == "Foo") | .name'                               # all 'Foo'
+    cat data.json | jq '.[] | select(.name == "Foo") | .name'                               # all records with name = 'Foo'
     cat data.json | jq '.[] | select(.name == "Foo" or .name == "Bar" | not) | .name'       # all except 'Foo' and 'Bar'
+    cat data.json | jq '.[] | select(.name | contains("Foo")) | .name'                      # all records with names containing 'Foo'
 
   Append JSON key:
 
