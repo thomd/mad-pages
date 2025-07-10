@@ -22,9 +22,8 @@
     gh repo view USER/REPO                        # view info of repo 'USER/REPO'
     gh repo view USER/REPO -w                     # open repo 'USER/REPO' in browser
 
-    gh search repos cli shell                     # search repositories matching set of keywords "cli" and "shell"
-    gh search repos "vim plugin"                  # search repositories matching phrase "vim plugin"
-    gh search repos --owner=microsoft             # search repositories public repos in the microsoft organization
+    gh search repos cli "vim plugin"              # search repositories matching "cli" and "vim plugin"
+    gh search repos --owner=USER                  # search repositories of USER
     gh search repos --topic=unix,terminal         # search repositories with a set of topics
 
   Releases
