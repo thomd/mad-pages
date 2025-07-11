@@ -16,6 +16,7 @@
     S        # open sheets sheet
     Enter    # open row sheet
     T        # transpose sheet
+    v        # toggle multiline mode for line wrap
 
     _        # toggle column width
     /        # search in current column
