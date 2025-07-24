@@ -2,16 +2,8 @@
 
 ## Inspect Ollama with Mitmproxy
 
-  start revers proxy
-
     mitmproxy --mode reverse:http://localhost:11434
-
-  start Ollama server
-
     OLLAMA_HOST=127.0.0.1:11434 ollama serve
-
-  inspect llm requests in Mitmproxy
-
     export OLLAMA\_HOST=127.0.0.1:8080
     llm install llm-ollama
     llm -m llama3.2 --tool llm_time "What time is it?" --no-stream
