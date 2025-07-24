@@ -17,11 +17,12 @@
 
 ## Inspect OpenAI with Mitmproxy
 
-  start revers proxy
-
     mitmproxy --mode reverse:https://api.openai.com
-
-  inspect llm requests in Mitmproxy
-
     export OPENAI\_BASE\_URL="http://localhost:8080/v1"
     llm -m 4o-mini --tool llm_time "What time is it?" --no-stream
+
+## Inspect ANthropic with Mitmproxy
+
+    mitmproxy --mode reverse:https://api.anthropic.com
+    export ANTHROPIC_BASE_URL="http://localhost:8080"
+    llm -m claude-3-sonnet) --tool llm_time "What time is it?" --no-stream
