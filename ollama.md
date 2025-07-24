@@ -49,5 +49,5 @@
   inspect llm requests in Mitmproxy
 
     export OLLAMA_HOST=127.0.0.1:11435
-    llm --tool llm_time "What time is it?" --no-stream
+    llm -m llama3.2 --tool llm_time "What time is it?" --no-stream
 
