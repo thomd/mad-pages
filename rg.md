@@ -3,6 +3,11 @@
 
 Configuration is in `~/.ripgreprc`
 
+## Output Options
+
+    -I                # supress file paths
+    -N                # suppress line numbers
+
 ## Options
 
     -i                # case insensitive search
@@ -19,8 +24,6 @@ Configuration is in `~/.ripgreprc`
     --files           # print each file that would be searched
     -c                # only show the count of matching lines for each file
     -o                # print only matched parts of a line
-    -I                # never print the file path with the matched lines
-    -N                # suppress line numbers
     -w                # only show matches surrounded by word boundaries
     -M NUM            # don't print lines longer than this limit
     -v                # invert match
