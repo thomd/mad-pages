@@ -10,3 +10,4 @@
 
     uv venv
     uv pip install PACKAGE
+    uv run main.py
