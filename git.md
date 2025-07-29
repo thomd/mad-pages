@@ -4,7 +4,7 @@
 
   Find Branch which your current branch was branched off (goes back only ~90 days)
 
-    git reflog | grep "moving from"
+    git reflog | grep "checkout: moving from" | grep BRANCH
 
   Commit Perspective
 
