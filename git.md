@@ -4,7 +4,7 @@
 
   Find Branch which your current branch was branched off
 
-    git reflog | grep 
+    git reflog | grep "moving from"
 
   Commit Perspective
 
