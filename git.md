@@ -2,11 +2,9 @@
 
 ## Git Best Practices
 
-  Find Branch which contains Common Ancestor
+  Find Branch which your current branch was branched off
 
-  This is an indication of the branch 
-
-    git branch --contains $(git merge-base develop feature/123)
+    git reflog | grep 
 
   Commit Perspective
 
