@@ -2,9 +2,11 @@
 
 ## Git Best Practices
 
-  Find Common Ancestor Base of Two Branches
+  Find Branch which contains Common Ancestor
 
-    git branch -a --contains $(git merge-base develop feature/123)
+  This is an indication of the branch 
+
+    git branch --contains $(git merge-base develop feature/123)
 
   Commit Perspective
 
