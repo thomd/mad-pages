@@ -2,6 +2,10 @@
 
 ## Git Best Practices
 
+  Find Common Ancestor Base of Two Branches
+
+    git merge-base develop feature/123
+
   Commit Perspective
 
     git log COMMIT^..COMMIT -p                                # what changed on COMMIT ?
