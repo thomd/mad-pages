@@ -4,7 +4,7 @@
 
   Find Common Ancestor Base of Two Branches
 
-    git merge-base develop feature/123
+    git branch -a --contains $(git merge-base develop feature/123)
 
   Commit Perspective
 
