@@ -2,7 +2,7 @@
 
 ## Git Best Practices
 
-  Find Branch which your current branch was branched off
+  Find Branch which your current branch was branched off (goes back only ~90 days)
 
     git reflog | grep "moving from"
 
