@@ -23,6 +23,12 @@
     cat data.json | jq '.[] | select(.name == "Foo" or .name == "Bar" | not) | .name'       # all except 'Foo' and 'Bar'
     cat data.json | jq '.[] | select(.name | contains("Foo")) | .name'                      # all records with names containing 'Foo'
 
+  Conditionals
+
+    jo a=foo b=bar | jq '"\(.a)" + (if .b != null then " " + .b else "" end)'               # "foo bar"
+    jo a=foo c=baz | jq '"\(.a)" + (if has("b") then " " + .b else "" end)'                 # "foo"
+    jo a=foo c=baz | jq '"\(.a)" + (if .b != null then " " + .b else empty end)'            # no output at all
+
   Append JSON key:
 
     cat file.json | jq '. += {"foo": "bar"}'
