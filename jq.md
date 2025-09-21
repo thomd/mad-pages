@@ -24,7 +24,7 @@
     cat data.json | jq '.[] | select(.name | contains("Foo")) | .name'                      # all records with names containing 'Foo'
     cat package.json | jq 'any((.scripts? // {})|keys[]; test("foo"))'                      # check if package.json has a script key mattching 'foo'
     cat package.json | jq '(.scripts//{})|has("foo")'                                       # check if package.json has a script key 'foo'
-    jq '(.scripts//{})|has("foo") | input_filename' -- package.json                         # print filename if json file has a script key 'foo'
+    jq 'select((.scripts//{})|has("foo")) | input_filename' -- package.json                 # print filename if json file has a script key 'foo'
 
   Conditionals
 
