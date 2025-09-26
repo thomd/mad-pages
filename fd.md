@@ -17,7 +17,7 @@
     -x, --exec                                  # run an external command for each of the search results in parallel (use --threads=1 for sequential command execution)
     -X, --exec-batch                            # run the external command once, with all search results as arguments
     -l                                          # shortcut for `-X ls -alh`
-    -E PATTERN                                  # exclude
+    -g, --glob                                  # find files with exactly the provided search pattern
     --changed-within TIME                       # filter by file modification time (newer than)
 
   The -x and -X option must come last, to have specific options of the external commands
