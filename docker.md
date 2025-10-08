@@ -1,27 +1,28 @@
 # docker(1)
 
-    docker system df                              # docker disk usage
-    docker system prune -f                        # remove unused containers, volumes, networks and images
+    docker system df                                     # docker disk usage
+    docker system prune -f                               # remove unused containers, volumes, networks and images
+    docker inspect CONTAINER                             # Inspect a running container
 
-Container
+Run Container
 
-    docker run -it \<image> /bin/bash              # Start a container with an interactive shell
-    docker run --rm \<image> env                   # show environment of a container
-    docker inspect \<container>                    # Inspect a running container
-    docker ps -aq | xargs docker rm               # remove all containers
+    docker run -it IMAGE /bin/bash                       # Start a container with an interactive shell
+    docker run -it -w /app IMAGE /bin/bash               # Start a container with an interactive shell in new dir `/app`
+    docker run -it -v $(pwd):/app IMAGE /bin/bash        # Start a container with an interactive shell and mount PWD
+    docker run --rm IMAGE env                            # show environment of a container
 
 Create and run a Docker Image from a _Dockerfile_
 
-    docker build -t \<image> .
-    docker run --rm --name \<container> -d -p 8080:8080 \<image>
-    docker logs \<container>
-    docker exec -it \<container> /bin/bash 
+    docker build -t IMAGE .
+    docker run --rm --name CONTAINER -d -p 8080:8080 IMAGE
+    docker logs CONTAINER
+    docker exec -it CONTAINER /bin/bash 
 
 Push Image to Docker-Hub (https://hub.docker.com/u/thomd)
 
     docker login
-    docker tag \<image> thomd/\<image>:\<tag>
-    docker push thomd/\<image>:\<tag>
+    docker tag IMAGE thomd/IMAGE:TAG
+    docker push thomd/IMAGE:TAG
 
 Alpine Image
 
@@ -40,8 +41,3 @@ Dockerized Webserver
     docker run -d --rm -v $(pwd):/var/www/html -p 80:80 php:8-apache
     echo -e "\<?php phpinfo(); ?>" > index.php
 
-# Docker Best Practices
-
-  Run interactive Ubuntu
-
-    docker run -it --rm ubuntu /bin/bash
