@@ -32,6 +32,11 @@ POST Route
 
     > curl -d '{"a":1}' -H 'content-type: application/json' localhost
 
+Logger
+
+    var morgan = require('morgan')
+    app.use(morgan('combined'))
+
 Template Engine
 
     > npm install pug
