@@ -11,7 +11,7 @@ Date Diffs
 
     date -v -2d                                                       # date two days ago
     date -v +75d                                                      # date in 75 days
-    date -v +75d "+%d.%m.%Y"                                          # date in 75 days
+    date -v +75d "+%d.%m.%Y"                                          # date in 75 days formatted as `DD.MM.YYYY`
     while read p; do date -v -${p}d; done < <(seq 10)                 # date of the 10 past days
 
 Transformations
