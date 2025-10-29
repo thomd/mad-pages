@@ -27,10 +27,14 @@ Configuration is in `~/.ripgreprc`
     -w                # only show matches surrounded by word boundaries
     -M NUM            # don't print lines longer than this limit
     -v                # invert match
+    -L, --follow      # follow symbolic links
+
     --no-ignore       # also search in git-ignored files
     --hidden, -.      # search also in hidden files
     --no-hidden       # do not search in hidden files
-    -L, --follow      # follow symbolic links
+    -u                # is equivalent to `--no-ignore`
+    -uu               # is equivalent to `--no-ignore --hidden`
+    -uuu              # is equivalent to `--no-ignore --hidden --binary`
 
 ## Examples
 
