@@ -1,7 +1,7 @@
 # express
 
     cp ~/develop/npm-packages/express/package-lock.json .
-    npm i
+    pm install --ignore-scripts
 
 GET Route
 
