@@ -1,12 +1,5 @@
 # express
 
-  package.js
-
-    
-
-
-    > npm install express
-
 GET Route
 
     const express = require('express')
