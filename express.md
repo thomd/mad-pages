@@ -1,5 +1,8 @@
 # express
 
+    cp ~/develop/npm-packages/express/package-lock.json .
+    npm i
+
 GET Route
 
     const express = require('express')
