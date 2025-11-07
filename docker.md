@@ -1,19 +1,20 @@
 # docker(1)
 
-    docker system df                                     # docker disk usage
-    docker system prune -f                               # remove unused containers, volumes, networks and images
-    docker inspect CONTAINER                             # Inspect a running container
+    docker system df                                           # docker disk usage
+    docker system prune -f                                     # remove unused containers, volumes, networks and images
+    docker inspect CONTAINER                                   # Inspect a running container
 
 Run Container
 
-    docker run -it IMAGE /bin/bash                       # Start a container with an interactive shell
-    docker run -it -w /app IMAGE /bin/bash               # Start a container with an interactive shell in new dir `/app`
-    docker run -it -v $(pwd):/app IMAGE /bin/bash        # Start a container with an interactive shell and mount PWD
-    docker run --rm IMAGE env                            # show environment of a container
+    docker run -it IMAGE /bin/bash                             # Start a container with an interactive shell
+    docker run -it -w /app IMAGE /bin/bash                     # Start a container with an interactive shell in new dir `/app`
+    docker run -it -v $(pwd):/app IMAGE /bin/bash              # Start a container with an interactive shell and mount PWD
+    docker run --rm IMAGE env                                  # show environment of a container
 
 Create and run a Docker Image from a _Dockerfile_
 
     docker build -t IMAGE .
+    docker build --no-cache -t IMAGE .                         # build an image from a Dockerfile without using the cache
     docker run --rm --name CONTAINER -d -p 8080:8080 IMAGE
     docker logs CONTAINER
     docker exec -it CONTAINER /bin/bash 
