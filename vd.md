@@ -10,6 +10,9 @@
 
 ## Commands
 
+    U        # undo
+    Ctrl h   # show help menu
+
     F        # frequency table
     I        # descriptive statistics
     C        # open columns sheet
