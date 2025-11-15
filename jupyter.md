@@ -1,11 +1,8 @@
 # Jupyter Notebooks
 
-## Install
+## Run
 
-    pip install jupyterlab
-    pip install jupyter\_contrib_nbextensions
-    pip install jupyter\_nbextensions_configurator
-    pip install watermark
+    uv run --with jupyter jupyter lab
 
 ## Jupyter Shortcuts
 
