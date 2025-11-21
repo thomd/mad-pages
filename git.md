@@ -2,6 +2,10 @@
 
 ## Git Best Practices
 
+  Find Merged Pull Requests of a JIRA Ticket
+
+    git log develop --oneline --no-decorate --grep "Merged PR" | rg JIRA_ID
+
   Find Branch which your current branch was branched off (goes back only ~90 days)
 
     git reflog | grep "checkout: moving from" | grep BRANCH
