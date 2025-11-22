@@ -1,23 +1,11 @@
 # tmux(1)
 
-Kill Session
+- create horizontal panes with `ctrl-b %`
+- create vertical panes with "
 
-    tmux kill-session
-
-Show key bindings: `ctrl-a ?`
-
-## panes
-
-Jump to last pane: `ctrl-a tab`
-
-Switch panes: `ctrl-a x`
-
-## copy-paste
-
-Copy CWD to clipboard: `ctrl-a Y`
-
-Copy current command line to clipboard: `ctrl-a y`
-
-Copy-Paste mouse selections (`alt-mouse`) with `⌘-c ⌘-v`
-
-
+show pane numbers with q
+cycle through panes with o
+break panes into windows with !
+create new window with c
+choose a window with w
+select next / previous window with n / p
