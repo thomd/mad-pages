@@ -1,5 +1,9 @@
 # tmux(1)
 
+Start tmux
+
+    tmux
+
 Keybindings
 
 - create horizontal panes with `ctrl-b %`
@@ -10,3 +14,4 @@ Keybindings
 - create new window with `ctrl-b c`
 - choose a window with `ctrl-b w`
 - select next / previous window with `ctrl-b n` / `ctrl-b p`
+- show sessions with `ctrl-b s`
