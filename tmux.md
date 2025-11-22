@@ -1,11 +1,12 @@
 # tmux(1)
 
-- create horizontal panes with `ctrl-b %`
-- create vertical panes with "
+Keybindings
 
-show pane numbers with q
-cycle through panes with o
-break panes into windows with !
-create new window with c
-choose a window with w
-select next / previous window with n / p
+- create horizontal panes with `ctrl-b %`
+- create vertical panes with `ctrl-b "`
+- show pane numbers with `ctrl-b q`
+- cycle through panes with `ctrl-b o`
+- break panes into windows with `ctrl-b !`
+- create new window with `ctrl-b c`
+- choose a window with `ctrl-b w`
+- select next / previous window with `ctrl-b n` / `ctrl-b p`
