@@ -1,8 +1,10 @@
 # Kubernetes
 
+    kubectl config current-context                # minikube or microk8s ?
+
 ## Minikube
 
-  Start Minikube
+  Start
 
     minikube start --nodes 1                      # start one kubernets cluster in a Docker container and configure kubectl via ~/.kube/config file
     minikube status                               # should be Running
@@ -15,7 +17,7 @@
     minikube logs                                 # debug logs of Minikube cluster
     minikube ssh                                  # log into the minikube environment (same as docker exec -it -w /home/docker minikube /bin/bash)
 
-  Stop Minikube
+  Stop
 
     minikube stop
     minikube status                               # should be Stopped
@@ -23,7 +25,7 @@
 
 ## MicroK8s
 
-  Start MicroK8s
+  Start
 
     microk8s start                                # start the kubernetes cluster
     microk8s config >> ~/.kube/config             # point kubectl to MicroK8s
@@ -35,7 +37,7 @@
     multipass info microk8s-vm                    # get IPs
     multipass shell microk8s-vm                   # ssh into MicroK8s VM
 
-  Stop MicroK8s
+  Stop
 
     microk8s stop                                 # stop the kubernetes cluster
     microk8s status
