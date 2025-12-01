@@ -1,7 +1,10 @@
 # Kubernetes
 
-What is your state?
+Minikube
 
-    minikube status                         # minikube kubernetes
-    multipass list                          # multipass kubernetes
-    kubectl get all
+    minikube status
+    kubectl get all                    # default: `service/kubernetes`
+
+MicroK8s
+
+
