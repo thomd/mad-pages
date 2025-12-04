@@ -1,7 +1,5 @@
 # Kubernetes
 
-    kubectl config current-context                # minikube or microk8s ?
-
 ## Minikube
 
   Start
