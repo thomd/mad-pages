@@ -4,7 +4,7 @@
 
   Start
 
-    minikube start --nodes 1                      # start one kubernets cluster in a Docker container and configure kubectl via ~/.kube/config file
+    minikube start --driver docker --nodes 1      # start one kubernets cluster in a Docker container and configure kubectl via ~/.kube/config file
     minikube status                               # should be Running
     kubectl config current-context                # verify kubectl context. Should be minikube
     docker ps -f name=minikube                    # show container running minikube
@@ -19,7 +19,7 @@
 
     minikube stop
     minikube status                               # should be Stopped
-    minikube delete                               # delete minikube container and remove minikube from ~/.kube/config
+    minikube delete --purge                       # delete minikube container and remove minikube from ~/.kube/config
 
 ## MicroK8s
 
