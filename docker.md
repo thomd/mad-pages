@@ -8,7 +8,7 @@ Run Container
 
     docker run -it IMAGE /bin/bash                             # Start a container with an interactive shell
     docker run -it -w /app IMAGE /bin/bash                     # Start a container with an interactive shell in new dir `/app`
-    docker run -it -v $(pwd):/app IMAGE /bin/bash              # Start a container with an interactive shell and mount PWD
+    docker run -it -v "$(pwd)":/app IMAGE /bin/bash            # Start a container with an interactive shell and mount PWD
     docker run --rm IMAGE env                                  # show environment of a container
 
 Create and run a Docker Image from a _Dockerfile_
