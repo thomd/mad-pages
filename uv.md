@@ -11,3 +11,9 @@
     uv venv
     uv pip install PACKAGE
     uv run main.py
+
+## Tools
+
+    uv tool install PACKAGE                                   # install a executable binary PACKAGE globally into `~/.local/bin`
+    uv tool dir                                               # where was it installed to?
+    uv tool list                                              # list installed packages
