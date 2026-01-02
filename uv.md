@@ -8,7 +8,7 @@
 
 ## Usage
 
-    uv venv
+    uv venv --seed
     uv pip install PACKAGE
     uv run main.py
 
