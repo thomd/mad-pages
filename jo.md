@@ -13,6 +13,7 @@
     seq 1 3 | jo -a                            # [1, 2, 3]
     jo -a 1 2 3                                # [1, 2, 3]
     jo a[]=1 a[]=2 a[]=3                       # {"a": [1, 2, 3]}
+    jo -a $(jo a=0) $(jo b=1)                  # [{"a":0},{"b":1}]
 
 ## create nested object
 
