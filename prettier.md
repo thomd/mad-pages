@@ -3,4 +3,4 @@
 ## Use Prettier in Vim
 
     pnpm add prettier
-    jo tabWidth=4 semi@F singleQuote@T printWidth=160 > .prettierrc
+    jo tabWidth=2 semi@F useTabs@F singleQuote@T printWidth=160 trailingComma=all > .prettierrc
