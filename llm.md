@@ -1,5 +1,9 @@
 # llm(1)
 
+## Prompts
+
+    llm -s 'extract text as markdown' -a image.png
+
 ## Inspect Ollama with Mitmproxy
 
     mitmproxy --mode reverse:http://localhost:11434
