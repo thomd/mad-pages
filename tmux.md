@@ -15,3 +15,8 @@ Keybindings
 - choose a window with `ctrl-b w`
 - select next / previous window with `ctrl-b n` / `ctrl-b p`
 - show sessions with `ctrl-b s`
+- enter settings mode with `ctrl-b :`
+
+Settings
+
+    set-option -g mouse on
