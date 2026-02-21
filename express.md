@@ -7,8 +7,9 @@ GET Route
 
     const express = require('express')
     const app = express()
-    app.get('/', (req, res) => {
+    app.get('/:id', (req, res) => {
         console.log(req.headers)
+        console.log(req.params.id)
         res.status(200).send('ok')
     })
     app.listen(80)
