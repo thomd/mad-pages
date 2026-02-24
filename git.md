@@ -27,6 +27,10 @@
 
     git reset @~ FILE && git commit --amend --no-edit         # uncommit a file
 
+## Diff
+
+    git diff --color-moved=no                                 # do not show moved lines of code with different color
+
 ## Search History
 
     git log --diff-filter=D --summary                         # list all deleted files ever
