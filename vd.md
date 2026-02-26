@@ -43,7 +43,6 @@
     :        # create new column by splitting with `split regex:`
     =        # create new column by expression `new column expr=`
     Ctrl ^   # toggle between current and previous sheet
-    gY       # copy selected rows to clipboard
 
     e        # edit (in memory) current cell
     ^        # rename current column header
@@ -55,6 +54,8 @@
     ~        # set column type text
 
     zY       # copy value of current cell
+    gzY      # copy values of selected cells
+    gY       # ???
 
     .        # plot numerical data
 
