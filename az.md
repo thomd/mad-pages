@@ -13,4 +13,12 @@ PRIVATE: login to private account via device code in browser
 
     az login --use-device-code
 
+Logout:
 
+    az logout --username EMAIL
+
+## Subscription
+
+    az account set -s SUBSCRIPTION                                      # set default subscription
+    az account show                                                     # details of the default subscription
+    az account show -s SUBSCRIPTION                                     # details of subscription SUBSCRIPTION
