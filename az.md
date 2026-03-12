@@ -1,29 +1,16 @@
 # az(1)
 
-## Login using AAD/MSA Identity
+## Authentication
 
-    az login                                                   # interactive login via webpage
-    az login --use-device-code                                 # interactive login via webpage manually via https://microsoft.com/devicelogin if no web browser is available
-    az login -u \<username> -p \<password>                       # explicit login via credentials
+    az account list -o table
+    az account list | jq '.[] | select(.isDefault==true) | .name'       # name of default account
 
-    az account list -o table                                   # list Azure accounts
-    az account set -s \<account-name>                           # set default azure account / subscription
-    az account show -o table                                   # show account info
+COMPANY: login to company account via OAuth ( --use-device-code is disabled for our company accounts)
 
-## Login using PAT Token
+    az login
 
-Create a PAT token in Azure DevOps > User Settings > Security > Personal Access Tokens
+PRIVATE: login to private account via device code in browser
 
-    az devops login                                            # you are asked to enter the PAT via console
+    az login --use-device-code
 
-## Resource Groups
 
-    az account list-locations -o table                         # list possible locations
-    az group list -o table
-    az group create -n \<group> -l \<location>
-    az group delete -n \<group> --no-wait -y
-
-# Azure DevOps
-
-    az pipelines list -p "$AZDO_PROJECT" -o table              # list pipelines
-    az pipelines runs list -p "$AZDO_PROJECT" -o table         # list pipeline runs
