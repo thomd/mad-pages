@@ -31,7 +31,7 @@
 
 ## Empty Commit
 
-    git commit --allow-empty -m "trigger Azure pipeline"
+    git commit --allow-empty -m "trigger Azure pipeline" --no-verify
 
 ## Create Patch File
 
