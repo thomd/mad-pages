@@ -1,22 +1,20 @@
 # git(1)
 
-## Git Best Practices
-
-  Find Merged Pull Requests of a JIRA Ticket
+## Find Merged Pull Requests of a JIRA Ticket
 
     git log develop --oneline --no-decorate --grep "Merged PR" | rg JIRA_ID
 
-  Find Branch which your current branch was branched off (goes back only ~90 days)
+## Find Branch which your current branch was branched off (goes back only ~90 days)
 
     git reflog | grep "checkout: moving from" | grep BRANCH
 
-  Commit Perspective
+## What was changed?
 
-    git log COMMIT^..COMMIT -p                                # what changed on COMMIT ?
+    git log A^..A -p                                          # what was changed in commit A ?
 
-  File Perspective
+    git diff A^...A -- FILE                                   # How did FILE change on commit COMMIT ?
 
-    git diff COMMIT^...COMMIT -- FILE                         # How did FILE change on commit COMMIT ?
+## Files
 
     git show BRANCH:FILE                                      # state of FILE in BRANCH
     git diff BRANCH..BRANCH -- FILE                           # compare FILE from two BRANCHES
@@ -30,6 +28,17 @@
 ## Diff
 
     git diff --color-moved=no                                 # do not show moved lines of code with different color
+
+## Empty Commit
+
+    git commit --allow-empty -m "trigger Azure pipeline"
+
+## Create Patch File
+
+    git diff --no-color > my.patch
+
+    git apply --check my.patch                                # test before actually applying it
+    git apply my.patch
 
 ## Search History
 
