@@ -5,3 +5,5 @@
     vercel logs                  # display logs for a deployment
     vercel open                  # open the current project in the Vercel Dashboard
     vercel rm DEPLOYMENT         # remove a deployment
+
+    vercel project               # list project
