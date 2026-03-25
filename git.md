@@ -16,7 +16,8 @@
 
 ## Files
 
-    git show BRANCH:FILE                                      # state of FILE in BRANCH
+    git show BRANCH:FILE                                      # show state of FILE in BRANCH
+    git show :FILE                                            # show state of FILE in current branch
     git diff BRANCH..BRANCH -- FILE                           # compare FILE from two BRANCHES
     git checkout BRANCH -- FILE                               # checkout a file from BRANCH
 
