@@ -36,7 +36,7 @@
 
     fd -x echo
     fd -x echo {/}                              # print basenames
-    fd -e jpg -x convert {} {.}.png             # convert all jpg files to png files
+    fd -e jpg -x magick convert {} {.}.png      # convert all jpg files to png files
     fd -e jpg -x mv {} {//}/foo{/}              # prefix all jpg files names with 'foo'
     fd -x sh -c "cmd1; cmd2"                    # execute two commands in parallel
     fd -x sh -c "echo {} > {/.}.txt"            # execute multiple commands with placeholder
@@ -65,6 +65,7 @@
     fd -e pdf -X cpdf -o all.pdf                # merge multiple pdf into one
     fd -e js -E node\_modules                    # find all js files but not in `node_modules`
     fd -HI -S +1g . ~                           # find files larger then 1GB within home directory
+    fd -e jpg -x magick convert {} {.}.png      # convert all jpg files to png files
 
     fd --threads=1 -e isml -x sh -c "awk -f script.awk {} > tmp; mv tmp > {}"    # replace with an awk script
 
