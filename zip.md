@@ -9,3 +9,4 @@
 
     unzip -l protected.zip                               # list, but do not unzip
     unzip protected.zip
+    unzip archive.zip -d target-folder                   # unzip into a folder
