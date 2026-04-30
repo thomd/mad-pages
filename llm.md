@@ -9,3 +9,7 @@
 
     curl -L https://llm.datasette.io/ | llm -t gh:simonw/summarize
     git diff --cached | llm -t gh:thomd/commit-message
+
+# Examples
+
+    defuddle parse https://example.com/page.html --markdown | llm -s 'summarize this text in one paragraph'
