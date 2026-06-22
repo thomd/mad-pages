@@ -1,4 +1,4 @@
-# Coding Agent Skills
+# gh-skill(1)
 
     gh skill search "QUERY"         # search Skills
     gh skill update                 # update Skills
