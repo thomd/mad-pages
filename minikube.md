@@ -23,16 +23,16 @@
 
 ## Minikube Ingress
 
-The Ingress controller runs in its own dedicated namespace ingres-nginx. Wait for its status to show as fully active
+  The Ingress controller runs in its own dedicated namespace ingres-nginx. Wait for its status to show as fully active
 
     minikube addons enable ingress
     kubectl rollout status deployment ingress-nginx-controller -n ingress-nginx --timeout=90s
 
 ## Local Docker Registry with Minikube
 
-By default, Kubernetes will try to pull images from a public registry (Docker Hub).
+  By default, Kubernetes will try to pull images from a public registry (Docker Hub).
 
-Set up and use a local container registry for your images:
+  Set up and use a local container registry for your images:
 
     minikube start
     minikube addons enable registry                   # the registry will be available on localhost:PORT. PORT is told on startup
