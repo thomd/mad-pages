@@ -61,6 +61,11 @@
 
 ## VisiData Best Practices
 
+  Determine Value Lengths
+
+    :                                       # to enter a python expression
+    len(str(curcol))                        # enter this expression
+
   Extract pattern and create new column
 
     ;  ([0-9]{4})                           # create new colum containing all 4-digit numbers within current column
