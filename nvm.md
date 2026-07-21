@@ -1,7 +1,7 @@
 
 # nvm(1)
 
-use versions
+use version
 
     nvm ls                                  # list installed nodes
     nvm ls-remote                           # list installable nodes
@@ -9,12 +9,13 @@ use versions
     nvm use default                         # use defined default version
     nvm alias default \<version>             # set \<version> as the default node
 
-install new version
+install version
 
     nvm install \<version>                   # install <version>
     nvm install --lts                       # install latest LTS version
     nvm install \<lts_name>                  # install specific LTS version
     nvm reinstall-packages \<version>        # reinstall global npm packages contained in <version> to current version
+    nvm install-latest-npm                  # install latest npm
 
 cleanup
 
