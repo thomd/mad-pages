@@ -50,17 +50,22 @@
 ## Stashing
 
     git stash
-    git stash -p                        # interactively specify changes included in this stash
-    git stash -u                        # include also untracked files
-    git stash -k                        # stash only unstaged changes (--keep-index)
-    git stash push -- FILE              # stash only a specific file
+    git stash -p                                              # interactively specify changes included in this stash
+    git stash -u                                              # include also untracked files
+    git stash -k                                              # stash only unstaged changes (--keep-index)
+    git stash push -- FILE                                    # stash only a specific file
 
-    git stash list                      # list all stashes; alias git s
-    git stash show                      # show files of first stash
-    git stash show stash@{1}            # show files of a specific stash
+    git stash list                                            # list all stashes
+    git stash show                                            # show files of first stash
+    git stash show stash@{1}                                  # show files of a specific stash
 
-    git stash pop stash@{1}             # apply a stash and drop from stack
-    git stash pop                       # apply first stash and drop from stack
+    git stash pop stash@{1}                                   # apply a stash and drop from stack
+    git stash pop                                             # apply first stash and drop from stack
 
-    git stash clear                     # clear all stashes
+    git stash clear                                           # clear all stashes
 
+## Worktree
+
+    git worktree add -b feature/foo ../foo develop            # create worktree with branch feature/foo based on develop
+    git worktree list
+    git worktree remove ../foo
